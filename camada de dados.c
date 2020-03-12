@@ -24,11 +24,18 @@ int obter_jogador_atual(ESTADO *estado) {
     else jogador = 2;
     return jogador;
 }
+
 //int obter_numero_de_jogadas(ESTADO *estado){
 int oter_numero_de_jogadas(ESTADO *e) {
     int x=0;
-    x=x+1
+    x=x+1;
     e->num_jogadas = x;
 return x;
 }
+
 //CASA obter_estado_casa(ESTADO *e, COORDENADA c){
+CASA obter_estado_casa(ESTADO *e, COORDENADA c){
+    tab[ultima_jogada.x][ultima_jogada.y] = PRETA;
+    tab[c.x][c.y] = BRANCA;
+return c
+}

@@ -35,7 +35,5 @@ return x;
 
 //CASA obter_estado_casa(ESTADO *e, COORDENADA c){
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
-    tab[ultima_jogada.x][ultima_jogada.y] = PRETA;
-    tab[c.x][c.y] = BRANCA;
-return c
+return e->tab[c.x][c.y]
 }

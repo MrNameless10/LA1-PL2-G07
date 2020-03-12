@@ -35,5 +35,5 @@ return x;
 
 //CASA obter_estado_casa(ESTADO *e, COORDENADA c){
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
-return e->tab[c.x][c.y]
+return e->tab[c.x][c.y];
 }

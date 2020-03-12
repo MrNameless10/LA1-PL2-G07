@@ -6,6 +6,7 @@ ESTADO *inicializar_estado() {
             e->tab[x][y] = VAZIO;
         }
     }
+      
     e->ultima_jogada.x = 4;
     e->ultima_jogada.y = 3; 
     e->tab[4][3] = BRANCA; //posicao da peca branca no inicio do jogo
@@ -18,5 +19,10 @@ ESTADO *inicializar_estado() {
 //int obter_jogador_atual(ESTADO *estado){
 
 //int obter_numero_de_jogadas(ESTADO *estado){
-
+int oter_numero_de_jogadas(ESTADO *e) {
+    int x=0;
+    x++
+    e->num_jogadas = x;
+return x;
+}
 //CASA obter_estado_casa(ESTADO *e, COORDENADA c){

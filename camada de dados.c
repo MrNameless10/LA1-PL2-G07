@@ -18,7 +18,7 @@ ESTADO *inicializar_estado() {
 }
 //int obter_jogador_atual(ESTADO *estado){
 
-int obter_jogador_atual(ESTADO *estado) {
+int obter_jogador_atual(ESTADO *e) {
     int jogador;
     if (e->num_jogadas % 2 == 0) jogador = 1;
     else jogador = 2;
@@ -26,8 +26,8 @@ int obter_jogador_atual(ESTADO *estado) {
 }
 
 //int obter_numero_de_jogadas(ESTADO *estado){
-int oter_numero_de_jogadas(ESTADO *e) {
-    int x=0;
+int obter_numero_de_jogadas(ESTADO *e) {
+    e->num_jogadas = x;
     x=x+1;
     e->num_jogadas = x;
 return x;

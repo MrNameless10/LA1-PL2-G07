@@ -1,11 +1,13 @@
 void mostrar_tabuleiro(ESTADO *e) {
-    int letra,numero;
-    for(numero=8;numero>=1; numero--){
-        for(letra='a';letra<='h';letra++){
-            if(letra== 'h' && numero==8) printf("2");
-            else if (letra=='a' && numero==1) printf("1");
-            else if (letra=='e'&& numero==5) printf("*");
-            else printf(".");
+    int x ,y;
+
+    for(y=8;y>=1; y--){
+        for(x=1;x<=8;x++){
+            if(x==8 && y==8) printf("2");
+            else if (x==1 && y==1) printf("1");
+            else if (e->tab[x][y]==BRANCA) printf("*");
+            else if (e->tab[x][y]==VAZIO) printf(".");
+            else if (e->tab[x][y]==PRETA) printf("#");
         }
         printf("\n");
     }

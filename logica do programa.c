@@ -1,4 +1,6 @@
-// Função que deve ser completada e colocada na camada da lógica do programa
+//
+// Created by pedro on 12/03/2020.
+//
 int ver_movimentos(ESTADO*e, COORDENADA c){
     int c1,l1,c2,l2;
     c1 = e-> ultima_jogada.x;

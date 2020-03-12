@@ -27,7 +27,7 @@ int obter_jogador_atual(ESTADO *estado) {
 //int obter_numero_de_jogadas(ESTADO *estado){
 int oter_numero_de_jogadas(ESTADO *e) {
     int x=0;
-    x++
+    x=x+1
     e->num_jogadas = x;
 return x;
 }

@@ -1,6 +1,7 @@
 //
 // Created by pedro on 12/03/2020.
 //
+#include "camada de dados.h"
 int ver_movimentos(ESTADO*e, COORDENADA c){
     int c1,l1,c2,l2;
     c1 = e-> ultima_jogada.x;
@@ -24,4 +25,3 @@ int jogar(ESTADO *e, COORDENADA c) {
         return 1;}
     else return 0;    
 }
-

@@ -36,7 +36,10 @@ int obter_numero_de_jogadas(ESTADO *e) {
 return e->num_jogadas;
 }
 
-//CASA obter_estado_casa(ESTADO *e, COORDENADA c){
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
-return e->tab[c.linha][c.coluna];
+return e->tab[c.x][c.y];
+}
+
+CASA obter_casa(ESTADO *e,int x,int y){
+return e->tab[x][y];
 }

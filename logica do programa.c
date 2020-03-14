@@ -9,8 +9,8 @@ int ver_movimentos(ESTADO*e, COORDENADA c){
     c2 = c.x;
     l2 = c.y;
     
-    if((sqrt((c1-c2)^2-(l1-l2)^2) == 1
-        return 1;
+    if((sqrt((c1-c2)^2-(l1-l2)^2) == 1) return 1;
+    else return 0;
 }
         
 int jogar(ESTADO *e, COORDENADA c) {

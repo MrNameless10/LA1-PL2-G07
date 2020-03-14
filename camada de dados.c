@@ -43,3 +43,7 @@ return e->tab[c.x][c.y];
 CASA obter_casa(ESTADO *e,int x,int y){
 return e->tab[x][y];
 }
+
+COORDENADA obter_ultima_jogada(ESTADO *e){
+return e->ultima_jogada;
+}

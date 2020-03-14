@@ -7,14 +7,13 @@
 
 void mostrar_tabuleiro(ESTADO *e) {
     int x ,y;
-
-    for(y=0;y<8; y++){//0 a 7 por 0 a 7. A posicao (0,0) equivale a primeira casa no canto superior esquerdo.
+    for(y=0;y<8; y++){
         for(x=0;x<8;x++){
             if (x==7 && y==0) printf("2");
             else if (x==0 && y==7)printf("1");
-            else if (e->tab[x][y]==BRANCA) printf("*");
-            else if (e->tab[x][y]==PRETA) printf("#");
-            else if (e->tab[x][y]==VAZIO) printf(".");
+            else if (obter_casa(e,x,y)==BRANCA) printf("*");
+            else if (obter_casa(e,x,y)==PRETA) printf("#");
+            else if (obter_casa(e,x,y)==VAZIO) printf(".");
         }
         printf("\n");
     }

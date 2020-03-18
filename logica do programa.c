@@ -4,8 +4,8 @@
 
 int ver_movimentos(ESTADO*e, COORDENADA c){
     int c1,l1,c2,l2;
-    c1 = obter_ultima_jogada(e).x
-    l1 = obter_ultima_jogada(e).y
+    c1 = obter_ultima_jogada(e).x;
+    l1 = obter_ultima_jogada(e).y;
     c2 = c.x;
     l2 = c.y;
     

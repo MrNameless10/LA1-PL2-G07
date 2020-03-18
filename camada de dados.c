@@ -9,8 +9,8 @@ ESTADO *inicializar_estado() {
         }
     }
       
-    e->ultima_jogada.linha = 4;
-    e->ultima_jogada.coluna = 3; 
+    e->ultima_jogada.x = 4;
+    e->ultima_jogada.y = 3; 
     e->tab[4][3] = BRANCA; //posicao da peca branca no inicio do jogo
     e->num_jogadas = 0; 
     e->jogador_atual = 1;

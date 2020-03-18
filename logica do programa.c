@@ -16,7 +16,7 @@ int ver_movimentos(ESTADO*e, COORDENADA c){
 int jogar(ESTADO *e, COORDENADA c) {
     printf("jogar %d %d\n", c.x, c.y);
     if(ver_movimentos(e,c)){
-	    e->tab[ultima_jogada.x][ultima_jogada.y] = PRETA;
+	    e->tab[obter_ultima_jogada(e).x][obter_ultima_jogada(e).x] = PRETA;
 	    e->tab[c.x][c.y] = BRANCA;
 	    e->ultima_jogada.x = c.x;
 	    e->ultima_jogada.y = c.y;	

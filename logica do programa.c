@@ -21,7 +21,7 @@ int jogar(ESTADO *e, COORDENADA c) {
 	    e->ultima_jogada.x = c.x;
 	    e->ultima_jogada.y = c.y;	
 	    e->jogador_atual = obter_jogador_atual (e);
-	    e->jogadas[obter_numero_de_jogadas(e)] = c;
+	    //e->jogadas[obter_numero_de_jogadas(e)] = c;
         return 1;}
     else return 0;    
 }

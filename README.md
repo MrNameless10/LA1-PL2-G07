@@ -1,4 +1,4 @@
-# LA1-PL2-GO7
+# LA1-PL2-G07
 - Laboratorios de Algoritmia I
 - PL2
 - Grupo 07

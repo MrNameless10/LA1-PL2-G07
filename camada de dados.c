@@ -14,6 +14,7 @@ ESTADO *inicializar_estado() {
     e->tab[4][3] = BRANCA; //posicao da peca branca no inicio do jogo
     e->num_jogadas = 0; 
     e->jogador_atual = 1;
+    e->num_comandos = 0;
     //e->jogadas
 
     return e;

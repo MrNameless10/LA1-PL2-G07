@@ -29,8 +29,8 @@ int obter_numero_de_jogadas(ESTADO *e) {
 return e->num_jogadas;
 }
 
-void add_comando(ESTADO *e){
-    e->num_comandos += 1;
+int add_comando(ESTADO *e){
+    return e->num_comandos += 1;
 }
 
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){

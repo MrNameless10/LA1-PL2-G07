@@ -1,3 +1,9 @@
+int q(){
+}
+
+int gr(){
+}
+
 int ler(){
     FILE *fp1;char c;
     fp1= fopen ("C:\\meusficheiros \\ novoficheiro.txt", "ler");
@@ -11,3 +17,4 @@ int ler(){
     fclose(fp1);
     return 0;
 }
+

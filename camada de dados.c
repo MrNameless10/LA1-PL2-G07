@@ -53,8 +53,7 @@ void alterar_casa(ESTADO *e, COORDENADA c)
     e -> tab[x][y] = PRETA;
     e -> tab[c.x][c.y] = BRANCA;
 }
-
-int alterar_ultima_jogada(ESTADO *e, COORDENADA c) {
+void alterar_ultima_jogada(ESTADO *e, COORDENADA c) {
     e->ultima_jogada.x = c.x;
     e->ultima_jogada.y = c.y;
 }

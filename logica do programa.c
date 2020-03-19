@@ -20,6 +20,7 @@ int jogar(ESTADO *e, COORDENADA c) {
 	    alterar_ultima_jogada(e,c);
 	    alterar_jogador_atual(e);
 	    //e->jogadas[obter_numero_de_jogadas(e)] = c;
+	    if(fim_de_jogo(e,c)) printf("GAME OVER! Parabéns jogador %d",obter_jogador_atual(e));
         return 1;
     }
     else return 0;    

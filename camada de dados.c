@@ -1,4 +1,7 @@
+#include "camada de dados.h"
 #include <stdlib.h>
+#include <stdio.h>
+
 
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));

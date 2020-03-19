@@ -2,20 +2,20 @@
 #include <math.h>
 #include <stdio.h>
 
-int ver_movimentos(ESTADO*e, COORDENADA c){
+int valida_jogada(ESTADO*e, COORDENADA c){
     int c1,l1,c2,l2;
     c1 = obter_ultima_jogada(e).x;
     l1 = obter_ultima_jogada(e).y;
     c2 = c.x;
     l2 = c.y;
     
-    if((sqrt((c1-c2)^2-(l1-l2)^2) == 1)) return 1;
+    if((sqrt((c1-c2)^2-(l1-l2)^2) == 1) && e->tab[c.x][c.y] == VAZIO) return 1;
     else return 0;
 }
         
 int jogar(ESTADO *e, COORDENADA c) {
     printf("jogar %d %d\n", c.x, c.y);
-    if(ver_movimentos(e,c)){
+    if(valida_jogada(e,c)){
 	    alterar_casa (e,c);
 	    e->ultima_jogada.x = c.x;
 	    e->ultima_jogada.y = c.y;	

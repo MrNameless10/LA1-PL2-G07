@@ -26,3 +26,4 @@ int obter_numero_de_jogadas(ESTADO *estado);
 CASA obter_estado_casa(ESTADO *e, COORDENADA c);
 CASA obter_casa(ESTADO *e,int x,int y);
 COORDENADA obter_ultima_jogada(ESTADO *e);
+void alterar_casa(ESTADO *e, COORDENADA c);

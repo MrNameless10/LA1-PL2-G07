@@ -21,6 +21,7 @@ void mostrar_tabuleiro(ESTADO *e) {
     }
     printf("  abcdefgh");
     printf("\n");
+    mostrar_prompt(e);
 }
 
 

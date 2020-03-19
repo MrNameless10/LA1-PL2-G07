@@ -32,4 +32,3 @@ void alterar_ultima_jogada(ESTADO *e, COORDENADA c);
 int add_comando(ESTADO *e);
 void mostrar_prompt(ESTADO *e);
 void alterar_jogador_atual(ESTADO *e);
-int fim_de_jogo(ESTADO *e, COORDENADA c);

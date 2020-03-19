@@ -1,3 +1,3 @@
 #include "camada de dados.h"
-int ver_movimentos(ESTADO*e, COORDENADA c);
+int valida_jogada(ESTADO*e, COORDENADA c);
 int jogar(ESTADO *e, COORDENADA c);

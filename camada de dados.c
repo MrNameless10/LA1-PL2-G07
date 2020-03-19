@@ -66,3 +66,8 @@ void alterar_ultima_jogada(ESTADO *e, COORDENADA c) {
 void mostrar_prompt(ESTADO *e){
     printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
 }
+
+void alterar_jogador_atual(ESTADO *e){
+    if(obter_jogador_atual (e) == 1) e->jogador_atual = 2;
+    else e->jogador_atual = 1;
+}

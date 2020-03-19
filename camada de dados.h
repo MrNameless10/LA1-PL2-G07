@@ -31,3 +31,4 @@ void alterar_casa(ESTADO *e, COORDENADA c);
 void alterar_ultima_jogada(ESTADO *e, COORDENADA c);
 int add_comando(ESTADO *e);
 void mostrar_prompt(ESTADO *e);
+void alterar_jogador_atual(ESTADO *e);

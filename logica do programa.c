@@ -25,3 +25,16 @@ int jogar(ESTADO *e, COORDENADA c) {
     }
     else return 0;    
 }
+
+
+int fim_de_jogo(ESTADO *e, COORDENADA c) {
+    COORDENADA co;
+    for (int i = c.y - 1; i <= c.y + 1; i++) {
+        for (int k = c.x - 1; k <= c.x + 1; k++) {
+            co.x = i;
+            co.y = k;
+            if (valida_jogada(e, co)==1) return 0;
+        }
+    }
+    return obter_jogador_atual(e) ;
+}

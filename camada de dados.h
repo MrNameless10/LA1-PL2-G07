@@ -18,6 +18,7 @@ COORDENADA ultima_jogada;
 JOGADAS jogadas;
 int num_jogadas;
 int jogador_atual;
+int num_comandos;
 } ESTADO;
 
 ESTADO *inicializar_estado();

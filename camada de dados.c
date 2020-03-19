@@ -50,8 +50,8 @@ return e->ultima_jogada;
 
 void alterar_casa(ESTADO *e, COORDENADA c)
 {
-    int x = e -> ultima_jogada.x;
-    int y = e -> ultima_jogada.y;
+    int x = obter_ultima_jogada (e);
+    int y = obter_ultima_jogada (e);
 
     e -> tab[x][y] = PRETA;
     e -> tab[c.x][c.y] = BRANCA;

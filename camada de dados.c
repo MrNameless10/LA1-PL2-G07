@@ -21,19 +21,16 @@ ESTADO *inicializar_estado() {
 //int obter_jogador_atual(ESTADO *estado){
 
 int obter_jogador_atual(ESTADO *e) {
-    //int jogador;
-    //if (e->num_jogadas % 2 == 0) jogador = 1;
-    //else jogador = 2;
-    //return jogador;
     return e->jogador_atual;
 }
 
 //int obter_numero_de_jogadas(ESTADO *estado){
 int obter_numero_de_jogadas(ESTADO *e) {
-    //int x= e->num_jogadas;
-    //x=x+1;
-    //e->num_jogadas = x;
 return e->num_jogadas;
+}
+
+void add_comando(ESTADO *e){
+    e->num_comandos += 1;
 }
 
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){

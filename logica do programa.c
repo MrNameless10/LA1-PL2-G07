@@ -12,20 +12,6 @@ int valida_jogada(ESTADO*e, COORDENADA c){
     if((sqrt((c1-c2)^2-(l1-l2)^2) == 1) && e->tab[c.x][c.y] == VAZIO) return 1;
     else return 0;
 }
-        
-int jogar(ESTADO *e, COORDENADA c) {
-    printf("jogar %d %d\n", c.x, c.y);
-    if(valida_jogada(e,c)){
-	    alterar_casa (e,c);
-	    alterar_ultima_jogada(e,c);
-	    alterar_jogador_atual(e);
-	    //e->jogadas[obter_numero_de_jogadas(e)] = c;
-	    if(fim_de_jogo(e,c)) printf("GAME OVER! Parabéns jogador %d",obter_jogador_atual(e));
-        return 1;
-    }
-    else return 0;    
-}
-
 
 int fim_de_jogo(ESTADO *e, COORDENADA c) {
     COORDENADA co;
@@ -37,4 +23,17 @@ int fim_de_jogo(ESTADO *e, COORDENADA c) {
         }
     }
     return obter_jogador_atual(e) ;
+}
+        
+int jogar(ESTADO *e, COORDENADA c) {
+    printf("jogar %d %d\n", c.x, c.y);
+    if(valida_jogada(e,c)){
+	    alterar_casa (e,c);
+	    alterar_ultima_jogada(e,c);
+	    alterar_jogador_atual(e);
+	    //e->jogadas[obter_numero_de_jogadas(e)] = c;
+	    if(fim_de_jogo(e,c)) printf("GAME OVER! Parabéns jogador %d", obter_jogador_atual(e));
+        return 1;
+    }
+    else return 0;    
 }

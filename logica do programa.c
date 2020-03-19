@@ -17,10 +17,10 @@ int jogar(ESTADO *e, COORDENADA c) {
     printf("jogar %d %d\n", c.x, c.y);
     if(valida_jogada(e,c)){
 	    alterar_casa (e,c);
-	    e->ultima_jogada.x = c.x;
 	    alterar_ultima_jogada(e,c);
 	    e->jogador_atual = obter_jogador_atual (e);
 	    //e->jogadas[obter_numero_de_jogadas(e)] = c;
-        return 1;}
+        return 1;
+    }
     else return 0;    
 }

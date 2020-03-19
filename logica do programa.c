@@ -18,7 +18,7 @@ int jogar(ESTADO *e, COORDENADA c) {
     if(valida_jogada(e,c)){
 	    alterar_casa (e,c);
 	    alterar_ultima_jogada(e,c);
-	    e->jogador_atual = obter_jogador_atual (e);
+	    alterar_jogador_atual(e);
 	    //e->jogadas[obter_numero_de_jogadas(e)] = c;
         return 1;
     }

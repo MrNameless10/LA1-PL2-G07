@@ -54,7 +54,12 @@ void alterar_casa(ESTADO *e, COORDENADA c)
     e -> tab[x][y] = PRETA;
     e -> tab[c.x][c.y] = BRANCA;
 }
+
 void alterar_ultima_jogada(ESTADO *e, COORDENADA c) {
     e->ultima_jogada.x = c.x;
     e->ultima_jogada.y = c.y;
+}
+
+void mostrar_prompt(ESTADO *e){
+    printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
 }

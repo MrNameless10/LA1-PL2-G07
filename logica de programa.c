@@ -15,7 +15,6 @@ int valida_jogada(ESTADO *e, COORDENADA c){
     return 0;
 }
 
-
 int jogar(ESTADO *e, COORDENADA c) {
     if(valida_jogada(e,c)){
         alterar_casa(e,c);

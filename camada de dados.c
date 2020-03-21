@@ -59,10 +59,8 @@ void alterar_ultima_jogada(ESTADO *e, COORDENADA c) {
     e->ultima_jogada.y = c.y;
 }
 
-int add_comando(ESTADO *e){
-    if((e->num_comandos-(obter_numero_de_jogadas(e)))<=2)
-        return e->num_comandos +=1;
-    else return e->num_comandos;
+int add_comando(ESTADO *e) {
+    return e->num_comandos += 1;
 }
 
 void mostrar_prompt(ESTADO *e){

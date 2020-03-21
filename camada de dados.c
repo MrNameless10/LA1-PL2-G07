@@ -64,7 +64,7 @@ int add_comando(ESTADO *e){
 }
 
 void mostrar_prompt(ESTADO *e){
-    printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
+    printf("# %d  PL%d  (%d)> ", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
 }
 
 void alterar_jogador_atual(ESTADO *e){

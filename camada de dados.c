@@ -1,4 +1,3 @@
-
 #include "camada de dados.h"
 #include "logica de programa.h"
 #include <stdlib.h>
@@ -14,8 +13,8 @@ ESTADO *inicializar_estado() {
     }
 
     e->ultima_jogada.x = 4;
-    e->ultima_jogada.y = 3;
-    e->tab[4][3] = BRANCA; //posicao da peca branca no inicio do jogo
+    e->ultima_jogada.y = 4;
+    e->tab[4][4] = BRANCA; //posicao da peca branca no inicio do jogo
     e->num_jogadas = 0;
     e->jogador_atual = 1;
     e->num_comandos = 0;
@@ -74,8 +73,8 @@ void alterar_jogador_atual(ESTADO *e){
 
 int fim_de_jogo(ESTADO *e, COORDENADA c) {
     COORDENADA cor;
-    if (c.y == 0 && c.x == 7) return 2;
-    if (c.y == 7 && c.x == 0) return 1;
+    if (c.y == 7 && c.x == 7) return 2;
+    if (c.y == 0 && c.x == 0) return 1;
     for (int i = c.y - 1; i <= c.y + 1; i++) {
         for (int k = c.x - 1; k <= c.x + 1; k++) {
             cor.x = i;

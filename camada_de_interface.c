@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-#include "logica do programa.h"
-#include "camada de dados.h"
+#include "logica_do_programa.h"
+#include "camada_de_dados.h"
 
 #define BUF_SIZE 1024
 
@@ -31,8 +31,8 @@ int interpretador(ESTADO *e) {
     
     if(fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
-       COORDENADA coord = {*col - 'a', *lin - '1'};
-       jogar(e, coord);
+       COORDENADA c = {*col - 'a', *lin - '1'};
+       jogar(e, c);
        mostrar_tabuleiro(e);
     }
     

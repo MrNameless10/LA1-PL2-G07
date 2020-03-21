@@ -15,5 +15,6 @@ CMakeFiles/LAProjeto.dir/logica_de_programa.c.obj: ../logica\ de\ programa.h
 
 CMakeFiles/LAProjeto.dir/main.c.obj: ../camada\ de\ dados.h
 CMakeFiles/LAProjeto.dir/main.c.obj: ../camada\ de\ interface.h
+CMakeFiles/LAProjeto.dir/main.c.obj: ../logica\ de\ programa.h
 CMakeFiles/LAProjeto.dir/main.c.obj: ../main.c
 

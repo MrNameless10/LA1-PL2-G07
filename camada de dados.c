@@ -73,13 +73,22 @@ void alterar_jogador_atual(ESTADO *e){
 }
 
 int fim_de_jogo(ESTADO *e, COORDENADA c) {
-    COORDENADA co;
+    COORDENADA cor;
+    if (c.y == 0 && c.x == 7) return 2;
+    if (c.y == 7 && c.x == 0) return 1;
     for (int i = c.y - 1; i <= c.y + 1; i++) {
         for (int k = c.x - 1; k <= c.x + 1; k++) {
-            co.x = i;
-            co.y = k;
-            if (valida_jogada(e, co)==1) return 0;
+            cor.x = i;
+            cor.y = k;
+            if (valida_jogada(e, cor)==0) return 0;
         }
     }
-    return obter_jogador_atual(e) ;
+    return (obter_jogador_atual(e)== 1 ? 2 : 1) ;
 }
+
+void alterar_num_jogadas(ESTADO *e){
+    if (obter_jogador_atual(e)== 1)
+        e->num_jogadas++;
+}
+
+

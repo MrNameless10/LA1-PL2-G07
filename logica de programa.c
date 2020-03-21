@@ -2,36 +2,28 @@
 #include "camada de dados.h"
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-int valida_jogada(ESTADO*e, COORDENADA c){
-    int c1,l1,c2,l2;
-    c1 = obter_ultima_jogada(e).x;
-    l1 = obter_ultima_jogada(e).y;
-    c2 = c.x;
-    l2 = c.y;
+int valida_jogada(ESTADO *e, COORDENADA c){
+    int x1 = e->ultima_jogada.x, y1 = e->ultima_jogada.y;
+    int x2 = c.x, y2 = c.y;
 
-    if((sqrt((c1-c2)^2-(l1-l2)^2) == 1) && e->tab[c.x][c.y] == VAZIO) return 1;
-    else return 0;
-
-    //int x = e->ultima_jogada.x;
-    //int y = e->ultima_jogada.y;
-
-
-    //int r = 0;
-    //if (e->tab[c.x][c.y] == VAZIO && c.x >= x - 1 && c.x <= x + 1 && c.y >= y - 1 && c.y <= y + 1)
-        //r = 1;
-    //return r;
-
+    if(((x1 == x2) && (((abs(y1-y2))==1))) || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))){
+        CASA casa_coord = obter_estado_casa(e,c);
+        if(casa_coord == VAZIO) return 1;
+    }
+    return 0;
 }
 
+
 int jogar(ESTADO *e, COORDENADA c) {
-    printf("jogar %d %d\n", c.x, c.y);
     if(valida_jogada(e,c)){
         alterar_casa(e,c);
         alterar_ultima_jogada(e,c);
         alterar_jogador_atual(e);
         //e->jogadas[obter_numero_de_jogadas(e)] = c;
-        if(fim_de_jogo(e,c)) printf("GAME OVER! Parabéns jogador %d",obter_jogador_atual(e));
+        alterar_num_jogadas(e);
+        if(fim_de_jogo(e,c)) printf("GAME OVER! Parabéns jogador %d \n",fim_de_jogo(e,c));
         return 1;
     }
     else return 0;

@@ -37,4 +37,5 @@ int add_comando(ESTADO *e);
 void mostrar_prompt(ESTADO *e);
 void alterar_jogador_atual(ESTADO *e);
 int fim_de_jogo(ESTADO *e, COORDENADA c);
+void alterar_num_jogadas(ESTADO *e);
 #endif //UNTITLED_CAMADA_DE_DADOS_H

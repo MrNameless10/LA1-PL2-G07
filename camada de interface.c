@@ -1,4 +1,3 @@
-
 #include "camada de dados.h"
 #include "logica de programa.h"
 #include <stdio.h>
@@ -8,11 +7,11 @@
 
 void mostrar_tabuleiro(ESTADO *e) {
     int x ,y,i=8;
-    for(y=0;y<8; y++){
+    for(y=7;y>=0; y--){
         printf("%d ", i);
         for(x=0;x<8;x++){
-            if (x==7 && y==0) printf("2");
-            else if (x==0 && y==7)printf("1");
+            if (x==7 && y==7) printf("2");
+            else if (x==0 && y==0)printf("1");
             else if (obter_casa(e,x,y)==BRANCA) printf("*");
             else if (obter_casa(e,x,y)==PRETA) printf("#");
             else if (obter_casa(e,x,y)==VAZIO) printf(".");
@@ -36,6 +35,5 @@ int interpretador(ESTADO *e) {
         jogar(e, coord);
         mostrar_tabuleiro(e);
     }
-
     return 1;
 }

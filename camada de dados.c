@@ -59,7 +59,7 @@ void alterar_ultima_jogada(ESTADO *e, COORDENADA c) {
     e->ultima_jogada.y = c.y;
 }
 
-int add_comando(ESTADO *e) {
+int add_comando(ESTADO *e){
     return e->num_comandos += 1;
 }
 
@@ -90,5 +90,3 @@ void alterar_num_jogadas(ESTADO *e){
     if (obter_jogador_atual(e)== 1)
         e->num_jogadas++;
 }
-
-

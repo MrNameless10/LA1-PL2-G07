@@ -7,7 +7,6 @@
 
 #define BUF_SIZE 1024
 
-// Função que deve ser colocada no ficheiro main.c
 int main()
 {
     ESTADO *e = inicializar_estado();

@@ -2,8 +2,8 @@
 #include "camada de interface.h"
 #include "logica do programa.h"
 
-int main(){
-ESTADO *e = inicializar_estado();
-interpretador(e);
-return 0;
+int main() {
+    ESTADO *e = inicializar_estado();
+    interpretador(e);
+    return 0; 
 }

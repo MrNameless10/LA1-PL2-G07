@@ -6,13 +6,47 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/migue/CLionProjects/LAProjeto/camada de dados.h
-
-C:/Users/migue/CLionProjects/LAProjeto/camada de interface.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.c
 camada de dados.h
-C:/Users/migue/CLionProjects/LAProjeto/camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+logica de programa.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
+stdlib.h
+-
+stdio.h
+-
 
-C:/Users/migue/CLionProjects/LAProjeto/main.c
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.c
+camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+logica de programa.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
+stdio.h
+-
+string.h
+-
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.h
+camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.c
+logica de programa.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
+camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+math.h
+-
+stdio.h
+-
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
+camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/main.c
 stdio.h
 -
 stdlib.h
@@ -20,7 +54,7 @@ stdlib.h
 string.h
 -
 camada de dados.h
-C:/Users/migue/CLionProjects/LAProjeto/camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
 camada de interface.h
-C:/Users/migue/CLionProjects/LAProjeto/camada de interface.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.h
 

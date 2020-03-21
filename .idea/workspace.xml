@@ -21,6 +21,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZJSE8Bptf63rzjfvpGo2nDw1qb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,6 +56,7 @@
       <workItem from="1584631444300" duration="9460000" />
       <workItem from="1584807966691" duration="161000" />
       <workItem from="1584808485663" duration="177000" />
+      <workItem from="1584808865435" duration="16000" />
     </task>
     <servers />
   </component>
@@ -60,26 +64,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1584808662338">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1584808880672">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808662338" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1584808662337">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808880672" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1584808880672">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808662337" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1584808662337">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808880672" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1584808880672">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808662337" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1584808662337">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808880672" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1584808880672">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808662337" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1584808486190">
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808880672" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1584808865259">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808486190" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1584808865259" />
     <state x="493" y="200" key="run.anything.popup" timestamp="1584635054323">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

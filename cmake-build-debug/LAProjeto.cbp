@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug"/>
+				<Option working_dir="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LAProjeto">
-				<Option output="C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/LAProjeto.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug"/>
+				<Option output="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/LAProjeto.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -29,15 +29,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAProjeto"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAProjeto"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="LAProjeto/fast">
-				<Option output="C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/LAProjeto.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug"/>
+				<Option output="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/LAProjeto.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -47,55 +47,55 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAProjeto/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 LAProjeto/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug"/>
+				<Option working_dir="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug"/>
+				<Option working_dir="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/CLionProjects/LAProjeto/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/camada de dados.c">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.c">
 			<Option target="LAProjeto"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/camada de dados.h">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h">
 			<Option target="LAProjeto"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/camada de interface.c">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.c">
 			<Option target="LAProjeto"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/camada de interface.h">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.h">
 			<Option target="LAProjeto"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/logica de programa.c">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.c">
 			<Option target="LAProjeto"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/logica de programa.h">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h">
 			<Option target="LAProjeto"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/main.c">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/main.c">
 			<Option target="LAProjeto"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/CLionProjects/LAProjeto/CMakeLists.txt">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

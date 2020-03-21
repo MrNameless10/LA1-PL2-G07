@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/migue/CLionProjects/LAProjeto/camada de dados.h
+
+C:/Users/migue/CLionProjects/LAProjeto/camada de interface.h
+camada de dados.h
+C:/Users/migue/CLionProjects/LAProjeto/camada de dados.h
+
+C:/Users/migue/CLionProjects/LAProjeto/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+camada de dados.h
+C:/Users/migue/CLionProjects/LAProjeto/camada de dados.h
+camada de interface.h
+C:/Users/migue/CLionProjects/LAProjeto/camada de interface.h
+

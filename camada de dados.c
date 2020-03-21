@@ -1,7 +1,8 @@
+
 #include "camada de dados.h"
+#include "logica de programa.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
@@ -11,18 +12,17 @@ ESTADO *inicializar_estado() {
             e->tab[x][y] = VAZIO;
         }
     }
-      
+
     e->ultima_jogada.x = 4;
-    e->ultima_jogada.y = 3; 
+    e->ultima_jogada.y = 3;
     e->tab[4][3] = BRANCA; //posicao da peca branca no inicio do jogo
-    e->num_jogadas = 0; 
+    e->num_jogadas = 0;
     e->jogador_atual = 1;
     e->num_comandos = 0;
     //e->jogadas
 
     return e;
 }
-//int obter_jogador_atual(ESTADO *estado){
 
 int obter_jogador_atual(ESTADO *e) {
     return e->jogador_atual;
@@ -30,23 +30,19 @@ int obter_jogador_atual(ESTADO *e) {
 
 //int obter_numero_de_jogadas(ESTADO *estado){
 int obter_numero_de_jogadas(ESTADO *e) {
-return e->num_jogadas;
-}
-
-int add_comando(ESTADO *e){
-    return e->num_comandos += 1;
+    return e->num_jogadas;
 }
 
 CASA obter_estado_casa(ESTADO *e, COORDENADA c){
-return e->tab[c.x][c.y];
+    return e->tab[c.x][c.y];
 }
 
 CASA obter_casa(ESTADO *e,int x,int y){
-return e->tab[x][y];
+    return e->tab[x][y];
 }
 
 COORDENADA obter_ultima_jogada(ESTADO *e){
-return e->ultima_jogada;
+    return e->ultima_jogada;
 }
 
 void alterar_casa(ESTADO *e, COORDENADA c)
@@ -63,6 +59,10 @@ void alterar_ultima_jogada(ESTADO *e, COORDENADA c) {
     e->ultima_jogada.y = c.y;
 }
 
+int add_comando(ESTADO *e){
+    return e->num_comandos += 1;
+}
+
 void mostrar_prompt(ESTADO *e){
     printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
 }
@@ -70,4 +70,16 @@ void mostrar_prompt(ESTADO *e){
 void alterar_jogador_atual(ESTADO *e){
     if(obter_jogador_atual (e) == 1) e->jogador_atual = 2;
     else e->jogador_atual = 1;
+}
+
+int fim_de_jogo(ESTADO *e, COORDENADA c) {
+    COORDENADA co;
+    for (int i = c.y - 1; i <= c.y + 1; i++) {
+        for (int k = c.x - 1; k <= c.x + 1; k++) {
+            co.x = i;
+            co.y = k;
+            if (valida_jogada(e, co)==1) return 0;
+        }
+    }
+    return obter_jogador_atual(e) ;
 }

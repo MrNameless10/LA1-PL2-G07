@@ -82,7 +82,7 @@ int fim_de_jogo(ESTADO *e, COORDENADA c) {
             if (valida_jogada(e, cor)==0) return 0;
         }
     }
-    return (obter_jogador_atual(e)== 1 ? 2 : 1) ;
+    return (obter_jogador_atual(e)== 1 ? 2 : 1);
 }
 
 void alterar_num_jogadas(ESTADO *e){

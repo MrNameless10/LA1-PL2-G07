@@ -69,59 +69,59 @@ CMakeFiles/LA1_PL2_G07.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/main.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\main.c -o CMakeFiles\LA1_PL2_G07.dir\main.c.s
 
-CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
-CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.obj: ../camada\ de\ dados.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\camada_de_dados.c.obj   -c "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\camada de dados.c"
+CMakeFiles/LA1_PL2_G07.dir/dados.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
+CMakeFiles/LA1_PL2_G07.dir/dados.c.obj: ../dados.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\dados.c.obj   -c C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\dados.c
 
-CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\camada de dados.c" > CMakeFiles\LA1_PL2_G07.dir\camada_de_dados.c.i
+CMakeFiles/LA1_PL2_G07.dir/dados.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/dados.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\dados.c > CMakeFiles\LA1_PL2_G07.dir\dados.c.i
 
-CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\camada de dados.c" -o CMakeFiles\LA1_PL2_G07.dir\camada_de_dados.c.s
+CMakeFiles/LA1_PL2_G07.dir/dados.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/dados.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\dados.c -o CMakeFiles\LA1_PL2_G07.dir\dados.c.s
 
-CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
-CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.obj: ../camada\ de\ interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\camada_de_interface.c.obj   -c "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\camada de interface.c"
+CMakeFiles/LA1_PL2_G07.dir/interface.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
+CMakeFiles/LA1_PL2_G07.dir/interface.c.obj: ../interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\interface.c.obj   -c C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\interface.c
 
-CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\camada de interface.c" > CMakeFiles\LA1_PL2_G07.dir\camada_de_interface.c.i
+CMakeFiles/LA1_PL2_G07.dir/interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/interface.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\interface.c > CMakeFiles\LA1_PL2_G07.dir\interface.c.i
 
-CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\camada de interface.c" -o CMakeFiles\LA1_PL2_G07.dir\camada_de_interface.c.s
+CMakeFiles/LA1_PL2_G07.dir/interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/interface.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\interface.c -o CMakeFiles\LA1_PL2_G07.dir\interface.c.s
 
-CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
-CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.obj: ../logica\ de\ programa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\logica_de_programa.c.obj   -c "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica de programa.c"
+CMakeFiles/LA1_PL2_G07.dir/logica.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
+CMakeFiles/LA1_PL2_G07.dir/logica.c.obj: ../logica.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\logica.c.obj   -c C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica.c
 
-CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica de programa.c" > CMakeFiles\LA1_PL2_G07.dir\logica_de_programa.c.i
+CMakeFiles/LA1_PL2_G07.dir/logica.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/logica.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica.c > CMakeFiles\LA1_PL2_G07.dir\logica.c.i
 
-CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica de programa.c" -o CMakeFiles\LA1_PL2_G07.dir\logica_de_programa.c.s
+CMakeFiles/LA1_PL2_G07.dir/logica.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/logica.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica.c -o CMakeFiles\LA1_PL2_G07.dir\logica.c.s
 
 # Object files for target LA1_PL2_G07
 LA1_PL2_G07_OBJECTS = \
 "CMakeFiles/LA1_PL2_G07.dir/main.c.obj" \
-"CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.obj" \
-"CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.obj" \
-"CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.obj"
+"CMakeFiles/LA1_PL2_G07.dir/dados.c.obj" \
+"CMakeFiles/LA1_PL2_G07.dir/interface.c.obj" \
+"CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
 
 # External object files for target LA1_PL2_G07
 LA1_PL2_G07_EXTERNAL_OBJECTS =
 
 LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/main.c.obj
-LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.obj
-LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.obj
-LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.obj
+LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/dados.c.obj
+LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/interface.c.obj
+LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/logica.c.obj
 LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/build.make
 LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/linklibs.rsp
 LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/objects1.rsp

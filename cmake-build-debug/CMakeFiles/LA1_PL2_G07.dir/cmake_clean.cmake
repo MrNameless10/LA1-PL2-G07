@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.obj"
-  "CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.obj"
-  "CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.obj"
+  "CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
+  "CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
+  "CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
   "CMakeFiles/LA1_PL2_G07.dir/main.c.obj"
   "LA1_PL2_G07.exe"
   "LA1_PL2_G07.exe.manifest"

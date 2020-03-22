@@ -39,4 +39,4 @@ int interpretador (ESTADO *e){
     	mostrar_tabuleiro(e);
     }
     return 0;
-} 
+}

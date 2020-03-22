@@ -25,18 +25,20 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
-void ler (char *ficheiro, ESTADO *e){
-    FILE *jogo;
-    jogo = fopen(ficheiro, "r");
-    char linha[25];
-    e->num_jogadas = -1;
-    for (int i = 0; i < 8; i++)
-    {
-        fgets(linha, 25, jogo);
-        get_y(linha, i, e);
+int ler(){
+    FILE *fp1;char c;
+    fp1= fopen ("C:\\meusficheiros \\ novoficheiro.txt", "ler");
+    while(1){
+        c = fgetc(fp1);
+        if(c==EOF)
+            break;
+        else
+            printf("%c", c);
     }
-    fclose(jogo);
+    fclose(fp1);
+    return 0;
 }
+
 
 void gr (char *ficheiro, ESTADO *e) {
     FILE *jogo;

@@ -1,0 +1,17 @@
+Ao decorrer do guiao6 da última semana o grupo encontrou várias dificuldades, onde algumas fomos pedindo ajuda à equipa de docentes e outras vez pela prática da exaustão de tentativas ou uma pesquisa mais elaborada e cuidada conseguimos obter os resultados pretendidos:
+
+	- Objetivo dos comandos Q,gr e ler;
+	- Perceber como poderiamos alterar a documentação no doxygen;
+	- Alteramos também alguns erros que estavam a surgir no processo de "run", pois algumas funções tinham pequenos erros. Entretanto tudo foi corrigido e devidamente identificado. Fizemos testes e para já tudo funciona na perfeição;
+	- Um dos erros que nos demorou mais a solucionar foi um erro de jogo no tabuleiro, pois estava a ler os comandos do jogador ao contrario, o que fazia com que quando nós jogavamos ás vezes a jogada não respeitava as regras do jogo e mesmo assim era validada;
+	- Corrigimos também a função fim de jogo;
+	- O prompt ficou feito e aparece tal como foi pedido no guião6;
+	- Tal como o Professor Francisco Marcondes sugeriu na video aula apartir da plataforma BlackBoard Ultra, criamos uma história e definimos objetivos que deverão ser cumprimidos ao longo da semana pelos vários constituintes do grupo. Estes objetivos foram feitos com a ajuda da plataforma Trello.
+
+Em conclusão, como grupo achamos que todos os objetivos foram cumpridos e apesar das dificuldades que fomos encontrando o grupo conseguiu superar de uma forma muito boa, sempre com um olhar critico e a pensar no proximo passo para que seja mais fácil caso exsitia um erro no futuro.
+
+Todas as reuniões entre os elementos do grupo, até ao momento, foram realizadas via Discord/Slack de forma a comunicarmos mais facilmente, isto devido às circunstâncias em que nos encontramos(COVID-19).
+
+A91647 Pedro Alexandre Silva Gomes;
+A91635 Miguel Ângelo Alves de Freitas;
+A91668 Tomás Vaz de Carvalho Campinho.

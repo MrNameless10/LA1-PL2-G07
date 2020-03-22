@@ -85,3 +85,21 @@ void alterar_num_jogadas(ESTADO *e){
     if (obter_jogador_atual(e)== 1)
         e->num_jogadas++;
 }
+
+void add_jogadas(ESTADO *e) {
+    e->num_jogadas++;
+}
+
+void get_y(char *linha, int num, ESTADO *e){
+    for (int i = 0; i < 8; i++){
+        if (linha[i] == '*') {
+            e->tab[num][i] = BRANCA;
+            e->ultima_jogada.x = i;
+            e->ultima_jogada.y = num;
+            add_jogadas(e);
+        } else if (linha[i] == '#') {
+            e->tab[num][i] = PRETA;
+            add_jogadas(e);
+        } else e -> tab[num][i] = VAZIO;
+    }
+}

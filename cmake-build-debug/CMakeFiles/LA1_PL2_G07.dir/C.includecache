@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.c
+camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+logica de programa.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
+camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+

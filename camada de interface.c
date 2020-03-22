@@ -5,8 +5,6 @@
 #include <string.h>
 #define BUF_SIZE 1024
 
-void mostrar_prompt(ESTADO *e);
-
 void mostrar_tabuleiro(ESTADO *e) {
     int x ,y,i=8;
     printf("\n");
@@ -27,8 +25,25 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
-void mostrar_prompt(ESTADO *e){
-    printf("# %d  PL%d  (%d)> ", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
+int ler(){
+    FILE *fp1;char c;
+    fp1= fopen ("C:\\meusficheiros \\ novoficheiro.txt", "ler");
+    while(1){
+        c = fgetc(fp1);
+        if(c==EOF)
+            break;
+        else
+            printf("%c", c);
+    }
+    fclose(fp1);
+    return 0;
+}
+
+void gr (char *ficheiro, ESTADO *e) {
+    FILE *jogo;
+    jogo = fopen(ficheiro, "w");
+    mostrar_tabuleiro(e);
+    fclose(jogo);
 }
 
 int interpretador (ESTADO *e){

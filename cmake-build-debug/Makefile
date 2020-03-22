@@ -122,86 +122,86 @@ LA1_PL2_G07/fast:
 	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/build
 .PHONY : LA1_PL2_G07/fast
 
-camada_de_dados.obj: camada_de_dados.c.obj
+dados.obj: dados.c.obj
 
-.PHONY : camada_de_dados.obj
+.PHONY : dados.obj
 
 # target to build an object file
-camada_de_dados.c.obj:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.obj
-.PHONY : camada_de_dados.c.obj
+dados.c.obj:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/dados.c.obj
+.PHONY : dados.c.obj
 
-camada_de_dados.i: camada_de_dados.c.i
+dados.i: dados.c.i
 
-.PHONY : camada_de_dados.i
+.PHONY : dados.i
 
 # target to preprocess a source file
-camada_de_dados.c.i:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.i
-.PHONY : camada_de_dados.c.i
+dados.c.i:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/dados.c.i
+.PHONY : dados.c.i
 
-camada_de_dados.s: camada_de_dados.c.s
+dados.s: dados.c.s
 
-.PHONY : camada_de_dados.s
+.PHONY : dados.s
 
 # target to generate assembly for a file
-camada_de_dados.c.s:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/camada_de_dados.c.s
-.PHONY : camada_de_dados.c.s
+dados.c.s:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/dados.c.s
+.PHONY : dados.c.s
 
-camada_de_interface.obj: camada_de_interface.c.obj
+interface.obj: interface.c.obj
 
-.PHONY : camada_de_interface.obj
+.PHONY : interface.obj
 
 # target to build an object file
-camada_de_interface.c.obj:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.obj
-.PHONY : camada_de_interface.c.obj
+interface.c.obj:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/interface.c.obj
+.PHONY : interface.c.obj
 
-camada_de_interface.i: camada_de_interface.c.i
+interface.i: interface.c.i
 
-.PHONY : camada_de_interface.i
+.PHONY : interface.i
 
 # target to preprocess a source file
-camada_de_interface.c.i:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.i
-.PHONY : camada_de_interface.c.i
+interface.c.i:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/interface.c.i
+.PHONY : interface.c.i
 
-camada_de_interface.s: camada_de_interface.c.s
+interface.s: interface.c.s
 
-.PHONY : camada_de_interface.s
+.PHONY : interface.s
 
 # target to generate assembly for a file
-camada_de_interface.c.s:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/camada_de_interface.c.s
-.PHONY : camada_de_interface.c.s
+interface.c.s:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/interface.c.s
+.PHONY : interface.c.s
 
-logica_de_programa.obj: logica_de_programa.c.obj
+logica.obj: logica.c.obj
 
-.PHONY : logica_de_programa.obj
+.PHONY : logica.obj
 
 # target to build an object file
-logica_de_programa.c.obj:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.obj
-.PHONY : logica_de_programa.c.obj
+logica.c.obj:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/logica.c.obj
+.PHONY : logica.c.obj
 
-logica_de_programa.i: logica_de_programa.c.i
+logica.i: logica.c.i
 
-.PHONY : logica_de_programa.i
+.PHONY : logica.i
 
 # target to preprocess a source file
-logica_de_programa.c.i:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.i
+logica.c.i:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/logica.c.i
 .PHONY : logica_de_programa.c.i
 
-logica_de_programa.s: logica_de_programa.c.s
+logica.s: logica.c.s
 
-.PHONY : logica_de_programa.s
+.PHONY : logica.s
 
 # target to generate assembly for a file
-logica_de_programa.c.s:
-	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/logica_de_programa.c.s
-.PHONY : logica_de_programa.c.s
+logica.c.s:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/logica.c.s
+.PHONY : logica.c.s
 
 main.obj: main.c.obj
 
@@ -239,15 +239,15 @@ help:
 	@echo ... LA1_PL2_G07
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... camada_de_dados.obj
-	@echo ... camada_de_dados.i
-	@echo ... camada_de_dados.s
-	@echo ... camada_de_interface.obj
-	@echo ... camada_de_interface.i
-	@echo ... camada_de_interface.s
-	@echo ... logica_de_programa.obj
-	@echo ... logica_de_programa.i
-	@echo ... logica_de_programa.s
+	@echo ... dados.obj
+	@echo ... dados.i
+	@echo ... dados.s
+	@echo ... interface.obj
+	@echo ... interface.i
+	@echo ... interface.s
+	@echo ... logica.obj
+	@echo ... logica.i
+	@echo ... logica.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

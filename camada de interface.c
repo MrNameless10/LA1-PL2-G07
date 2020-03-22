@@ -25,6 +25,27 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
+void ler (char *ficheiro, ESTADO *e){
+    FILE *jogo;
+    jogo = fopen(ficheiro, "r");
+    char linha[25];
+    e->num_jogadas = -1;
+    for (int i = 0; i < 8; i++)
+    {
+        fgets(linha, 25, jogo);
+        get_y(linha, i, e);
+    }
+    fclose(jogo);
+}
+
+void gr (char *ficheiro, ESTADO *e) {
+    FILE *jogo;
+    jogo = fopen(ficheiro, "w");
+    mostrar_tabuleiro(e);
+    fclose(jogo);
+}
+
+
 int interpretador (ESTADO *e){
 	char linha[BUF_SIZE];
 	char col[2], lin[2];

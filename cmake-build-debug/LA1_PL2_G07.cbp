@@ -74,22 +74,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.c">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.c">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.c">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.c">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.h">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.h">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.c">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.c">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>
-		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h">
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>
 		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/main.c">

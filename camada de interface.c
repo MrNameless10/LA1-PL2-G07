@@ -5,6 +5,11 @@
 #include <string.h>
 #define BUF_SIZE 1024
 
+void mostrar_prompt(ESTADO *e){
+    printf("# %d  PL%d  (%d)> ", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
+}
+
+
 void mostrar_tabuleiro(ESTADO *e) {
     int x ,y,i=8;
     printf("\n");

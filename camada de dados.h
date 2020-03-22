@@ -36,6 +36,4 @@ int add_comando(ESTADO *e);
 void alterar_jogador_atual(ESTADO *e);
 int fim_de_jogo(ESTADO *e, COORDENADA c);
 void alterar_num_jogadas(ESTADO *e);
-void get_y(char *linha, int num, ESTADO *e);
-void add_jogadas(ESTADO *e);
 #endif //UNTITLED_CAMADA_DE_DADOS_H

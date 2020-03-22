@@ -35,7 +35,7 @@ int interpretador (ESTADO *e){
     	else if (fim_de_jogo (e,coord)) {
     			printf ("GAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord)); 
     			exit(0);
-            }
+        }
     	mostrar_tabuleiro(e);
     }
     return 0;

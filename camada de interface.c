@@ -33,8 +33,7 @@ int interpretador (ESTADO *e){
     	COORDENADA coord = {*col -'a', *lin - '1'};
     	if (!(jogar (e, coord))) printf ("Jogada não possivel. (TENTE NOVAMENTE)\n");
     	else if (fim_de_jogo (e,coord)) {
-    			printf ("GAME OVER. Parabéns o jogador %d!\n",obter_jogador_atual(e)); 
-    			mostrar_tabuleiro(e);
+    			printf ("GAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord)); 
     			exit(0);
             }
     	mostrar_tabuleiro(e);

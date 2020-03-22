@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "camada de dados.h"
-#include "camada de interface.h"
-#include "logica de programa.h"
+#include "dados.h"
+#include "interface.h"
+#include "logica.h"
 
 #define BUF_SIZE 1024
 

@@ -1,5 +1,5 @@
-#include "camada de dados.h"
-#include "logica de programa.h"
+#include "dados.h"
+#include "logica.h"
 #include <stdlib.h>
 #include <stdio.h>
 

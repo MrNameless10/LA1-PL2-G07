@@ -1,22 +1,22 @@
 
 all: clean la1
 
-la1: main.c camada\ de\ dados.o camada\ de\ interface.o logica\ de\ programa.o
-	gcc main.c camada\ de\ dados.o camada\ de\ interface.o logica\ de\ programa.o
+la1: main.c dados.o interface.o logica.o
+	gcc main.c dados.o interface.o logica.o
 
 ####################################################################################################
 
-camada\ de\ dados.o:
-	gcc -c camada\ de\ dados.c
+dados.o:
+	gcc -c dados.c
 
-camada\ de\ interface.o:
-	gcc -c camada\ de\ interface.c
+interface.o:
+	gcc -c interface.c
 
 comandos.o:
 	gcc -c comandos.c
 
-logica\ de\ programa.o:
-	gcc -c logica\ de\ programa.c
+logica.o:
+	gcc -c logica.c
 
 clean:
 	rm -f *.o

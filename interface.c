@@ -41,18 +41,22 @@ fp=fopen ("ficheiro.bin","Q");
 return 0;
 }
 
-int ler(){
-    FILE *fp1;char c;
-    fp1= fopen ("C:\\meusficheiros \\ novoficheiro.txt", "ler");
-    while(1){
-        c = fgetc(fp1);
-        if(c==EOF)
-            break;
-        else
-            printf("%c", c);
-    }
-    fclose(fp1);
-    return 0;
+void ler(char *ficheiro, ESTADO *e){
+  FILE *jogo; char Linha[100]; char *result; int i; clrscr();
+  jogo = fopen("ficheiro.txt", "ler");
+ 
+	if (jogo == NULL){
+		printf("Problemas na abertura do arquivo\n");
+		return;
+	}
+	i = 1;
+	while (!feof(jogo)){
+		result = fgets(Linha, 100, jogo);  
+		if (result)
+			printf("Linha %d : %s",i,Linha);
+		i++;
+	}
+	fclose(jogo);
 }
 
 void gr(char *ficheiro, ESTADO *e){
@@ -69,13 +73,6 @@ void gr(char *ficheiro, ESTADO *e){
 			printf("Erro na Gravacao\n");
 	}
   fclose(jogo);
-}
-
-void gr (char *ficheiro, ESTADO *e) {
-    FILE *jogo;
-    jogo = fopen(ficheiro, "w");
-    mostrar_tabuleiro(e);
-    fclose(jogo);
 }
 
 int interpretador (ESTADO *e){

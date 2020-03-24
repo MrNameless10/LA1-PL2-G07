@@ -3,13 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <conio.h>
+#include <conio.h>//
 #define BUF_SIZE 1024
 
 void mostrar_prompt(ESTADO *e){
     printf("# %d  PL%d  (%d)> ", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
 }
-
 
 void mostrar_tabuleiro(ESTADO *e) {
     int x ,y,i=8;
@@ -31,14 +30,14 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
-void q (){
+void q (){//
 	FILE *jogo;
 	jogo = fclose(jogo,"Q");
 	if (!jogo)
 		printf ("Erro ao fechar o arquivo.");
 }
 
-void ler(char *ficheiro, ESTADO *e){
+void ler(char *ficheiro, ESTADO *e){//
 	FILE *jogo; char Linha[100]; char *result; int i; clrscr();
 	jogo = fopen("ficheiro.txt", "ler");
 	if (jogo == NULL){
@@ -55,7 +54,7 @@ void ler(char *ficheiro, ESTADO *e){
 	fclose(jogo);
 }
 
-void gr(char *ficheiro, ESTADO *e){
+void gr(char *ficheiro, ESTADO *e){//
 	FILE *jogo; int i; int result; 
 	clrscr();
 	jogo = fopen(ficheiro, "w"); 
@@ -78,11 +77,15 @@ int interpretador (ESTADO *e){
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
     	COORDENADA coord = {*col -'a', *lin - '1'};
     	if (!(jogar (e, coord))) printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
-    	else if (fim_de_jogo (e,coord)) {
+    	else if ((fim_de_jogo (e,coord)) || (fim_de_jogo (e,coord) ==9)) {
     			printf ("GAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord)); 
     			exit(0);
         }
     	mostrar_tabuleiro(e);
+    }else{
+        printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
+        mostrar_tabuleiro(e);
     }
+
     return 0;
-} 
+}  

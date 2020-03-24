@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.c
+dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
+logica.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
+stdlib.h
+-
+stdio.h
+-
 
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de interface.c
-camada de dados.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
-logica de programa.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.c
+dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
+logica.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
 stdio.h
 -
 stdlib.h
@@ -20,7 +30,37 @@ stdlib.h
 string.h
 -
 
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica de programa.h
-camada de dados.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/camada de dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.h
+dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.c
+logica.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
+dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
+math.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
+dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
+
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+dados.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
+interface.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.h
+logica.h
+C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
 

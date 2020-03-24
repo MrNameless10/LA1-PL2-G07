@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <conio.h>
 #define BUF_SIZE 1024
 
 void mostrar_prompt(ESTADO *e){
@@ -30,25 +31,44 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
-int ler(){
-    FILE *fp1;char c;
-    fp1= fopen ("C:\\meusficheiros \\ novoficheiro.txt", "ler");
-    while(1){
-        c = fgetc(fp1);
-        if(c==EOF)
-            break;
-        else
-            printf("%c", c);
-    }
-    fclose(fp1);
-    return 0;
+void q (){
+	FILE *jogo;
+	jogo = fclose(jogo,"Q");
+	if (!jogo)
+		printf ("Erro ao fechar o arquivo.");
 }
 
-void gr (char *ficheiro, ESTADO *e) {
-    FILE *jogo;
-    jogo = fopen(ficheiro, "w");
-    mostrar_tabuleiro(e);
-    fclose(jogo);
+void ler(char *ficheiro, ESTADO *e){
+	FILE *jogo; char Linha[100]; char *result; int i; clrscr();
+	jogo = fopen("ficheiro.txt", "ler");
+	if (jogo == NULL){
+		printf("Problemas na abertura do arquivo\n");
+		return;
+	}
+	i = 1;
+	while (!feof(jogo)){
+		result = fgets(Linha, 100, jogo);  
+		if (result)
+			printf("Linha %d : %s",i,Linha);
+		i++;
+	}
+	fclose(jogo);
+}
+
+void gr(char *ficheiro, ESTADO *e){
+	FILE *jogo; int i; int result; 
+	clrscr();
+	jogo = fopen(ficheiro, "w"); 
+	if (jogo == NULL){ 
+		printf("Problemas na criacao do arquivo\n");
+		return;
+	}
+	for (i = 0; i<10;i++){
+		result = fprintf(jogo,"Linha %d\n",i);  					  
+		if (result == EOF)		    
+			printf("Erro na Gravacao\n");
+	}
+	fclose(jogo);
 }
 
 int interpretador (ESTADO *e){

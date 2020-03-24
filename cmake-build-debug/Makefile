@@ -192,7 +192,7 @@ logica.i: logica.c.i
 # target to preprocess a source file
 logica.c.i:
 	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/logica.c.i
-.PHONY : logica_de_programa.c.i
+.PHONY : logica.c.i
 
 logica.s: logica.c.s
 

@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <conio.h>
 #define BUF_SIZE 1024
 
 void mostrar_prompt(ESTADO *e){
@@ -30,6 +31,16 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
+void q (){
+FILE *fp;
+fp=fopen ("ficheiro.bin","Q");
+	if (!fp){
+		printf ("Erro na abertura do arquivo. Fim de programa.");
+		exit (1);
+        }
+return 0;
+}
+
 int ler(){
     FILE *fp1;char c;
     fp1= fopen ("C:\\meusficheiros \\ novoficheiro.txt", "ler");
@@ -42,6 +53,22 @@ int ler(){
     }
     fclose(fp1);
     return 0;
+}
+
+void gr(char *ficheiro, ESTADO *e){
+  FILE *jogo; int i; int result;
+  clrscr();
+  jogo = fopen(ficheiro, "w"); 
+	if (jogo == NULL){ 
+		printf("Problemas na criacao do arquivo\n");
+		return;
+	}
+	for (i = 0; i<10;i++){
+		result = fprintf(jogo,"Linha %d\n",i);  					  
+		if (result == EOF)		    
+			printf("Erro na Gravacao\n");
+	}
+  fclose(jogo);
 }
 
 void gr (char *ficheiro, ESTADO *e) {

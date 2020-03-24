@@ -32,19 +32,15 @@ void mostrar_tabuleiro(ESTADO *e) {
 }
 
 void q (){
-FILE *fp;
-fp=fopen ("ficheiro.bin","Q");
-	if (!fp){
-		printf ("Erro na abertura do arquivo. Fim de programa.");
-		exit (1);
-        }
-return 0;
+	FILE *jogo;
+	jogo = fclose(jogo,"Q");
+	if (!jogo)
+		printf ("Erro ao fechar o arquivo.");
 }
 
 void ler(char *ficheiro, ESTADO *e){
-  FILE *jogo; char Linha[100]; char *result; int i; clrscr();
-  jogo = fopen("ficheiro.txt", "ler");
- 
+	FILE *jogo; char Linha[100]; char *result; int i; clrscr();
+	jogo = fopen("ficheiro.txt", "ler");
 	if (jogo == NULL){
 		printf("Problemas na abertura do arquivo\n");
 		return;
@@ -60,9 +56,9 @@ void ler(char *ficheiro, ESTADO *e){
 }
 
 void gr(char *ficheiro, ESTADO *e){
-  FILE *jogo; int i; int result;
-  clrscr();
-  jogo = fopen(ficheiro, "w"); 
+	FILE *jogo; int i; int result; 
+	clrscr();
+	jogo = fopen(ficheiro, "w"); 
 	if (jogo == NULL){ 
 		printf("Problemas na criacao do arquivo\n");
 		return;
@@ -72,7 +68,7 @@ void gr(char *ficheiro, ESTADO *e){
 		if (result == EOF)		    
 			printf("Erro na Gravacao\n");
 	}
-  fclose(jogo);
+	fclose(jogo);
 }
 
 int interpretador (ESTADO *e){

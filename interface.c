@@ -41,25 +41,19 @@ void q() {
 }
 
 void ler(char *ficheiro, ESTADO *e){//PROBLEMAS COM A FUNCAO LER
-	FILE *jogo; char Linha[100]; char *result; int i; system("clear");
-	strcat(ficheiro,".txt");
-	jogo = fopen(ficheiro, "ler");
-	if (jogo == NULL){
-		printf("Problemas na abertura do arquivo\n");
-		return;
-	}
-	i = 1;
-	while (!feof(jogo)){
-		result = fgets(Linha, 100, jogo);  
-		if (result)
-			printf("Linha %d : %s",i,Linha);
-		i++;
-	}
-	char letra = fgetc(jogo);
-	while((letra != EOF)) putchar(letra);
-        
-	fclose(jogo);
-	
+	FILE *jogo;
+	char a;
+    strcat(ficheiro,".txt");
+
+    if((jogo = fopen(ficheiro,"r")) == NULL){
+        printf("Problemas na abertura do arquivo");
+        return;
+    }
+   
+    while((a = fgetc(jogo)) != EOF)
+        printf("%c",a);
+
+    fclose(jogo);
 }
 
 void gr(char *ficheiro, ESTADO *e){
@@ -72,7 +66,7 @@ void gr(char *ficheiro, ESTADO *e){
 	}
 	int x,y;
 	fprintf(jogo,"\n");
-    for(y=7;y>=0; y--){
+    for(y=7;y>=0; y--){     //mostrar tabuleiro com fprintf
         fprintf(jogo,"%d ", i);
         for(x=0;x<8;x++){
             if (x==7 && y==7) fprintf(jogo,"2");

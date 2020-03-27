@@ -75,6 +75,7 @@ void gr(char *ficheiro, ESTADO *e){//
 
 int interpretador (ESTADO *e){
 	char linha[BUF_SIZE];
+	char file[BUF_SIZE];
 	char col[2], lin[2];
     if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
@@ -86,10 +87,22 @@ int interpretador (ESTADO *e){
     			exit(0);
         }
     	mostrar_tabuleiro(e);
+
+    }else if(strcmp(linha, "Q\n") == 0)
+        exit(0);
+    else if(sscanf(linha,"gr %s", file) == 1){
+        gr(file,e);
+		printf("JOGO GRAVADO\n");
+        mostrar_tabuleiro(e);
+    }
+    else if(sscanf(linha,"ler %s", file) == 1){
+        ler(file,e);
     }else{
         printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
         mostrar_tabuleiro(e);
     }
 
     return 0;
-} 
+}
+
+   

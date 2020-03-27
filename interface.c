@@ -40,9 +40,10 @@ void q() {
     fclose(jogo);
 }
 
-void ler(char *ficheiro, ESTADO *e){//
+void ler(char *ficheiro, ESTADO *e){//PROBLEMAS COM A FUNCAO LER
 	FILE *jogo; char Linha[100]; char *result; int i; system("clear");
-	jogo = fopen("ficheiro.txt", "ler");
+	strcat(ficheiro,".txt");
+	jogo = fopen(ficheiro, "ler");
 	if (jogo == NULL){
 		printf("Problemas na abertura do arquivo\n");
 		return;
@@ -54,22 +55,40 @@ void ler(char *ficheiro, ESTADO *e){//
 			printf("Linha %d : %s",i,Linha);
 		i++;
 	}
+	char letra = fgetc(jogo);
+	while((letra != EOF)) putchar(letra);
+        
 	fclose(jogo);
+	
 }
 
-void gr(char *ficheiro, ESTADO *e){//
-	FILE *jogo; int i; int result;
+void gr(char *ficheiro, ESTADO *e){
+	FILE *jogo; int i=8; int result;
     system("clear");
 	jogo = fopen(ficheiro, "w"); 
 	if (jogo == NULL){ 
 		printf("Problemas na criacao do arquivo\n");
 		return;
 	}
-	for (i = 0; i<10;i++){
-		result = fprintf(jogo,"Linha %d\n",i);  					  
-		if (result == EOF)		    
-			printf("Erro na Gravacao\n");
-	}
+	int x,y;
+	fprintf(jogo,"\n");
+    for(y=7;y>=0; y--){
+        fprintf(jogo,"%d ", i);
+        for(x=0;x<8;x++){
+            if (x==7 && y==7) fprintf(jogo,"2");
+            else if (x==0 && y==0) fprintf(jogo,"1");
+            else if (obter_casa(e,x,y)==BRANCA) fprintf(jogo,"*");
+            else if (obter_casa(e,x,y)==PRETA) fprintf(jogo,"#");
+            else if (obter_casa(e,x,y)==VAZIO) fprintf(jogo,".");
+        }
+        fprintf(jogo,"\n");
+        i--;
+    }
+    fprintf(jogo,"  abcdefgh");
+    fprintf(jogo,"\n");		
+	fprintf(jogo,"# %d  PL%d  (%d)> ", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf		  
+	if (result == EOF) printf("Erro na Gravacao\n");
+
 	fclose(jogo);
 }
 

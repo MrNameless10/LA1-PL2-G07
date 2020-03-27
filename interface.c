@@ -117,5 +117,3 @@ int interpretador (ESTADO *e){
 
     return 0;
 }
-
-   

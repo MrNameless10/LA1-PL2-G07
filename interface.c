@@ -39,7 +39,7 @@ void mostrar_tabuleiro(ESTADO *e) {
     fclose(jogo);
 }*/
 
-void ler(char *ficheiro, ESTADO *e){//PROBLEMAS COM A FUNCAO LER
+void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não continua o jogo no novo tabuleiro (por resolver)
 	FILE *jogo;
 	char a;
     strcat(ficheiro,".txt");
@@ -58,7 +58,6 @@ void ler(char *ficheiro, ESTADO *e){//PROBLEMAS COM A FUNCAO LER
 void gr(char *ficheiro, ESTADO *e){
 	FILE *jogo; int i=8; int result;
 	strcat(ficheiro,".txt");
-    system("clear");
 	jogo = fopen(ficheiro, "w"); 
 	if (jogo == NULL){ 
 		printf("Problemas na criacao do arquivo\n");

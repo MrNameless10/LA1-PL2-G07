@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <conio.h>
+//#include <conio.h>
 #define BUF_SIZE 1024
 
 void mostrar_prompt(ESTADO *e){
@@ -80,8 +80,9 @@ int interpretador (ESTADO *e){
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
     	COORDENADA coord = {*col -'a', *lin - '1'};
     	if (!(jogar (e, coord))) printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
-    	else if ((fim_de_jogo (e,coord)) || (fim_de_jogo (e,coord) ==9)) {
-    			printf ("GAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord)); 
+    	else if ((fim_de_jogo (e,coord))) {
+				mostrar_tabuleiro(e);
+				printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord));
     			exit(0);
         }
     	mostrar_tabuleiro(e);
@@ -91,4 +92,4 @@ int interpretador (ESTADO *e){
     }
 
     return 0;
-}  
+} 

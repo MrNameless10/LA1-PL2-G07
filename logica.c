@@ -7,6 +7,7 @@
 int valida_jogada(ESTADO *e, COORDENADA c){
     int x1 = e->ultima_jogada.x, y1 = e->ultima_jogada.y;
     int x2 = c.x, y2 = c.y;
+    if (c.x>7 || c.x<0 || c.y>7 || c.y<0) return 2;
 
     if(((x1 == x2) && (((abs(y1-y2))==1))) || (((abs(x2-x1))==1) && ((abs(y2-y1))==1 || y2 == y1 ))){
         CASA casa_coord = obter_estado_casa(e,c);

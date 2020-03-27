@@ -30,15 +30,14 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
-
-void q() {
+/*void q() {
     FILE *jogo;
 
     jogo = fopen("file.txt", "w");
 
     fprintf(jogo, "%s", "Programa terminado");
     fclose(jogo);
-}
+}*/
 
 void ler(char *ficheiro, ESTADO *e){//PROBLEMAS COM A FUNCAO LER
 	FILE *jogo;
@@ -46,7 +45,7 @@ void ler(char *ficheiro, ESTADO *e){//PROBLEMAS COM A FUNCAO LER
     strcat(ficheiro,".txt");
 
     if((jogo = fopen(ficheiro,"r")) == NULL){
-        printf("Problemas na abertura do arquivo");
+        printf("Problemas na abertura do arquivo");//d
         return;
     }
    
@@ -58,6 +57,7 @@ void ler(char *ficheiro, ESTADO *e){//PROBLEMAS COM A FUNCAO LER
 
 void gr(char *ficheiro, ESTADO *e){
 	FILE *jogo; int i=8; int result;
+	strcat(ficheiro,".txt");
     system("clear");
 	jogo = fopen(ficheiro, "w"); 
 	if (jogo == NULL){ 

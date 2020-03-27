@@ -85,6 +85,22 @@ void gr(char *ficheiro, ESTADO *e){
 	fclose(jogo);
 }
 
+void movs(FILE *jogo, ESTADO *e){
+    char *str;
+    for (int i = 0; i <= obter_numero_de_jogadas(e); i++) {
+        if (jogadas_guardadas(e, i, 1)) {
+            fprintf(jogo, "%02d: %s", i+1, (str = str_jogada_guardada(e, i, 1)));
+            free(str);
+        } else break;
+
+        if (jogadas_guardadas(e, i, 2)) {
+            fprintf(jogo, " %s\n", (str = str_jogada_guardada(e, i, 2)));
+            free(str);
+        } else break;
+    }
+}
+
+
 int interpretador (ESTADO *e){
 	char linha[BUF_SIZE];
 	char file[BUF_SIZE];

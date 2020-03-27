@@ -115,6 +115,30 @@ int bloqueado (ESTADO *e, COORDENADA c){
     else return 0;
 }
 
+int jogadas_guardadas(ESTADO *e, int i, int j) {
+    if (i < e->num_jogadas)
+        return 1;
+    else if (e->num_jogadas == i) {
+        if (e->jogador_atual == 1)
+            return 0;
+        else if (j == 1)
+            return 1;
+    }
+    return 0;
+}
+
+char str_jogada_guardada(ESTADO *e, int i, int j) {
+    char *string = malloc(2 * sizeof(char));
+    if (j == 1) {
+        string[0] = e->jogadas[i].jogador1.x + 'a';
+        string[1] = e->jogadas[i].jogador1.y + '1';
+    } else {
+        string[0] = e->jogadas[i].jogador2.x + 'a';
+        string[1] = e->jogadas[i].jogador2.y + '1';
+    }
+    return string;
+}
+
 void alterar_num_jogadas(ESTADO *e){
     if (obter_jogador_atual(e)== 1)
         e->num_jogadas++;

@@ -119,3 +119,7 @@ void alterar_num_jogadas(ESTADO *e){
     if (obter_jogador_atual(e)== 1)
         e->num_jogadas++;
 }
+
+int obter_num_comandos (ESTADO *e){
+    return e->num_comandos;
+}

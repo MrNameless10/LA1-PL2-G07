@@ -39,16 +39,16 @@ void mostrar_tabuleiro(ESTADO *e) {
     fclose(jogo);
 }*/
 
-void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não continua o jogo no novo tabuleiro (por resolver)
+void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não continua o jogo nesse tabuleiro (por resolver)
 	FILE *jogo;
 	char a;
     strcat(ficheiro,".txt");
 
     if((jogo = fopen(ficheiro,"r")) == NULL){
-        printf("Problemas na abertura do arquivo");//d
+        printf("Problemas na abertura do arquivo");
         return;
     }
-   
+	
     while((a = fgetc(jogo)) != EOF)
         printf("%c",a);
 
@@ -79,7 +79,7 @@ void gr(char *ficheiro, ESTADO *e){
     }
     fprintf(jogo,"  abcdefgh");
     fprintf(jogo,"\n");		
-	fprintf(jogo,"# %d  PL%d  (%d)> ", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf		  
+	fprintf(jogo,"# %d  PL%d  (%d)> ", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf		  
 	if (result == EOF) printf("Erro na Gravacao\n");
 
 	fclose(jogo);
@@ -100,15 +100,17 @@ int interpretador (ESTADO *e){
         }
     	mostrar_tabuleiro(e);
 
-    }else if(strcmp(linha, "Q\n") == 0)
-        exit(0);
+    }else if(strcmp(linha, "Q\n") == 0) exit(0);
+
     else if(sscanf(linha,"gr %s", file) == 1){
+
         gr(file,e);
 		printf("JOGO GRAVADO\n");
         mostrar_tabuleiro(e);
     }
     else if(sscanf(linha,"ler %s", file) == 1){
         ler(file,e);
+        //mostrar_tabuleiro(e);
     }else{
         printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
         mostrar_tabuleiro(e);

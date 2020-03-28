@@ -37,10 +37,8 @@ void alterar_jogador_atual(ESTADO *e);
 int fim_de_jogo(ESTADO *e, COORDENADA c);
 void alterar_num_jogadas(ESTADO *e);
 int bloqueado (ESTADO *e, COORDENADA c);
-<<<<<<< HEAD
 int obter_num_comandos (ESTADO *e);
-=======
 int jogadas_guardadas(ESTADO *e, int i, int j);
 char str_jogada_guardada(ESTADO *e, int i, int j);
->>>>>>> f4c434bd38aa3af587afe4218d7d89a5f44d1d7b
+
 #endif //UNTITLED_CAMADA_DE_DADOS_H

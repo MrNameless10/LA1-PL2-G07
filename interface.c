@@ -49,8 +49,7 @@ void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não conti
         return;
     }
 	
-    while((a = fgetc(jogo)) != EOF)
-        printf("%c",a);
+    while((a = fgetc(jogo)) != EOF) printf("%c",a);     
 
     fclose(jogo);
 }
@@ -130,7 +129,7 @@ int interpretador (ESTADO *e){
     else if(sscanf(linha,"ler %s", file) == 1){
         ler(file,e);
         
-    }else if(sscanf(linha, "%s", file) == 1 && !strcmp(file, "movs")){
+    }else if(sscanf(linha,"%s", file) == 1 && !strcmp(file, "movs")){
         movs(stdout, e);
         mostrar_tabuleiro(e);
     }
@@ -138,6 +137,6 @@ int interpretador (ESTADO *e){
         printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
         mostrar_tabuleiro(e);
     }
-    
+
     return 0;
 }

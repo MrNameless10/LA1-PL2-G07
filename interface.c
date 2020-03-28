@@ -81,10 +81,10 @@ void gr(char *ficheiro, ESTADO *e){
     fprintf(jogo,"  abcdefgh");
     fprintf(jogo,"\n");		
 
-	fprintf(jogo,"# %d  PL%d  (%d)> ", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf		  
+	fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf	
+    movs(jogo,e);	  
 	if (result == EOF) printf("Erro na Gravacao\n");
-
-    movs(jogo,e);
+    
 	fclose(jogo);
 }
 

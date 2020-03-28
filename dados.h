@@ -41,4 +41,5 @@ int bloqueado (ESTADO *e, COORDENADA c);
 int obter_num_comandos (ESTADO *e);
 int jogadas_guardadas(ESTADO *e, int i, int j);
 char* str_jogada_guardada(ESTADO *e, int i, int j);
+
 #endif //UNTITLED_CAMADA_DE_DADOS_H

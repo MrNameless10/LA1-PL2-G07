@@ -55,6 +55,8 @@ void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não conti
     fclose(jogo);
 }
 
+void movs(FILE *jogo, ESTADO *e);
+
 void gr(char *ficheiro, ESTADO *e){
 	FILE *jogo; int i=8; int result;
 	strcat(ficheiro,".txt");
@@ -81,7 +83,7 @@ void gr(char *ficheiro, ESTADO *e){
     fprintf(jogo,"\n");		
 	fprintf(jogo,"# %d  PL%d  (%d)> ", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf		  
 	if (result == EOF) printf("Erro na Gravacao\n");
-
+    movs(jogo,e);
 	fclose(jogo);
 }
 
@@ -99,7 +101,6 @@ void movs(FILE *jogo, ESTADO *e){
         } else break;
     }
 }
-
 
 int interpretador (ESTADO *e){
 	char linha[BUF_SIZE];
@@ -126,8 +127,12 @@ int interpretador (ESTADO *e){
     }
     else if(sscanf(linha,"ler %s", file) == 1){
         ler(file,e);
-        //mostrar_tabuleiro(e);
-    }else{
+        
+    }else if(sscanf(linha, "%s", file) == 1 && !strcmp(file, "movs")){
+        movs(stdout, e);
+        putchar('\n');
+    }
+    else{
         printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
         mostrar_tabuleiro(e);
     }

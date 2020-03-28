@@ -66,6 +66,20 @@ void alterar_jogador_atual(ESTADO *e){
     else e->jogador_atual = 1;
 }
 
+void alterar_jogadas(ESTADO *e, COORDENADA c){
+    
+    int x = e -> ultima_jogada.x;
+    int y = e -> ultima_jogada.y;
+
+    if(e->jogador_atual == 1){
+        e->jogadas[e->num_jogadas].jogador1.x = c.x;
+        e->jogadas[e->num_jogadas].jogador1.y = c.y;
+    } else {
+        e->jogadas[e->num_jogadas].jogador2.x = c.x;
+        e->jogadas[e->num_jogadas].jogador2.y = c.y;
+    }
+}
+
 int bloqueado (ESTADO *e, COORDENADA c);
 
 int fim_de_jogo(ESTADO *e, COORDENADA c) {
@@ -127,7 +141,7 @@ int jogadas_guardadas(ESTADO *e, int i, int j) {
     return 0;
 }
 
-char str_jogada_guardada(ESTADO *e, int i, int j) {
+char* str_jogada_guardada(ESTADO *e, int i, int j) {
     char *string = malloc(2 * sizeof(char));
     if (j == 1) {
         string[0] = e->jogadas[i].jogador1.x + 'a';

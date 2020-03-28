@@ -83,6 +83,7 @@ void gr(char *ficheiro, ESTADO *e){
     fprintf(jogo,"\n");		
 	fprintf(jogo,"# %d  PL%d  (%d)> ", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf		  
 	if (result == EOF) printf("Erro na Gravacao\n");
+    
     movs(jogo,e);
 	fclose(jogo);
 }
@@ -130,7 +131,8 @@ int interpretador (ESTADO *e){
         
     }else if(sscanf(linha, "%s", file) == 1 && !strcmp(file, "movs")){
         movs(stdout, e);
-        putchar('\n');
+        mostrar_tabuleiro(e);
+        //putchar('\n');
     }
     else{
         printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");

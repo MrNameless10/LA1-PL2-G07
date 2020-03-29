@@ -161,3 +161,28 @@ void alterar_num_jogadas(ESTADO *e){
 int obter_num_comandos (ESTADO *e){
     return e->num_comandos;
 }
+
+/*ESTADO *novo_estado(FILE *jogo) {
+    ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
+    char linha[25];
+    int c;
+    int x,y;
+    for(y=0;y<8;y++) {
+        for (x=0; x<8; x++) {
+            if(fscanf(jogo,"%d",&c) == 46) e->tab[x][y] = VAZIO;
+            if(fscanf(jogo,"%d",&c) == 42){
+                e->tab[x][y] = BRANCA;
+                e->ultima_jogada.x = x;
+                e->ultima_jogada.y = y;
+            }            
+            if(fscanf(jogo,"%d",&c) == 35) e->tab[x][y] = PRETA; 
+        }
+    }
+    
+    //e->tab[ultima_jogada.x][ultima_jogada.y] = BRANCA; //posicao da peca branca no inicio do jogo
+    //e->num_jogadas = 0;
+    //e->jogador_atual = 1;
+    //e->num_comandos = 0;
+    //e->jogada
+    return e;
+}*/

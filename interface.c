@@ -48,9 +48,10 @@ void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não conti
         printf("Problemas na abertura do arquivo");
         return;
     }
-	
-    while((a = fgetc(jogo)) != EOF) printf("%c",a);     
-
+    
+    while((a = fgetc(jogo)) != EOF) printf("%c",a);
+    //novo_estado(jogo);
+    //mostrar_tabuleiro(e);
     fclose(jogo);
 }
 
@@ -64,9 +65,10 @@ void gr(char *ficheiro, ESTADO *e){
 		printf("Problemas na criacao do arquivo\n");
 		return;
 	}
-	int x,y;
+
+	int x,y;        //mostrar tabuleiro com fprintf
 	fprintf(jogo,"\n");
-    for(y=7;y>=0; y--){     //mostrar tabuleiro com fprintf
+    for(y=7;y>=0; y--){     
         fprintf(jogo,"%d ", i);
         for(x=0;x<8;x++){
             if (x==7 && y==7) fprintf(jogo,"2");
@@ -80,8 +82,8 @@ void gr(char *ficheiro, ESTADO *e){
     }
     fprintf(jogo,"  abcdefgh");
     fprintf(jogo,"\n");		
-
-	fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf	
+    fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf	
+    
     movs(jogo,e);	  
 	if (result == EOF) printf("Erro na Gravacao\n");
     

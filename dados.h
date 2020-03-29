@@ -1,5 +1,6 @@
 #ifndef UNTITLED_CAMADA_DE_DADOS_H
 #define UNTITLED_CAMADA_DE_DADOS_H
+//#include <stdio.h>
 
 typedef enum {VAZIO, BRANCA, PRETA} CASA;
 
@@ -41,5 +42,6 @@ int bloqueado (ESTADO *e, COORDENADA c);
 int obter_num_comandos (ESTADO *e);
 int jogadas_guardadas(ESTADO *e, int i, int j);
 char* str_jogada_guardada(ESTADO *e, int i, int j);
+//ESTADO *novo_estado(FILE *);
 
 #endif //UNTITLED_CAMADA_DE_DADOS_H

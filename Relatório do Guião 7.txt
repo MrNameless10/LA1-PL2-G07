@@ -3,9 +3,9 @@ Ao decorrer do guiao7 da última semana o grupo encontrou algumas dificuldades, 
 	- Criamos o comando movs sem muita dificuldade;
 	- Alteramos também alguns erros que estavam a surgir no processo de gravar e ler, pois algumas funções tinham pequenos erros. Entretanto tudo foi corrigido e devidamente identificado;
 	- Não conseguimos perceber como realizar os testes automáticos e mais uma vez pedimos ajuda à equipa de docentes, infelizmente a plataforma blackboard ultra foi abaixo o que dificultou a compreensão deste conceito.
-	- Um dos erros que nos demorou mais a solucionar foi um erro de jogo no tabuleiro, pois estava a ler os comandos do jogador ao contrario, o que fazia com que quando nós jogavamos ás vezes a jogada não respeitava as regras do jogo e mesmo assim era validada;
+	- Um dos erros que nos demorou mais a solucionar foi os comandos gr e ler que precisam de guardar/ler informação sobre os movimentos e onde estámos com alguns problemas no comando ler;
 	- Corrigimos também a função fim de jogo;
-	- O prompt ficou feito e aparece tal como foi pedido no guião6;
+
 	- Tal como o Professor Francisco Marcondes sugeriu na video aula apartir da plataforma BlackBoard Ultra, criamos uma história e definimos objetivos que deverão ser cumprimidos ao longo da semana pelos vários constituintes do grupo. Estes objetivos foram feitos com a ajuda da plataforma Trello.
 
 Em conclusão, como grupo achamos que todos os objetivos foram cumpridos e apesar das dificuldades que fomos encontrando o grupo conseguiu superar de uma forma muito boa, sempre com um olhar critico e a pensar no proximo passo para que seja mais fácil caso exsitia um erro no futuro.

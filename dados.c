@@ -162,6 +162,20 @@ int obter_num_comandos (ESTADO *e){
     return e->num_comandos;
 }
 
+void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
+    if (e->jogador_atual != 1) {
+        e->jogadas[e->num_jogadas].jogador2.x = c - 'a';
+        e->jogadas[e->num_jogadas].jogador2.y = n - 1;
+
+        e->jogador_atual = 1;
+        e->num_jogadas++;
+    } else {
+        e->jogadas[e->num_jogadas].jogador1.x = c - 'a';
+        e->jogadas[e->num_jogadas].jogador1.x = n - 1;
+
+        e->jogador_atual = 2;
+    }
+}
 
 /*ESTADO *novo_estado(FILE *jogo) {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));

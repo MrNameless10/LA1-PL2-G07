@@ -58,7 +58,8 @@ void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não conti
 void movs(FILE *jogo, ESTADO *e);
 
 void gr(char *ficheiro, ESTADO *e){
-	FILE *jogo; int i=8; int result;
+	FILE *jogo;
+    int result;
 	strcat(ficheiro,".txt");
 	jogo = fopen(ficheiro, "w"); 
 	if (jogo == NULL){ 
@@ -66,7 +67,9 @@ void gr(char *ficheiro, ESTADO *e){
 		return;
 	}
 
-	int x,y;        //mostrar tabuleiro com fprintf
+    //mostrar tabuleiro com fprintf
+    int i=8;
+    int x,y;        
 	fprintf(jogo,"\n");
     for(y=7;y>=0; y--){     
         fprintf(jogo,"%d ", i);
@@ -85,8 +88,7 @@ void gr(char *ficheiro, ESTADO *e){
     fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf	
     
     movs(jogo,e);	  
-	if (result == EOF) printf("Erro na Gravacao\n");
-    
+ 
 	fclose(jogo);
 }
 

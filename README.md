@@ -5,3 +5,22 @@ Laboratorios de Algoritmia I
 - A91668 Tomás Vaz de Carvalho Campinho 
 - A91635 Miguel Ângelo Alves de Freitas 
 - A91647 Pedro Alexandre Silva Gomes
+
+
+
+
+
+Ao decorrer do guiao7 da última semana o grupo encontrou algumas dificuldades, depois de várias tentativas ou uma pesquisa mais elaborada e cuidada conseguimos obter os resultados pretendidos:
+
+	- Criamos o comando movs sem muita dificuldade;
+	- Alteramos também alguns erros que estavam a surgir no processo de gravar e ler, pois algumas funções tinham pequenos erros. Entretanto tudo foi corrigido e devidamente identificado;
+	- Não conseguimos perceber como realizar os testes automáticos e mais uma vez pedimos ajuda à equipa de docentes, infelizmente a plataforma blackboard ultra foi abaixo o que dificultou a compreensão deste conceito.
+	- Um dos erros que nos demorou mais a solucionar foi os comandos gr e ler que precisam de guardar/ler informação sobre os movimentos e onde estámos com alguns problemas no comando ler;
+	- Corrigimos também a função fim de jogo;
+
+	- Tal como o Professor Francisco Marcondes sugeriu na video aula apartir da plataforma BlackBoard Ultra, criamos uma história e definimos objetivos que deverão ser cumprimidos ao longo da semana pelos vários constituintes do grupo. Estes objetivos foram feitos com a ajuda da plataforma Trello.
+
+Em conclusão, como grupo achamos que todos os objetivos foram cumpridos e apesar das dificuldades que fomos encontrando o grupo conseguiu superar de uma forma muito boa, sempre com um olhar critico e a pensar no proximo passo para que seja mais fácil caso exsitia um erro no futuro.
+
+Todas as reuniões entre os elementos do grupo, até ao momento, foram realizadas via Discord/Slack de forma a comunicarmos mais facilmente, isto devido às circunstâncias em que nos encontramos(COVID-19).
+

@@ -39,7 +39,7 @@ void mostrar_tabuleiro(ESTADO *e) {
     fclose(jogo);
 }*/
 
-/*void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não continua o jogo nesse tabuleiro (por resolver)
+void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não continua o jogo nesse tabuleiro (por resolver)
 	FILE *jogo;
 	char a;
     strcat(ficheiro,".txt");
@@ -54,40 +54,7 @@ void mostrar_tabuleiro(ESTADO *e) {
     //mostrar_tabuleiro(e);
     fclose(jogo);
 }
-*/
 
-void ler (char *ficheiro, ESTADO *e)
-{
-    FILE *jogo;
-    jogo = fopen(ficheiro, "r");
-    int j1, j2;
-    char str[25];
-    char y[25];
-    char x1, x2;
-
-    free(e);
-    e = inicializar_estado();
-
-    for (int i = 0; i < 8; i++)
-    {
-        fgets(y, 25, jogo);
-        get_y(y, i, e);
-    }
-
-    fgets(y, 25, jogo);
-    while (fgets(y, 25, jogo) != NULL){
-        if (sscanf(y, "%s %c%d %c%d", str, &x1, &j1, &x2, &j2) == 5) {
-            printf("#Linha 46\n");
-            jogadas_anteriores_guardadas(e, x1, j1);
-            jogadas_anteriores_guardadas(e, x2, j2);
-        } else if (sscanf(y, "%s %c%d", str, &x1, &x1) == 3) {
-            printf("#Linha 49\n");
-            jogadas_anteriores_guardadas(e, x1, j1);
-        }
-    }
-
-    fclose(jogo);
-}
 
 void movs(FILE *jogo, ESTADO *e);
 

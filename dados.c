@@ -162,18 +162,18 @@ int obter_num_comandos (ESTADO *e){
     return e->num_comandos;
 }
 
-void get_y(char *y, int num, ESTADO *e){
+/*void get_y(char *y, int num, ESTADO *e){
     for (int i = 0; i < 8; i++)
     {
         if (y[i] == '*') {
             e->tab[num][i] = BRANCA;
             e->ultima_jogada.x = i;
-            e->ultima_jogada.y = y;
+            e->ultima_jogada.y = i;
         } else if (y[i] == '#') {
             e->tab[num][i] = PRETA;
         } else e -> tab[num][i] = VAZIO;
     }
-}
+}*/
 
 void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
     if (e->jogador_atual != 1) {
@@ -189,8 +189,6 @@ void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
         e->jogador_atual = 2;
     }
 }
-
-
 
 
 /*ESTADO *novo_estado(FILE *jogo) {

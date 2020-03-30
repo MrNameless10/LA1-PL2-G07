@@ -20,6 +20,8 @@ Ao decorrer do guiao7 da última semana o grupo encontrou algumas dificuldades, 
 
 	- Tal como o Professor Francisco Marcondes sugeriu na video aula apartir da plataforma BlackBoard Ultra, criamos uma história e definimos objetivos que deverão ser cumprimidos ao longo da semana pelos vários constituintes do grupo. Estes objetivos foram feitos com a ajuda da plataforma Trello.
 
+Problemas: - função ler/guardar não está a funcionar corretamente.
+
 Em conclusão, como grupo achamos que todos os objetivos foram cumpridos e apesar das dificuldades que fomos encontrando o grupo conseguiu superar de uma forma muito boa, sempre com um olhar critico e a pensar no proximo passo para que seja mais fácil caso exsitia um erro no futuro.
 
 Todas as reuniões entre os elementos do grupo, até ao momento, foram realizadas via Discord/Slack de forma a comunicarmos mais facilmente, isto devido às circunstâncias em que nos encontramos(COVID-19).

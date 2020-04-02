@@ -142,7 +142,7 @@ int jogadas_guardadas(ESTADO *e, int i, int j) {
 }
 
 char* str_jogada_guardada(ESTADO *e, int i, int j) {
-    char *string = malloc(2 * sizeof(char));
+    char *string = calloc(3, sizeof(char));
     if (j == 1) {
         string[0] = e->jogadas[i].jogador1.x + 'a';
         string[1] = e->jogadas[i].jogador1.y + '1';

@@ -43,15 +43,15 @@ void mostrar_tabuleiro(ESTADO *e) {
 }*/
 
 void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não continua o jogo nesse tabuleiro (por resolver)
-	FILE *jogo;
-	char a;
+    FILE *jogo;
+    char a;
     strcat(ficheiro,".txt");
 
     if((jogo = fopen(ficheiro,"r")) == NULL){
         printf("Problemas na abertura do arquivo");
         return;
     }
-    
+
     while((a = fgetc(jogo)) != EOF) printf("%c",a);
     //novo_estado(jogo);
     //mostrar_tabuleiro(e);
@@ -61,20 +61,20 @@ void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não conti
 void movs(FILE *jogo, ESTADO *e);
 
 void gr(char *ficheiro, ESTADO *e){
-	FILE *jogo;
+    FILE *jogo;
     //int result;
-	strcat(ficheiro,".txt");
-	jogo = fopen(ficheiro, "w"); 
-	if (jogo == NULL){ 
-		printf("Problemas na criacao do arquivo\n");
-		return;
-	}
+    strcat(ficheiro,".txt");
+    jogo = fopen(ficheiro, "w");
+    if (jogo == NULL){
+        printf("Problemas na criacao do arquivo\n");
+        return;
+    }
 
     //mostrar tabuleiro com fprintf
     int i=8;
-    int x,y;        
-	fprintf(jogo,"\n");
-    for(y=7;y>=0; y--){     
+    int x,y;
+    fprintf(jogo,"\n");
+    for(y=7;y>=0; y--){
         fprintf(jogo,"%d ", i);
         for(x=0;x<8;x++){
             if (x==7 && y==7) fprintf(jogo,"2");
@@ -88,12 +88,12 @@ void gr(char *ficheiro, ESTADO *e){
         i--;
     }
     fprintf(jogo,"  a b c d e f g h");
-    fprintf(jogo,"\n");		
-    fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1); //prompt com fprintf	
-    
-    movs(jogo,e);	  
- 
-	fclose(jogo);
+    fprintf(jogo,"\n");
+    fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1); //prompt com fprintf
+
+    movs(jogo,e);
+
+    fclose(jogo);
 }
 
 void movs(FILE *jogo, ESTADO *e){
@@ -112,39 +112,39 @@ void movs(FILE *jogo, ESTADO *e){
 }
 
 int interpretador (ESTADO *e){
-	char linha[BUF_SIZE];
-	char file[BUF_SIZE];
-	char col[2], lin[2];
-	int num;
+    char linha[BUF_SIZE];
+    char file[BUF_SIZE];
+    char col[2], lin[2];
+    int num;
     if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
-    	COORDENADA coord = {*col -'a', *lin - '1'};
-    	if (!(jogar (e, coord))){
+        COORDENADA coord = {*col -'a', *lin - '1'};
+        if (!(jogar (e, coord))){
             printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
             decrementa_ncomandos(e);
-    	}
-    	else if ((fim_de_jogo (e,coord))) {
-				mostrar_tabuleiro(e);
-				printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord));
-    			exit(0);
         }
-    	mostrar_tabuleiro(e);
+        else if ((fim_de_jogo (e,coord))) {
+            mostrar_tabuleiro(e);
+            printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord));
+            exit(0);
+        }
+        mostrar_tabuleiro(e);
 
     }else if(strcmp(linha, "Q\n") == 0) exit(0);
 
     else if(sscanf(linha,"gr %s", file) == 1){
 
         gr(file,e);
-		printf("JOGO GRAVADO\n");
+        printf("JOGO GRAVADO\n");
         mostrar_tabuleiro(e);
     }
     else if(sscanf(linha,"ler %s", file) == 1){
         ler(file,e);
-        
+
     }else if(sscanf(linha,"%s", file) == 1 && !strcmp(file, "movs")){
         movs(stdout, e);
         mostrar_tabuleiro(e);
-	    
+
     }else if(sscanf(linha,"pos %d", &num) == 1){
         posicao(num,e);
         mostrar_tabuleiro(e);

@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LA1_PL2_G07.dir/dados.c.o"
-  "CMakeFiles/LA1_PL2_G07.dir/interface.c.o"
-  "CMakeFiles/LA1_PL2_G07.dir/logica.c.o"
-  "CMakeFiles/LA1_PL2_G07.dir/main.c.o"
-  "LA1_PL2_G07"
+  "CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
+  "CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
+  "CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
+  "CMakeFiles/LA1_PL2_G07.dir/main.c.obj"
+  "LA1_PL2_G07.exe"
+  "LA1_PL2_G07.exe.manifest"
   "LA1_PL2_G07.pdb"
+  "libLA1_PL2_G07.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

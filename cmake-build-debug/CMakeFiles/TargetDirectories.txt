@@ -1,3 +1,3 @@
-/home/tomas/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/tomas/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir
-/home/tomas/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/migue/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir
+C:/Users/migue/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/migue/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/rebuild_cache.dir

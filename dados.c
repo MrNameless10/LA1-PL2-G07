@@ -67,7 +67,7 @@ void alterar_jogador_atual(ESTADO *e){
 }
 
 void alterar_jogadas(ESTADO *e, COORDENADA c){
-    
+
     int x = e -> ultima_jogada.x;
     int y = e -> ultima_jogada.y;
 
@@ -189,11 +189,11 @@ void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
                 e->tab[x][y] = BRANCA;
                 e->ultima_jogada.x = x;
                 e->ultima_jogada.y = y;
-            }            
-            if(fscanf(jogo,"%d",&c) == 35) e->tab[x][y] = PRETA; 
+            }
+            if(fscanf(jogo,"%d",&c) == 35) e->tab[x][y] = PRETA;
         }
     }
-    
+
     //e->tab[ultima_jogada.x][ultima_jogada.y] = BRANCA; //posicao da peca branca no inicio do jogo
     //e->num_jogadas = 0;
     //e->jogador_atual = 1;

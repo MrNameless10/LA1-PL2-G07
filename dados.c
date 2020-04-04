@@ -201,3 +201,26 @@ void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
     //e->jogada
     return e;
 }*/
+
+void reset_estado(ESTADO *e){
+    int x, y;
+    for(y=0;y<8;y++){
+        for (x=0; x<8; x++){
+            e->tab[x][y] = VAZIO;
+        }
+    }
+
+    e->ultima_jogada.x = 4;
+    e->ultima_jogada.y = 4;
+    e->tab[4][4] = BRANCA;
+    e->num_jogadas = 0;
+    e->jogador_atual = 1;
+}
+
+void pos(int num, ESTADO *e){
+    reset_estado(e);
+    for (int i = 0; i < num; i++){
+        jogar(e, e->jogadas[i].jogador1);
+        jogar(e, e->jogadas[i].jogador2);
+    }
+}

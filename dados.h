@@ -43,5 +43,7 @@ int obter_num_comandos (ESTADO *e);
 int jogadas_guardadas(ESTADO *e, int i, int j);
 char* str_jogada_guardada(ESTADO *e, int i, int j);
 //ESTADO *novo_estado(FILE *);
+void reset_estado(ESTADO *e);
+void pos(int num, ESTADO *e);
 
 #endif //UNTITLED_CAMADA_DE_DADOS_H

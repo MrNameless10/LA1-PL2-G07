@@ -7,7 +7,7 @@
 #define BUF_SIZE 1024
 
 void mostrar_prompt(ESTADO *e){
-    printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e));
+    printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1);
 }
 
 void mostrar_tabuleiro(ESTADO *e) {
@@ -85,7 +85,7 @@ void gr(char *ficheiro, ESTADO *e){
     }
     fprintf(jogo,"  abcdefgh");
     fprintf(jogo,"\n");		
-    fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)); //prompt com fprintf	
+    fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1); //prompt com fprintf	
     
     movs(jogo,e);	  
  
@@ -135,6 +135,10 @@ int interpretador (ESTADO *e){
         
     }else if(sscanf(linha,"%s", file) == 1 && !strcmp(file, "movs")){
         movs(stdout, e);
+        mostrar_tabuleiro(e);
+	    
+    }else if(sscanf(linha,"pos %d", &num) == 1){
+        pos(num,e);
         mostrar_tabuleiro(e);
     }
     else{

@@ -23,8 +23,6 @@ ESTADO *inicializar_estado() {
     return e;
 }
 
-//teste de commits pelo Clion
-
 int obter_jogador_atual(ESTADO *e) {
     return e->jogador_atual;
 }

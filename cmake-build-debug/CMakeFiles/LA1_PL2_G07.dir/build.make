@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\migue\CLionProjects\LA1-PL2-G07
+CMAKE_SOURCE_DIR = C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LA1_PL2_G07.dir/depend.make
@@ -58,55 +58,55 @@ include CMakeFiles/LA1_PL2_G07.dir/flags.make
 
 CMakeFiles/LA1_PL2_G07.dir/main.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
 CMakeFiles/LA1_PL2_G07.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LA1_PL2_G07.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\main.c.obj   -c C:\Users\migue\CLionProjects\LA1-PL2-G07\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LA1_PL2_G07.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\main.c.obj   -c C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\main.c
 
 CMakeFiles/LA1_PL2_G07.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\CLionProjects\LA1-PL2-G07\main.c > CMakeFiles\LA1_PL2_G07.dir\main.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\main.c > CMakeFiles\LA1_PL2_G07.dir\main.c.i
 
 CMakeFiles/LA1_PL2_G07.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\CLionProjects\LA1-PL2-G07\main.c -o CMakeFiles\LA1_PL2_G07.dir\main.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\main.c -o CMakeFiles\LA1_PL2_G07.dir\main.c.s
 
 CMakeFiles/LA1_PL2_G07.dir/dados.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
 CMakeFiles/LA1_PL2_G07.dir/dados.c.obj: ../dados.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\dados.c.obj   -c C:\Users\migue\CLionProjects\LA1-PL2-G07\dados.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\dados.c.obj   -c C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\dados.c
 
 CMakeFiles/LA1_PL2_G07.dir/dados.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/dados.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\CLionProjects\LA1-PL2-G07\dados.c > CMakeFiles\LA1_PL2_G07.dir\dados.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\dados.c > CMakeFiles\LA1_PL2_G07.dir\dados.c.i
 
 CMakeFiles/LA1_PL2_G07.dir/dados.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/dados.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\CLionProjects\LA1-PL2-G07\dados.c -o CMakeFiles\LA1_PL2_G07.dir\dados.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\dados.c -o CMakeFiles\LA1_PL2_G07.dir\dados.c.s
 
 CMakeFiles/LA1_PL2_G07.dir/logica.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
 CMakeFiles/LA1_PL2_G07.dir/logica.c.obj: ../logica.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\logica.c.obj   -c C:\Users\migue\CLionProjects\LA1-PL2-G07\logica.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\logica.c.obj   -c C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica.c
 
 CMakeFiles/LA1_PL2_G07.dir/logica.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/logica.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\CLionProjects\LA1-PL2-G07\logica.c > CMakeFiles\LA1_PL2_G07.dir\logica.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica.c > CMakeFiles\LA1_PL2_G07.dir\logica.c.i
 
 CMakeFiles/LA1_PL2_G07.dir/logica.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/logica.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\CLionProjects\LA1-PL2-G07\logica.c -o CMakeFiles\LA1_PL2_G07.dir\logica.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\logica.c -o CMakeFiles\LA1_PL2_G07.dir\logica.c.s
 
 CMakeFiles/LA1_PL2_G07.dir/interface.c.obj: CMakeFiles/LA1_PL2_G07.dir/flags.make
 CMakeFiles/LA1_PL2_G07.dir/interface.c.obj: ../interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\interface.c.obj   -c C:\Users\migue\CLionProjects\LA1-PL2-G07\interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\LA1_PL2_G07.dir\interface.c.obj   -c C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\interface.c
 
 CMakeFiles/LA1_PL2_G07.dir/interface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/LA1_PL2_G07.dir/interface.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\CLionProjects\LA1-PL2-G07\interface.c > CMakeFiles\LA1_PL2_G07.dir\interface.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\interface.c > CMakeFiles\LA1_PL2_G07.dir\interface.c.i
 
 CMakeFiles/LA1_PL2_G07.dir/interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/LA1_PL2_G07.dir/interface.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\CLionProjects\LA1-PL2-G07\interface.c -o CMakeFiles\LA1_PL2_G07.dir\interface.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\interface.c -o CMakeFiles\LA1_PL2_G07.dir\interface.c.s
 
 # Object files for target LA1_PL2_G07
 LA1_PL2_G07_OBJECTS = \
@@ -126,7 +126,7 @@ LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/build.make
 LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/linklibs.rsp
 LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/objects1.rsp
 LA1_PL2_G07.exe: CMakeFiles/LA1_PL2_G07.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable LA1_PL2_G07.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable LA1_PL2_G07.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LA1_PL2_G07.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/LA1_PL2_G07.dir/clean:
 .PHONY : CMakeFiles/LA1_PL2_G07.dir/clean
 
 CMakeFiles/LA1_PL2_G07.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\migue\CLionProjects\LA1-PL2-G07 C:\Users\migue\CLionProjects\LA1-PL2-G07 C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug C:\Users\migue\CLionProjects\LA1-PL2-G07\cmake-build-debug\CMakeFiles\LA1_PL2_G07.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07 C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07 C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug C:\Users\migue\Documents\GitHub\LA1-PL2-G07\LA1-PL2-G07\cmake-build-debug\CMakeFiles\LA1_PL2_G07.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LA1_PL2_G07.dir/depend
 

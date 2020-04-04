@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/migue/CLionProjects/LA1-PL2-G07/dados.c" "C:/Users/migue/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
-  "C:/Users/migue/CLionProjects/LA1-PL2-G07/interface.c" "C:/Users/migue/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
-  "C:/Users/migue/CLionProjects/LA1-PL2-G07/logica.c" "C:/Users/migue/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
-  "C:/Users/migue/CLionProjects/LA1-PL2-G07/main.c" "C:/Users/migue/CLionProjects/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/main.c.obj"
+  "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
+  "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
+  "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
+  "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/main.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

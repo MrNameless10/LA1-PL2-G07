@@ -21,6 +21,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1a5I7dXjzPztDO0JVZrKY787KhN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,6 +53,7 @@
       <updated>1586018861039</updated>
       <workItem from="1586018862315" duration="47000" />
       <workItem from="1586018957143" duration="467000" />
+      <workItem from="1586020161385" duration="102000" />
     </task>
     <servers />
   </component>
@@ -57,21 +61,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1586019423842">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1586020262393">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586019423842" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1586019423842">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586020262393" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1586020262392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586019423842" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1586019423842">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586020262392" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1586020262392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586019423842" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1586019423842">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586020262392" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1586020262392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586019423842" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1586020262392" />
   </component>
 </project>

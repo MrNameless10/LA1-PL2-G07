@@ -224,3 +224,7 @@ void posicao(int num, ESTADO *e){
         jogar(e, e->jogadas[i].jogador2);
     }
 }
+
+void decrementa_ncomandos(ESTADO *e){
+    e->num_comandos = e->num_comandos - 1;
+}

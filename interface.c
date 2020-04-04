@@ -119,7 +119,10 @@ int interpretador (ESTADO *e){
     if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
     	COORDENADA coord = {*col -'a', *lin - '1'};
-    	if (!(jogar (e, coord))) printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
+    	if (!(jogar (e, coord))){
+            printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
+            decrementa_ncomandos(e);
+    	}
     	else if ((fim_de_jogo (e,coord))) {
 				mostrar_tabuleiro(e);
 				printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord));
@@ -148,6 +151,7 @@ int interpretador (ESTADO *e){
     }
     else{
         printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
+        decrementa_ncomandos(e);
         mostrar_tabuleiro(e);
     }
 

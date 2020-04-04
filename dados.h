@@ -45,5 +45,6 @@ char* str_jogada_guardada(ESTADO *e, int i, int j);
 //ESTADO *novo_estado(FILE *);
 void reset_estado(ESTADO *e);
 void posicao(int num, ESTADO *e);
+void decrementa_ncomandos(ESTADO *e);
 
 #endif //UNTITLED_CAMADA_DE_DADOS_H

@@ -21,11 +21,12 @@ void mostrar_tabuleiro(ESTADO *e) {
             else if (obter_casa(e,x,y)==BRANCA) printf("*");
             else if (obter_casa(e,x,y)==PRETA) printf("#");
             else if (obter_casa(e,x,y)==VAZIO) printf(".");
+            printf(" ");
         }
         printf("\n");
         i--;
     }
-    printf("  abcdefgh");
+    printf("  a b c d e f g h");
     printf("\n");
     mostrar_prompt(e);
 }
@@ -79,11 +80,12 @@ void gr(char *ficheiro, ESTADO *e){
             else if (obter_casa(e,x,y)==BRANCA) fprintf(jogo,"*");
             else if (obter_casa(e,x,y)==PRETA) fprintf(jogo,"#");
             else if (obter_casa(e,x,y)==VAZIO) fprintf(jogo,".");
+            fprintf(jogo," ");
         }
         fprintf(jogo,"\n");
         i--;
     }
-    fprintf(jogo,"  abcdefgh");
+    fprintf(jogo,"  a b c d e f g h");
     fprintf(jogo,"\n");		
     fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1); //prompt com fprintf	
     
@@ -111,6 +113,7 @@ int interpretador (ESTADO *e){
 	char linha[BUF_SIZE];
 	char file[BUF_SIZE];
 	char col[2], lin[2];
+	int num;
     if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
     if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2){
     	COORDENADA coord = {*col -'a', *lin - '1'};
@@ -138,7 +141,7 @@ int interpretador (ESTADO *e){
         mostrar_tabuleiro(e);
 	    
     }else if(sscanf(linha,"pos %d", &num) == 1){
-        pos(num,e);
+        posicao(num,e);
         mostrar_tabuleiro(e);
     }
     else{

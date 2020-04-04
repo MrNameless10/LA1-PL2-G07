@@ -217,7 +217,7 @@ void reset_estado(ESTADO *e){
     e->jogador_atual = 1;
 }
 
-void pos(int num, ESTADO *e){
+void posicao(int num, ESTADO *e){
     reset_estado(e);
     for (int i = 0; i < num; i++){
         jogar(e, e->jogadas[i].jogador1);

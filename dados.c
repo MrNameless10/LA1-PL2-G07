@@ -1,7 +1,9 @@
 #include "dados.h"
 #include "logica.h"
+#include "listas.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
@@ -227,4 +229,33 @@ void posicao(int num, ESTADO *e){
 
 void decrementa_ncomandos(ESTADO *e){
     e->num_comandos = e->num_comandos - 1;
+}
+
+LISTA posicoes_possiveis(ESTADO *e, LISTA l){
+
+    COORDENADA c1 = obter_ultima_jogada(e), c2, *ec;
+
+    for (int i = c1.y - 1; i <= c1.y + 1; i++){
+        for (int j = c1.x - 1; j <= c1.x + 1; ++j) {
+            c2.y = i;
+            c2.x = j;
+            if (valida_jogada(e, c2)){
+                ec = malloc(sizeof(COORDENADA));
+
+                ec->y = c2.y;
+                ec->x = c2.x;
+
+                l = insere_cabeca(l, ec);
+            }
+        }
+    }
+
+    return l;
+}
+
+float euclidiana(COORDENADA c1 ,COORDENADA c2){
+
+    float d = sqrtf(pow(c1.y - c2.y, 2) + pow(c1.x - c2.y, 2));
+
+    return d;
 }

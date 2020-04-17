@@ -1,6 +1,7 @@
 #ifndef UNTITLED_CAMADA_DE_DADOS_H
 #define UNTITLED_CAMADA_DE_DADOS_H
 //#include <stdio.h>
+#include "listas.h"
 
 typedef enum {VAZIO, BRANCA, PRETA} CASA;
 
@@ -46,5 +47,7 @@ char* str_jogada_guardada(ESTADO *e, int i, int j);
 void reset_estado(ESTADO *e);
 void posicao(int num, ESTADO *e);
 void decrementa_ncomandos(ESTADO *e);
+LISTA posicoes_possiveis(ESTADO *e, LISTA l);
+float euclidiana(COORDENADA c1 ,COORDENADA c2);
 
 #endif //UNTITLED_CAMADA_DE_DADOS_H

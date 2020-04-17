@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 //#include <conio.h>
 #define BUF_SIZE 1024
 
@@ -109,6 +110,40 @@ void movs(FILE *jogo, ESTADO *e){
     }
 }
 
+void jog(ESTADO *e){
+    int d = INT_MAX; //ou outro
+    COORDENADA c, o, *a;
+    LISTA l = criar_lista();
+    l = posicoes_possiveis(e, l);
+    LISTA m = l;
+
+    if (obter_jogador_atual(e) == 1){
+        o.x = 0;
+        o.y = 0;
+    }
+    else{
+        o.x = 7;
+        o.y = 7;
+    }
+
+    while (!lista_esta_vazia(m)){
+        a = (COORDENADA*) devolve_cabeca(m);
+
+        euclidiana(*a, o);
+
+        if (euclidiana(*a, o) < d){
+            d = euclidiana(*a, o);
+            c = *a;
+        }
+        m = proximo(m);
+    }
+    jogar(e, c);
+
+    while (!lista_esta_vazia(l)) {
+        l = remove_cabeca(l);
+    }
+}
+
 int interpretador (ESTADO *e){
     char linha[BUF_SIZE];
     char file[BUF_SIZE];
@@ -146,8 +181,12 @@ int interpretador (ESTADO *e){
     }else if(sscanf(linha,"pos %d", &num) == 1){
         posicao(num,e);
         mostrar_tabuleiro(e);
-    }
-    else{
+
+    }else if(sscanf(linha, "%s", file) == 1 && !strcmp(file, "jog")) {
+        jog(e);
+        mostrar_tabuleiro(e);
+
+    }else{
         printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
         decrementa_ncomandos(e);
         mostrar_tabuleiro(e);

@@ -110,7 +110,7 @@ void movs(FILE *jogo, ESTADO *e){
     }
 }
 
-void jog(ESTADO *e){
+void jog(ESTADO *e){  //até agora só contém a estrategia da distancia Euclidiana!!!
     int d = INT_MAX; //ou outro
     COORDENADA c, o, *a;
     LISTA l = criar_lista();

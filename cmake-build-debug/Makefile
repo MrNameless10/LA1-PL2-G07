@@ -176,6 +176,33 @@ interface.c.s:
 	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/interface.c.s
 .PHONY : interface.c.s
 
+listas.obj: listas.c.obj
+
+.PHONY : listas.obj
+
+# target to build an object file
+listas.c.obj:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/listas.c.obj
+.PHONY : listas.c.obj
+
+listas.i: listas.c.i
+
+.PHONY : listas.i
+
+# target to preprocess a source file
+listas.c.i:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/listas.c.i
+.PHONY : listas.c.i
+
+listas.s: listas.c.s
+
+.PHONY : listas.s
+
+# target to generate assembly for a file
+listas.c.s:
+	$(MAKE) -f CMakeFiles\LA1_PL2_G07.dir\build.make CMakeFiles/LA1_PL2_G07.dir/listas.c.s
+.PHONY : listas.c.s
+
 logica.obj: logica.c.obj
 
 .PHONY : logica.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... interface.obj
 	@echo ... interface.i
 	@echo ... interface.s
+	@echo ... listas.obj
+	@echo ... listas.i
+	@echo ... listas.s
 	@echo ... logica.obj
 	@echo ... logica.i
 	@echo ... logica.s

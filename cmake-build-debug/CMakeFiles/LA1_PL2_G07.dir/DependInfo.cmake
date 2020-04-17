@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/dados.c.obj"
   "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/interface.c.obj"
+  "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/listas.c.obj"
   "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/logica.c.obj"
   "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/main.c" "C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir/main.c.obj"
   )

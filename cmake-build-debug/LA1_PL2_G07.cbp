@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.h">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.c">
+			<Option target="LA1_PL2_G07"/>
+		</Unit>
+		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.h">
+			<Option target="LA1_PL2_G07"/>
+		</Unit>
 		<Unit filename="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.c">
 			<Option target="LA1_PL2_G07"/>
 		</Unit>

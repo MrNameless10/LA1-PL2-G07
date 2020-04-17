@@ -129,8 +129,6 @@ void jog(ESTADO *e){
     while (!lista_esta_vazia(m)){
         a = (COORDENADA*) devolve_cabeca(m);
 
-        euclidiana(*a, o);
-
         if (euclidiana(*a, o) < d){
             d = euclidiana(*a, o);
             c = *a;

@@ -129,17 +129,14 @@ void jog(ESTADO *e){  //até agora só contém a estrategia da distancia Euclidi
     while (!lista_esta_vazia(m)){
         a = (COORDENADA*) devolve_cabeca(m);
 
-        if (euclidiana(*a, o) < d){
-            d = euclidiana(*a, o);
+        if (distancia_euclidiana(*a, o) < d){
+            d = distancia_euclidiana(*a, o);
             c = *a;
         }
         m = proximo(m);
     }
-    jogar(e, c);
+    if (valida_jogada(e,c)==1) jogar(e, c);
 
-    while (!lista_esta_vazia(l)) {
-        l = remove_cabeca(l);
-    }
 }
 
 int interpretador (ESTADO *e){

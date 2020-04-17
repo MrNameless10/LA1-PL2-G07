@@ -239,7 +239,7 @@ LISTA posicoes_possiveis(ESTADO *e, LISTA l){
         for (int j = c1.x - 1; j <= c1.x + 1; ++j) {
             c2.y = i;
             c2.x = j;
-            if (valida_jogada(e, c2)){
+            if (valida_jogada(e, c2)==1){
                 ec = malloc(sizeof(COORDENADA));
 
                 ec->y = c2.y;
@@ -253,7 +253,7 @@ LISTA posicoes_possiveis(ESTADO *e, LISTA l){
     return l;
 }
 
-float euclidiana(COORDENADA c1 ,COORDENADA c2){
+float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2){
 
     float d = sqrtf(pow(c1.y - c2.y, 2) + pow(c1.x - c2.y, 2));
 

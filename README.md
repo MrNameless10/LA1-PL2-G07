@@ -16,7 +16,7 @@ Ao decorrer do guiao 9 da última semana o grupo não encontrou dificuldades:
 		* Usar uma heurística para escolher qual é a jogada que vai ser efetuada  (neste caso escolhemos --> Distância menor usando a distância Euclidiana)                             (Check)
 		* Fazer essa jogada e mudar o jogador atual                                                                                                                                     (Check)
 
-	- Como pedido, realizamos os testes manualmente e efetuamos os prints de tela necessários que estão disponiveis na página do github, metemos numa pasta à parte intitulada como "prints de tela" po alguma razão não conseguimos copiar as imagens para o readme tal como o professor sugeriu;
+	- Como pedido, realizamos os testes manualmente e efetuamos os prints de tela necessários que estão disponiveis na página do github, metemos numa pasta à parte intitulada como "prints de tela" e já conseguimos copiar as imagens para o readme tal como o professor sugeriu através do Slack;
 	- Para além dos exemplos que foram mostrados no guião, o nosso grupo fez simulações reais do jogo fazendo várias partidas para ver se tudo funcionava direito;
 	- Tal como o Professor Francisco Marcondes sugeriu na video aula apartir da plataforma BlackBoard Ultra, criamos uma história e definimos objetivos que deverão ser cumprimidos ao longo da semana pelos vários constituintes do grupo. Estes objetivos foram feitos com a ajuda da plataforma Trello.
 

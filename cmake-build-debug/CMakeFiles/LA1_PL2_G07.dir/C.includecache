@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.c
-dados.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
-logica.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
-listas.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.h
-stdlib.h
--
-stdio.h
--
-math.h
--
-
 C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
 listas.h
 C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.h
@@ -38,47 +24,9 @@ string.h
 limits.h
 -
 
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.h
-dados.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
-
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.c
-listas.h
 C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.h
-listas.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.h
-stdlib.h
--
-
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/listas.h
-
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.c
-logica.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
-dados.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
-math.h
--
-stdio.h
--
-stdlib.h
--
 
 C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
 dados.h
 C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
-
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/main.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-dados.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/dados.h
-interface.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/interface.h
-logica.h
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/logica.h
 

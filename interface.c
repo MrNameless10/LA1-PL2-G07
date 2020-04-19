@@ -6,6 +6,7 @@
 #include <limits.h>
 //#include <conio.h>
 #define BUF_SIZE 1024
+int interpretador (ESTADO *e);
 
 void mostrar_prompt(ESTADO *e){
     printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1);
@@ -135,7 +136,13 @@ void jog(ESTADO *e){  //até agora só contém a estrategia da distancia Euclidi
         }
         m = proximo(m);
     }
-    if (valida_jogada(e,c)==1) jogar(e, c);
+    jogar(e, c);
+
+    if ((fim_de_jogo (e,c))) {
+        mostrar_tabuleiro(e);
+        printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,c));
+        exit(0);
+    }
 
 }
 

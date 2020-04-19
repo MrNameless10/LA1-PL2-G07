@@ -24,4 +24,7 @@ Em conclusão, como grupo achamos que todos os objetivos foram cumpridos e apesa
 
 Todas as reuniões entre os elementos do grupo, até ao momento, foram realizadas via Discord/Slack de forma a comunicarmos mais facilmente, isto devido às circunstâncias em que nos encontramos(COVID-19).
 
-![Image description](https://github.com/TomasCampinho/LA1-PL2-G07/blob/master/Prints%20de%20telas/Guiao9/Implementa%C3%A7%C3%A3o%20do%20comando%20jog.png)
+
+<b>Segue-se os prints de tela em relação ao guiao9:</b>
+
+![Comando Jog](https://github.com/TomasCampinho/LA1-PL2-G07/blob/master/Prints%20de%20telas/Guiao9/Implementa%C3%A7%C3%A3o%20do%20comando%20jog.png)

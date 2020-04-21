@@ -255,7 +255,6 @@ LISTA posicoes_possiveis(ESTADO *e, LISTA l){
 
 float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2){
 
-    float d = sqrtf(pow(c1.y - c2.y, 2) + pow(c1.x - c2.y, 2));
-
+    float d = sqrtf(pow(c1.y - c2.y, 2) + pow(c1.x - c2.x, 2));
     return d;
 }

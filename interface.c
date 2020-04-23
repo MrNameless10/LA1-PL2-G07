@@ -62,17 +62,17 @@ void escreve_tabuleiro(ESTADO *e, FILE *jogo) {
 void ler(char *ficheiro, ESTADO *e){
     FILE *jogo;
     jogo = fopen(ficheiro, "r");
-    char linha[25],str[25],c1, c2;
+    char linha[50],str[50],c1, c2;
     int n1, n2;
     free(e);
     e = inicializar_estado();
 
     for (int i = 7; i >= 0; i--){
-        fgets(linha, 25, jogo);
+        fgets(linha, 50, jogo);
         lelinha(linha, i, e);
     }
-    fgets(linha, 25, jogo);
-    while(fgets(linha, 25, jogo) != NULL){
+    fgets(linha, 50, jogo);
+    while(fgets(linha, 50, jogo) != NULL){
         if(sscanf(linha, "%s %c%d %c%d", str, &c1, &n1, &c2, &n2) == 5){
             jogadas_anteriores_guardadas(e, c1, n1);
             jogadas_anteriores_guardadas(e, c2, n2);

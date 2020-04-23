@@ -179,6 +179,18 @@ void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
     }
 }
 
+void lelinha(char *linha, int nlinha, ESTADO *e){
+    for(int i = 7; i >= 0; i--){
+        if(linha[i] == '*'){
+            e->tab[i][nlinha] = BRANCA;
+            e->ultima_jogada.x = i;
+            e->ultima_jogada.y = nlinha;
+        }else if(linha[i] == '#'){
+            e->tab[i][nlinha] = PRETA;
+        }else e -> tab[i][nlinha] = VAZIO;
+    }
+}
+
 /*ESTADO *novo_estado(FILE *jogo) {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
     char linha[25];

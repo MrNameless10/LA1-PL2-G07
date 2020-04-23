@@ -42,66 +42,70 @@ void mostrar_tabuleiro(ESTADO *e) {
     fclose(jogo);
 }*/
 
-void ler(char *ficheiro, ESTADO *e){//Mostra o tabuleiro guardado mas não continua o jogo nesse tabuleiro (por resolver)
-    FILE *jogo;
-    char a;
-    strcat(ficheiro,".txt");
-
-    if((jogo = fopen(ficheiro,"r")) == NULL){
-        printf("Problemas na abertura do arquivo");
-        return;
-    }
-
-    while((a = fgetc(jogo)) != EOF) printf("%c",a);
-    //novo_estado(jogo);
-    //mostrar_tabuleiro(e);
-    fclose(jogo);
-}
-
 void movs(FILE *jogo, ESTADO *e);
 
-void gr(char *ficheiro, ESTADO *e){
-    FILE *jogo;
-    //int result;
-    strcat(ficheiro,".txt");
-    jogo = fopen(ficheiro, "w");
-    if (jogo == NULL){
-        printf("Problemas na criacao do arquivo\n");
-        return;
-    }
-
-    //mostrar tabuleiro com fprintf
-    int x,y;
-    fprintf(jogo,"\n");
+void escreve_tabuleiro(ESTADO *e, FILE *jogo) {
+    int x ,y;
+    printf("\n");
     for(y=7;y>=0; y--){
         for(x=0;x<8;x++){
-            if (x==7 && y==7) fprintf(jogo,"2");
-            else if (x==0 && y==0) fprintf(jogo,"1");
+            if (x==7 && y==7) fprintf(jogo, "2");
+            else if (x==0 && y==0) fprintf(jogo, "1");
             else if (obter_casa(e,x,y)==BRANCA) fprintf(jogo,"*");
             else if (obter_casa(e,x,y)==PRETA) fprintf(jogo,"#");
             else if (obter_casa(e,x,y)==VAZIO) fprintf(jogo,".");
-
         }
-        fprintf(jogo,"\n");
+        fprintf(jogo, "\n");
     }
+}
 
-    movs(jogo,e);
+void ler(char *ficheiro, ESTADO *e){
+    FILE *jogo;
+    jogo = fopen(ficheiro, "r");
+    char linha[25],str[25],c1, c2;
+    int n1, n2;
+    free(e);
+    e = inicializar_estado();
 
+    for (int i = 7; i >= 0; i--){
+        fgets(linha, 25, jogo);
+        lelinha(linha, i, e);
+    }
+    fgets(linha, 25, jogo);
+    while(fgets(linha, 25, jogo) != NULL){
+        if(sscanf(linha, "%s %c%d %c%d", str, &c1, &n1, &c2, &n2) == 5){
+            jogadas_anteriores_guardadas(e, c1, n1);
+            jogadas_anteriores_guardadas(e, c2, n2);
+        }else if(sscanf(linha, "%s %c%d", str, &c1, &n1) == 3){
+            jogadas_anteriores_guardadas(e, c1, n1);
+        }
+    }
+    fclose(jogo);
+    mostrar_tabuleiro(e);
+}
+
+void gr(char *ficheiro, ESTADO *e){
+    FILE *jogo;
+    jogo = fopen(ficheiro, "w");
+
+    escreve_tabuleiro(e, jogo);
+    fprintf(jogo, "\n");
+    movs(jogo, e);
     fclose(jogo);
 }
 
 void movs(FILE *jogo, ESTADO *e){
     char *str;
-    for (int i = 0; i <= obter_numero_de_jogadas(e); i++) {
-        if (jogadas_guardadas(e, i, 1)) {
+    for(int i = 0; i <= obter_numero_de_jogadas(e); i++){
+        if(jogadas_guardadas(e, i, 1)){
             fprintf(jogo, "%02d: %s", i+1, (str = str_jogada_guardada(e, i, 1)));
             free(str);
-        } else break;
+        }else break;
 
-        if (jogadas_guardadas(e, i, 2)) {
+        if(jogadas_guardadas(e, i, 2)){
             fprintf(jogo, " %s\n", (str = str_jogada_guardada(e, i, 2)));
             free(str);
-        } else break;
+        }else break;
     }
 }
 

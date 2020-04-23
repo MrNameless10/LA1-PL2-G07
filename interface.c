@@ -80,7 +80,7 @@ void gr(char *ficheiro, ESTADO *e){
             else if (obter_casa(e,x,y)==BRANCA) fprintf(jogo,"*");
             else if (obter_casa(e,x,y)==PRETA) fprintf(jogo,"#");
             else if (obter_casa(e,x,y)==VAZIO) fprintf(jogo,".");
-            fprintf(jogo," ");
+
         }
         fprintf(jogo,"\n");
     }

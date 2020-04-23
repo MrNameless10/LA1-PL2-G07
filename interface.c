@@ -71,11 +71,9 @@ void gr(char *ficheiro, ESTADO *e){
     }
 
     //mostrar tabuleiro com fprintf
-    int i=8;
     int x,y;
     fprintf(jogo,"\n");
     for(y=7;y>=0; y--){
-        fprintf(jogo,"%d ", i);
         for(x=0;x<8;x++){
             if (x==7 && y==7) fprintf(jogo,"2");
             else if (x==0 && y==0) fprintf(jogo,"1");
@@ -85,11 +83,7 @@ void gr(char *ficheiro, ESTADO *e){
             fprintf(jogo," ");
         }
         fprintf(jogo,"\n");
-        i--;
     }
-    fprintf(jogo,"  a b c d e f g h");
-    fprintf(jogo,"\n");
-    fprintf(jogo,"# %d  PL%d  (%d)>\n\n", obter_num_comandos(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1); //prompt com fprintf
 
     movs(jogo,e);
 

@@ -145,6 +145,10 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
 
 }
 
+void jog2(ESTADO *e){
+
+}
+
 int interpretador (ESTADO *e){
     char linha[BUF_SIZE];
     char file[BUF_SIZE];
@@ -185,6 +189,10 @@ int interpretador (ESTADO *e){
 
     }else if(sscanf(linha, "%s", file) == 1 && !strcmp(file, "jog")) {
         jog(e);
+        mostrar_tabuleiro(e);
+
+    }else if(sscanf(linha, "%s", file) == 1 && !strcmp(file, "jog2")) {
+        jog2(e);
         mostrar_tabuleiro(e);
 
     }else{

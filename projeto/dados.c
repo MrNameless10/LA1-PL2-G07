@@ -83,7 +83,7 @@ int fim_de_jogo(ESTADO *e, COORDENADA c) {
     COORDENADA cor;
     if (c.y == 7 && c.x == 7) return 2;
     if (c.y == 0 && c.x == 0) return 1;
-    if (bloqueado(e,c)==1) return (obter_jogador_atual(e)== 1 ? 2 : 1);
+    if (bloqueado(e,c)==8) return (obter_jogador_atual(e)== 1 ? 2 : 1);
     for (int i = c.y - 1; i <= c.y + 1; i++) {
         for (int k = c.x - 1; k <= c.x + 1; k++) {
             cor.x = i;
@@ -122,8 +122,7 @@ int bloqueado (ESTADO *e, COORDENADA c){
     cor.y = c.y-1;
     if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
 
-    if(r==8) return 1;
-    else return 0;
+    return r;
 }
 
 int jogadas_guardadas(ESTADO *e, int i, int j) {
@@ -264,11 +263,7 @@ float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2){
     return d;
 }
 
-int tamanho_lista(LISTA l){
-    int tamanho;
-    tamanho = sizeof(l)/ sizeof(l[0]);
-    return tamanho;
-}
+
 
 /*ESTADO cabeca_proxlista (LISTA l) {
     COORDENADA *c1;

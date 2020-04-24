@@ -151,16 +151,18 @@ void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
     LISTA l = criar_lista();
     c.x = 0;
     c.y = 0;
-    LISTA m = l;
     l = posicoes_possiveis(e, l);
+    LISTA m = l;
+    LISTA o = criar_lista();
 
-
-    while (tamanho_lista(m) % 2 != 0) {
-        m = proximo(m);
-        m = posicoes_possiveis(e, m);
+    while (lista_esta_vazia(l)==0) {
+        a = devolve_cabeca(l);
+        c = *a;
+        if (bloqueado(e, c) % 2 == 0) {
+            break;
+        }
+        m = proximo(l);
     }
-    a = devolve_cabeca(m);
-    c = *a;
     jogar(e, c);
 
     if((fim_de_jogo (e,c))){      //para que o jogo acabe com o comando jog.
@@ -170,6 +172,7 @@ void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
     }
 
 }
+
 /*
     while(lista_esta_vazia(m)==0){
         a = devolve_cabeca(m);

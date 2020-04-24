@@ -13,5 +13,5 @@ void *devolve_cabeca(LISTA l);
 LISTA proximo(LISTA l);
 LISTA remove_cabeca(LISTA l);
 int lista_esta_vazia(LISTA l);
-
+int tamanho_lista(LISTA l);
 #endif //LA1_PL2_G07_LISTAS_H

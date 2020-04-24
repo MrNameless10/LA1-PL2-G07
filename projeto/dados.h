@@ -51,6 +51,5 @@ void posicao(int num, ESTADO *e);
 void decrementa_ncomandos(ESTADO *e);
 LISTA posicoes_possiveis(ESTADO *e, LISTA l);
 float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2);
-int tamanho_lista(LISTA l);
 
 #endif //UNTITLED_CAMADA_DE_DADOS_H

@@ -44,7 +44,7 @@ int obter_num_comandos (ESTADO *e);
 void jogadas_anteriores_guardadas(ESTADO *e, char c, int n);
 int jogadas_guardadas(ESTADO *e, int i, int j);
 char* str_jogada_guardada(ESTADO *e, int i, int j);
-void lelinha(char *linha, int nlinha, ESTADO *e);
+void lelinha(char const *linha, int nlinha, ESTADO *e);
 //ESTADO *novo_estado(FILE *);
 void reset_estado(ESTADO *e);
 void posicao(int num, ESTADO *e);

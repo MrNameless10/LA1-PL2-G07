@@ -70,9 +70,6 @@ void alterar_jogador_atual(ESTADO *e){
 
 void alterar_jogadas(ESTADO *e, COORDENADA c){
 
-    int x = e -> ultima_jogada.x;
-    int y = e -> ultima_jogada.y;
-
     if(e->jogador_atual == 1){
         e->jogadas[e->num_jogadas].jogador1.x = c.x;
         e->jogadas[e->num_jogadas].jogador1.y = c.y;
@@ -81,8 +78,6 @@ void alterar_jogadas(ESTADO *e, COORDENADA c){
         e->jogadas[e->num_jogadas].jogador2.y = c.y;
     }
 }
-
-int bloqueado (ESTADO *e, COORDENADA c);
 
 int fim_de_jogo(ESTADO *e, COORDENADA c) {
     COORDENADA cor;
@@ -177,7 +172,7 @@ void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
     }
 }
 
-void lelinha(char *linha, int nlinha, ESTADO *e){
+void lelinha(char const *linha, int nlinha, ESTADO *e){
     for(int i = 7; i >= 0; i--){
         if(linha[i] == '*'){
             e->tab[i][nlinha] = BRANCA;

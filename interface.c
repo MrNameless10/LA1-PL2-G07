@@ -68,10 +68,9 @@ void ler(char *ficheiro, ESTADO *e){
     e = inicializar_estado();
 
     for (int i = 7; i >= 0; i--){    //muda para o novo estado do tabuleiro linha por linha.
-        fgets(linha, 50, jogo);
-        lelinha(linha, i, e);
+        if((fgets(linha, 50, jogo) != NULL)) lelinha(linha, i, e);
     }
-    fgets(linha, 50, jogo);
+
     while(fgets(linha, 50, jogo) != NULL){
         if(sscanf(linha, "%s %c%d %c%d", string, &c1, &n1, &c2, &n2) == 5){ //com duas jogadas -- 01: e1 e2 (por exemplo)
             jogadas_anteriores_guardadas(e, c1, n1);
@@ -115,6 +114,8 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
     LISTA l = criar_lista();
     l = posicoes_possiveis(e,l);
     LISTA m = l;
+    c.x=0;
+    c.y=0;
 
     if(obter_jogador_atual(e)==1){
         target.x = 0;

@@ -1,3 +1,0 @@
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/LA1_PL2_G07.dir
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -146,24 +146,24 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
 }
 
 void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
-    COORDENADA c, target, *a;
-    int d = INT_MAX;
+    COORDENADA c, *a;
     LISTA l = criar_lista();
     c.x = 0;
     c.y = 0;
     l = posicoes_possiveis(e, l);
     LISTA m = l;
-    LISTA o = criar_lista();
 
     while (lista_esta_vazia(l)==0) {
         a = devolve_cabeca(l);
         c = *a;
-        if (bloqueado(e, c) % 2 == 0) {
+        if(bloqueado(e,c) % 2 == 0){
             break;
         }
-        m = proximo(l);
+        l = proximo(l);
     }
-    jogar(e, c);
+    if (lista_esta_vazia(l)!=0) jog(e);
+
+    jogar(e,c);
 
     if((fim_de_jogo (e,c))){      //para que o jogo acabe com o comando jog.
         mostrar_tabuleiro(e);

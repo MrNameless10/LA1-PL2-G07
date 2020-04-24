@@ -62,21 +62,21 @@ void escreve_tabuleiro(ESTADO *e, FILE *jogo) {
 void ler(char *ficheiro, ESTADO *e){
     FILE *jogo;
     jogo = fopen(ficheiro, "r");
-    char linha[50],str[50],c1, c2;
+    char linha[50],string[50],c1, c2;
     int n1, n2;
     free(e);
     e = inicializar_estado();
 
-    for (int i = 7; i >= 0; i--){
+    for (int i = 7; i >= 0; i--){    //muda para o novo estado do tabuleiro linha por linha.
         fgets(linha, 50, jogo);
         lelinha(linha, i, e);
     }
     fgets(linha, 50, jogo);
     while(fgets(linha, 50, jogo) != NULL){
-        if(sscanf(linha, "%s %c%d %c%d", str, &c1, &n1, &c2, &n2) == 5){
+        if(sscanf(linha, "%s %c%d %c%d", string, &c1, &n1, &c2, &n2) == 5){ //com duas jogadas -- 01: e1 e2 (por exemplo)
             jogadas_anteriores_guardadas(e, c1, n1);
             jogadas_anteriores_guardadas(e, c2, n2);
-        }else if(sscanf(linha, "%s %c%d", str, &c1, &n1) == 3){
+        }else if(sscanf(linha, "%s %c%d", string, &c1, &n1) == 3){ //com uma jogada -- 04: f2 (por exemplo)
             jogadas_anteriores_guardadas(e, c1, n1);
         }
     }
@@ -95,48 +95,48 @@ void gr(char *ficheiro, ESTADO *e){
 }
 
 void movs(FILE *jogo, ESTADO *e){
-    char *str;
+    char *string;
     for(int i = 0; i <= obter_numero_de_jogadas(e); i++){
         if(jogadas_guardadas(e, i, 1)){
-            fprintf(jogo, "%02d: %s", i+1, (str = str_jogada_guardada(e, i, 1)));
-            free(str);
+            fprintf(jogo, "%02d: %s", i+1, (string = str_jogada_guardada(e, i, 1)));
+            free(string);
         }else break;
 
         if(jogadas_guardadas(e, i, 2)){
-            fprintf(jogo, " %s\n", (str = str_jogada_guardada(e, i, 2)));
-            free(str);
+            fprintf(jogo, " %s\n", (string = str_jogada_guardada(e, i, 2)));
+            free(string);
         }else break;
     }
 }
 
-void jog(ESTADO *e){  //até agora só contém a estrategia da distancia Euclidiana!!!
-    int d = INT_MAX; //ou outro
-    COORDENADA c, o, *a;
+void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
+    int d = INT_MAX;
+    COORDENADA c, target, *a;
     LISTA l = criar_lista();
-    l = posicoes_possiveis(e, l);
+    l = posicoes_possiveis(e,l);
     LISTA m = l;
 
-    if (obter_jogador_atual(e) == 1){
-        o.x = 0;
-        o.y = 0;
+    if(obter_jogador_atual(e)==1){
+        target.x = 0;
+        target.y = 0;
     }
     else{
-        o.x = 7;
-        o.y = 7;
+        target.x = 7;
+        target.y = 7;
     }
 
-    while (!lista_esta_vazia(m)){
+    while(lista_esta_vazia(m)==0){
         a = (COORDENADA*) devolve_cabeca(m);
 
-        if (distancia_euclidiana(*a, o) < d){
-            d = distancia_euclidiana(*a, o);
+        if(distancia_euclidiana(*a, target) < d){
+            d = distancia_euclidiana(*a, target);
             c = *a;
         }
         m = proximo(m);
     }
-    jogar(e, c);
+    jogar(e,c);
 
-    if ((fim_de_jogo (e,c))) {
+    if((fim_de_jogo (e,c))){      //para que o jogo acabe com o comando jog.
         mostrar_tabuleiro(e);
         printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,c));
         exit(0);
@@ -191,6 +191,5 @@ int interpretador (ESTADO *e){
         decrementa_ncomandos(e);
         mostrar_tabuleiro(e);
     }
-
     return 0;
 }

@@ -263,3 +263,18 @@ float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2){
     float d = sqrtf(pow(c1.y - c2.y, 2) + pow(c1.x - c2.x, 2));
     return d;
 }
+
+int tamanho_lista(LISTA l){
+    int tamanho;
+    tamanho = sizeof(l)/ sizeof(l[0]);
+    return tamanho;
+}
+
+/*ESTADO cabeca_proxlista (LISTA l) {
+    COORDENADA *c1;
+    LISTA m = l;
+    m = proximo(l);
+    c1= devolve_cabeca(m);
+    return c1;
+}
+ */

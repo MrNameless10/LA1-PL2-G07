@@ -127,7 +127,7 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
     }
 
     while(lista_esta_vazia(m)==0){
-        a = (COORDENADA*) devolve_cabeca(m);
+        a = devolve_cabeca(m);
 
         if(distancia_euclidiana(*a, target) < d){
             d = distancia_euclidiana(*a, target);
@@ -145,10 +145,52 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
 
 }
 
-void jog2(ESTADO *e){
+void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
+    COORDENADA c, target, *a;
+    int d = INT_MAX;
+    LISTA l = criar_lista();
+    c.x = 0;
+    c.y = 0;
+    LISTA m = l;
+    l = posicoes_possiveis(e, l);
+
+
+    while (tamanho_lista(m) % 2 != 0) {
+        m = proximo(m);
+        m = posicoes_possiveis(e, m);
+    }
+    a = devolve_cabeca(m);
+    c = *a;
+    jogar(e, c);
+
+    if((fim_de_jogo (e,c))){      //para que o jogo acabe com o comando jog.
+        mostrar_tabuleiro(e);
+        printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,c));
+        exit(0);
+    }
 
 }
+/*
+    while(lista_esta_vazia(m)==0){
+        a = devolve_cabeca(m);
 
+        if(tamanho_lista(l) % 2 == 0){
+            d = distancia_euclidiana(*a, target);
+            c = *a;
+        }
+        m = proximo(m);
+    }
+    jogar(e,c);
+
+
+   /* for (i;i<=tamanho_lista(l);i++) {
+        l = posicoes_possiveis(e,l);
+
+        if (tamanho_lista(l[i]) % 2 == 0)
+            jogar(e, c);
+    }
+}
+ */
 int interpretador (ESTADO *e){
     char linha[BUF_SIZE];
     char file[BUF_SIZE];

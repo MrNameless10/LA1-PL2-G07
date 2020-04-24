@@ -1,6 +1,7 @@
 #include "listas.h"
 #include "listas.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 LISTA criar_lista(){
     LISTA l = malloc(sizeof(NODO));

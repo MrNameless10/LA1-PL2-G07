@@ -31,6 +31,6 @@ void gr(char *ficheiro, ESTADO *e);
 void mostrar_prompt(ESTADO *e);
 
 /**
-\Mostra o tabuleiro na linha de comandos @param e aponta para o estado do jogo @param jogo File para o output
+\Mostra o tabuleiro na linha de comandos @param e aponta para o estado do jogo @param guarda o jogo no File para o output
 */
 void escreve_tabuleiro(ESTADO *e, FILE *jogo);

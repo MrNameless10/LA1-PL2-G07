@@ -14,12 +14,12 @@ typedef struct nodo{
 }*LISTA, NODO;
 
 /**
-\brief Cria um lista ligada dando @returns apontando para a mesma
+\brief Cria um lista ligada @returns apontando para a mesma
 */
 LISTA criar_lista();
 
 /**
-\brief Insere um valor à cabeça @param l Lista ligada @param valor para ser adicionado dando @returns apontando para a lista ligada
+\brief Insere um valor à cabeça @param l Lista ligada @param valor para ser adicionado @returns apontando para a lista ligada
  */
 LISTA insere_cabeca(LISTA l, void *valor);
 

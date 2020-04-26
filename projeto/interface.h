@@ -49,3 +49,8 @@ void jog(ESTADO *e);
 \brief Função que joga pelo jogador pela estrategia baseada na paridade @param e aponta para o estado do jogo
 */
 void jog2(ESTADO *e);
+
+/**
+\brief Função que congratula o jogador correspondente @param e aponta para o estado @param COORDENADA da ultima jogada
+*/
+void congratular_jogador(ESTADO *e, COORDENADA c);

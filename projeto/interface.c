@@ -32,6 +32,15 @@ void mostrar_tabuleiro(ESTADO *e) {
     mostrar_prompt(e);
 }
 
+void congratular_jogador(ESTADO *e, COORDENADA c){
+
+    if((fim_de_jogo (e,c))){
+        mostrar_tabuleiro(e);
+        printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,c));
+        exit(0);
+    }
+}
+
 void movs(FILE *jogo, ESTADO *e);
 
 void escreve_tabuleiro(ESTADO *e, FILE *jogo) {
@@ -126,13 +135,7 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
         m = proximo(m);
     }
     jogar(e,c);
-
-    if((fim_de_jogo (e,c))){      //para que o jogo acabe com o comando jog.
-        mostrar_tabuleiro(e);
-        printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,c));
-        exit(0);
-    }
-
+    congratular_jogador(e,c);
 }
 
 void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
@@ -153,13 +156,7 @@ void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
     if (lista_esta_vazia(l)!=0) jog(e);
 
     jogar(e,c);
-
-    if((fim_de_jogo (e,c))){      //para que o jogo acabe com o comando jog.
-        mostrar_tabuleiro(e);
-        printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,c));
-        exit(0);
-    }
-
+    congratular_jogador(e,c);
 }
 
 int interpretador (ESTADO *e){
@@ -174,11 +171,8 @@ int interpretador (ESTADO *e){
             printf ("Jogada impossivel. (TENTE NOVAMENTE)\n");
             decrementa_ncomandos(e);
         }
-        else if ((fim_de_jogo (e,coord))) {
-            mostrar_tabuleiro(e);
-            printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,coord));
-            exit(0);
-        }
+        else congratular_jogador(e,coord);
+
         mostrar_tabuleiro(e);
 
     }else if(strcmp(linha, "Q\n") == 0) exit(0);

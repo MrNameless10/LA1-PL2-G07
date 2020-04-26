@@ -1,0 +1,108 @@
+\hypertarget{interface_8h}{}\doxysection{C\+:/\+Users/migue/\+Documents/\+Git\+Hub/\+L\+A1-\/\+P\+L2-\/\+G07/\+L\+A1-\/\+P\+L2-\/\+G07/projeto/interface.h File Reference}
+\label{interface_8h}\index{C:/Users/migue/Documents/GitHub/LA1-\/PL2-\/G07/LA1-\/PL2-\/G07/projeto/interface.h@{C:/Users/migue/Documents/GitHub/LA1-\/PL2-\/G07/LA1-\/PL2-\/G07/projeto/interface.h}}
+{\ttfamily \#include \char`\"{}dados.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\+\_\+tabuleiro}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Mostra o tabuleiro na linha de comandos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_8h_a24da95ebeede4a540e37790ce8be359b}{interpretador}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Recebe o input do jogador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8h_a86da472ab10e0eeb84614f53ef2fa83d}{ler}} (char $\ast$ficheiro, \mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\item 
+void \mbox{\hyperlink{interface_8h_af1aeaac32ef88d07f12ad4434deae8bb}{gr}} (char $\ast$ficheiro, \mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\item 
+void \mbox{\hyperlink{interface_8h_a1fd532d3d252ff42d406a15757e2a401}{mostrar\+\_\+prompt}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Imprime o prompt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}{escreve\+\_\+tabuleiro}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e, F\+I\+LE $\ast$jogo)
+\begin{DoxyCompactList}\small\item\em Mostra o tabuleiro na linha de comandos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definições das funções que fazem a ligação ao jogador 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}\label{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}} 
+\index{interface.h@{interface.h}!escreve\_tabuleiro@{escreve\_tabuleiro}}
+\index{escreve\_tabuleiro@{escreve\_tabuleiro}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{escreve\_tabuleiro()}{escreve\_tabuleiro()}}
+{\footnotesize\ttfamily void escreve\+\_\+tabuleiro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e,  }\item[{F\+I\+LE $\ast$}]{jogo }\end{DoxyParamCaption})}
+
+
+
+Mostra o tabuleiro na linha de comandos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado do jogo\\
+\hline
+{\em guarda} & o jogo no File para o output \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_af1aeaac32ef88d07f12ad4434deae8bb}\label{interface_8h_af1aeaac32ef88d07f12ad4434deae8bb}} 
+\index{interface.h@{interface.h}!gr@{gr}}
+\index{gr@{gr}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{gr()}{gr()}}
+{\footnotesize\ttfamily void gr (\begin{DoxyParamCaption}\item[{char $\ast$}]{ficheiro,  }\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+/brief Grava um ficheiro
+\begin{DoxyParams}{Parameters}
+{\em ficheiro} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a24da95ebeede4a540e37790ce8be359b}\label{interface_8h_a24da95ebeede4a540e37790ce8be359b}} 
+\index{interface.h@{interface.h}!interpretador@{interpretador}}
+\index{interpretador@{interpretador}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{interpretador()}{interpretador()}}
+{\footnotesize\ttfamily int interpretador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Recebe o input do jogador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado do jogo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a86da472ab10e0eeb84614f53ef2fa83d}\label{interface_8h_a86da472ab10e0eeb84614f53ef2fa83d}} 
+\index{interface.h@{interface.h}!ler@{ler}}
+\index{ler@{ler}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}}
+{\footnotesize\ttfamily void ler (\begin{DoxyParamCaption}\item[{char $\ast$}]{ficheiro,  }\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+/brief Lê um ficheiro
+\begin{DoxyParams}{Parameters}
+{\em ficheiro} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a1fd532d3d252ff42d406a15757e2a401}\label{interface_8h_a1fd532d3d252ff42d406a15757e2a401}} 
+\index{interface.h@{interface.h}!mostrar\_prompt@{mostrar\_prompt}}
+\index{mostrar\_prompt@{mostrar\_prompt}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{mostrar\_prompt()}{mostrar\_prompt()}}
+{\footnotesize\ttfamily void mostrar\+\_\+prompt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Imprime o prompt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado do jogo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_aa0b6c1689e60ac852a73d67e066c1df5}\label{interface_8h_aa0b6c1689e60ac852a73d67e066c1df5}} 
+\index{interface.h@{interface.h}!mostrar\_tabuleiro@{mostrar\_tabuleiro}}
+\index{mostrar\_tabuleiro@{mostrar\_tabuleiro}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{mostrar\_tabuleiro()}{mostrar\_tabuleiro()}}
+{\footnotesize\ttfamily void mostrar\+\_\+tabuleiro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Mostra o tabuleiro na linha de comandos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado do jogo \\
+\hline
+\end{DoxyParams}

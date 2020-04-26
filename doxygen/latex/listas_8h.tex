@@ -1,0 +1,159 @@
+\hypertarget{listas_8h}{}\doxysection{C\+:/\+Users/migue/\+Documents/\+Git\+Hub/\+L\+A1-\/\+P\+L2-\/\+G07/\+L\+A1-\/\+P\+L2-\/\+G07/projeto/listas.h File Reference}
+\label{listas_8h}\index{C:/Users/migue/Documents/GitHub/LA1-\/PL2-\/G07/LA1-\/PL2-\/G07/projeto/listas.h@{C:/Users/migue/Documents/GitHub/LA1-\/PL2-\/G07/LA1-\/PL2-\/G07/projeto/listas.h}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structnodo}{nodo}}
+\begin{DoxyCompactList}\small\item\em Definição genérica das listas ligadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{listas_8h_a5a5447a03bcb835183312f000a1d12bc}\label{listas_8h_a5a5447a03bcb835183312f000a1d12bc}} 
+typedef struct \mbox{\hyperlink{structnodo}{nodo}} $\ast$ \mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}
+\begin{DoxyCompactList}\small\item\em Definição genérica das listas ligadas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{listas_8h_ab352ead3fb06267f3afdd032d67c189c}\label{listas_8h_ab352ead3fb06267f3afdd032d67c189c}} 
+typedef struct \mbox{\hyperlink{structnodo}{nodo}} {\bfseries N\+O\+DO}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} \mbox{\hyperlink{listas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}{criar\+\_\+lista}} ()
+\begin{DoxyCompactList}\small\item\em Cria um lista ligada dando. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} \mbox{\hyperlink{listas_8h_a6ec793087950b61f792d8e184bf04d9d}{insere\+\_\+cabeca}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l, void $\ast$valor)
+\begin{DoxyCompactList}\small\item\em Insere um valor à cabeça. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{listas_8h_af90a7ac214fd566bfb7288d744c94185}{devolve\+\_\+cabeca}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
+\begin{DoxyCompactList}\small\item\em Devolve a cabeça da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} \mbox{\hyperlink{listas_8h_affb39e37aef63ab00b6df8f9336f6673}{proximo}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
+\begin{DoxyCompactList}\small\item\em Devolve o próximo valor da lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} \mbox{\hyperlink{listas_8h_a18d863cdb6eb3e2ede74559c4d70b4e5}{remove\+\_\+cabeca}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
+\begin{DoxyCompactList}\small\item\em Remove a cabeça da lista. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{listas_8h_a7e919af230d184128c5465451ea64a79}{lista\+\_\+esta\+\_\+vazia}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
+\begin{DoxyCompactList}\small\item\em Verifica se a lista está vazia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{listas_8h_a7daf2472369dc2617e86e90118cc01e6}{tamanho\+\_\+lista}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
+\begin{DoxyCompactList}\small\item\em Mostra o tamanho da lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Definições das listas ligadas 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{listas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}\label{listas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}} 
+\index{listas.h@{listas.h}!criar\_lista@{criar\_lista}}
+\index{criar\_lista@{criar\_lista}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{criar\_lista()}{criar\_lista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} criar\+\_\+lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cria um lista ligada dando. 
+
+\begin{DoxyReturn}{Returns}
+apontando para a mesma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listas_8h_af90a7ac214fd566bfb7288d744c94185}\label{listas_8h_af90a7ac214fd566bfb7288d744c94185}} 
+\index{listas.h@{listas.h}!devolve\_cabeca@{devolve\_cabeca}}
+\index{devolve\_cabeca@{devolve\_cabeca}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{devolve\_cabeca()}{devolve\_cabeca()}}
+{\footnotesize\ttfamily void$\ast$ devolve\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Devolve a cabeça da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lista ligada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor guardado na cabeça 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listas_8h_a6ec793087950b61f792d8e184bf04d9d}\label{listas_8h_a6ec793087950b61f792d8e184bf04d9d}} 
+\index{listas.h@{listas.h}!insere\_cabeca@{insere\_cabeca}}
+\index{insere\_cabeca@{insere\_cabeca}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{insere\_cabeca()}{insere\_cabeca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} insere\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}}]{l,  }\item[{void $\ast$}]{valor }\end{DoxyParamCaption})}
+
+
+
+Insere um valor à cabeça. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lista ligada\\
+\hline
+{\em valor} & para ser adicionado dando \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+apontando para a lista ligada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listas_8h_a7e919af230d184128c5465451ea64a79}\label{listas_8h_a7e919af230d184128c5465451ea64a79}} 
+\index{listas.h@{listas.h}!lista\_esta\_vazia@{lista\_esta\_vazia}}
+\index{lista\_esta\_vazia@{lista\_esta\_vazia}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{lista\_esta\_vazia()}{lista\_esta\_vazia()}}
+{\footnotesize\ttfamily int lista\+\_\+esta\+\_\+vazia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Verifica se a lista está vazia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lista ligada dando \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se está vazia e 0 senão está 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listas_8h_affb39e37aef63ab00b6df8f9336f6673}\label{listas_8h_affb39e37aef63ab00b6df8f9336f6673}} 
+\index{listas.h@{listas.h}!proximo@{proximo}}
+\index{proximo@{proximo}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{proximo()}{proximo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} proximo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Devolve o próximo valor da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lista ligada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista que começa no elemento a seguir da lista dada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listas_8h_a18d863cdb6eb3e2ede74559c4d70b4e5}\label{listas_8h_a18d863cdb6eb3e2ede74559c4d70b4e5}} 
+\index{listas.h@{listas.h}!remove\_cabeca@{remove\_cabeca}}
+\index{remove\_cabeca@{remove\_cabeca}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{remove\_cabeca()}{remove\_cabeca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} remove\+\_\+cabeca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Remove a cabeça da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lista ligada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cauda da lista ligada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listas_8h_a7daf2472369dc2617e86e90118cc01e6}\label{listas_8h_a7daf2472369dc2617e86e90118cc01e6}} 
+\index{listas.h@{listas.h}!tamanho\_lista@{tamanho\_lista}}
+\index{tamanho\_lista@{tamanho\_lista}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{tamanho\_lista()}{tamanho\_lista()}}
+{\footnotesize\ttfamily int tamanho\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}}]{l }\end{DoxyParamCaption})}
+
+
+
+Mostra o tamanho da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & Lista \\
+\hline
+\end{DoxyParams}

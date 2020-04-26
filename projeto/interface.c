@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
-//#include <conio.h>
 #define BUF_SIZE 1024
 int interpretador (ESTADO *e);
 
@@ -32,15 +31,6 @@ void mostrar_tabuleiro(ESTADO *e) {
     printf("\n");
     mostrar_prompt(e);
 }
-
-/*void q() {
-    FILE *jogo;
-
-    jogo = fopen("file.txt", "w");
-
-    fprintf(jogo, "%s", "Programa terminado");
-    fclose(jogo);
-}*/
 
 void movs(FILE *jogo, ESTADO *e);
 
@@ -151,7 +141,6 @@ void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
     c.x = 0;
     c.y = 0;
     l = posicoes_possiveis(e, l);
-    LISTA m = l;
 
     while (lista_esta_vazia(l)==0) {
         a = devolve_cabeca(l);
@@ -173,27 +162,6 @@ void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
 
 }
 
-/*
-    while(lista_esta_vazia(m)==0){
-        a = devolve_cabeca(m);
-
-        if(tamanho_lista(l) % 2 == 0){
-            d = distancia_euclidiana(*a, target);
-            c = *a;
-        }
-        m = proximo(m);
-    }
-    jogar(e,c);
-
-
-   /* for (i;i<=tamanho_lista(l);i++) {
-        l = posicoes_possiveis(e,l);
-
-        if (tamanho_lista(l[i]) % 2 == 0)
-            jogar(e, c);
-    }
-}
- */
 int interpretador (ESTADO *e){
     char linha[BUF_SIZE];
     char file[BUF_SIZE];

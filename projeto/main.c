@@ -30,8 +30,6 @@ int main() {
     else{
         filename = argv[1];
         filename2 = argv[2];
-        printf("Filename : %s\n", filename);
-        printf("Filename2 : %s\n", filename2);
     }
 
     ler(filename,e);

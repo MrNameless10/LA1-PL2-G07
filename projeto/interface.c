@@ -79,7 +79,6 @@ void ler(char *ficheiro, ESTADO *e){
         }
     }
     fclose(jogo);
-    mostrar_tabuleiro(e);
 }
 
 void gr(char *ficheiro, ESTADO *e){
@@ -185,6 +184,7 @@ int interpretador (ESTADO *e){
     }
     else if(sscanf(linha,"ler %s", file) == 1){
         ler(file,e);
+        mostrar_tabuleiro(e);
 
     }else if(sscanf(linha,"%s", file) == 1 && !strcmp(file, "movs")){
         movs(stdout, e);

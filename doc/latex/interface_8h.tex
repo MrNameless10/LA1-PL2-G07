@@ -9,19 +9,44 @@ void \mbox{\hyperlink{interface_8h_aa0b6c1689e60ac852a73d67e066c1df5}{mostrar\+\
 int \mbox{\hyperlink{interface_8h_a24da95ebeede4a540e37790ce8be359b}{interpretador}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Recebe o input do jogador. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interface_8h_a86da472ab10e0eeb84614f53ef2fa83d}{ler}} (char $\ast$ficheiro, \mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
-\item 
+\begin{DoxyCompactList}\small\item\em Lê um ficheiro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interface_8h_af1aeaac32ef88d07f12ad4434deae8bb}{gr}} (char $\ast$ficheiro, \mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
-\item 
+\begin{DoxyCompactList}\small\item\em Grava um ficheiro. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interface_8h_a1fd532d3d252ff42d406a15757e2a401}{mostrar\+\_\+prompt}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
 \begin{DoxyCompactList}\small\item\em Imprime o prompt. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}{escreve\+\_\+tabuleiro}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e, F\+I\+LE $\ast$jogo)
-\begin{DoxyCompactList}\small\item\em Mostra o tabuleiro na linha de comandos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Mostra o tabuleiro na linha de comandos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8h_a52f8eb7a7c3f4118a8a7287d00476c1c}{movs}} (F\+I\+LE $\ast$jogo, \mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que mostra os movimentos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8h_a9dfbc982d23a619e36575d8e7ec8e41c}{jog}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que joga pelo jogador pela estrategia da distancia euclidian. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8h_a75a3c6feb2f2ec713f96559558b136d0}{jog2}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Função que joga pelo jogador pela estrategia baseada na paridade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8h_adad8e3f8dda46dfbaede645214b2e87e}{congratular\+\_\+jogador}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e, \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} c)
+\begin{DoxyCompactList}\small\item\em Função que congratula o jogador correspondente. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Definições das funções que fazem a ligação ao jogador 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{interface_8h_adad8e3f8dda46dfbaede645214b2e87e}\label{interface_8h_adad8e3f8dda46dfbaede645214b2e87e}} 
+\index{interface.h@{interface.h}!congratular\_jogador@{congratular\_jogador}}
+\index{congratular\_jogador@{congratular\_jogador}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{congratular\_jogador()}{congratular\_jogador()}}
+{\footnotesize\ttfamily void congratular\+\_\+jogador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e,  }\item[{\mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Função que congratula o jogador correspondente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado\\
+\hline
+{\em \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}} & da ultima jogada \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}\label{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}} 
 \index{interface.h@{interface.h}!escreve\_tabuleiro@{escreve\_tabuleiro}}
 \index{escreve\_tabuleiro@{escreve\_tabuleiro}!interface.h@{interface.h}}
@@ -45,7 +70,11 @@ Mostra o tabuleiro na linha de comandos.
 \doxysubsubsection{\texorpdfstring{gr()}{gr()}}
 {\footnotesize\ttfamily void gr (\begin{DoxyParamCaption}\item[{char $\ast$}]{ficheiro,  }\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
 
-/brief Grava um ficheiro
+
+
+Grava um ficheiro. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em ficheiro} & \\
 \hline
@@ -65,13 +94,47 @@ Recebe o input do jogador.
 {\em e} & aponta para o estado do jogo \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a9dfbc982d23a619e36575d8e7ec8e41c}\label{interface_8h_a9dfbc982d23a619e36575d8e7ec8e41c}} 
+\index{interface.h@{interface.h}!jog@{jog}}
+\index{jog@{jog}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{jog()}{jog()}}
+{\footnotesize\ttfamily void jog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que joga pelo jogador pela estrategia da distancia euclidian. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado do jogo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a75a3c6feb2f2ec713f96559558b136d0}\label{interface_8h_a75a3c6feb2f2ec713f96559558b136d0}} 
+\index{interface.h@{interface.h}!jog2@{jog2}}
+\index{jog2@{jog2}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{jog2()}{jog2()}}
+{\footnotesize\ttfamily void jog2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que joga pelo jogador pela estrategia baseada na paridade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado do jogo \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_a86da472ab10e0eeb84614f53ef2fa83d}\label{interface_8h_a86da472ab10e0eeb84614f53ef2fa83d}} 
 \index{interface.h@{interface.h}!ler@{ler}}
 \index{ler@{ler}!interface.h@{interface.h}}
 \doxysubsubsection{\texorpdfstring{ler()}{ler()}}
 {\footnotesize\ttfamily void ler (\begin{DoxyParamCaption}\item[{char $\ast$}]{ficheiro,  }\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
 
-/brief Lê um ficheiro
+
+
+Lê um ficheiro. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em ficheiro} & \\
 \hline
@@ -104,5 +167,20 @@ Mostra o tabuleiro na linha de comandos.
 
 \begin{DoxyParams}{Parameters}
 {\em e} & aponta para o estado do jogo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a52f8eb7a7c3f4118a8a7287d00476c1c}\label{interface_8h_a52f8eb7a7c3f4118a8a7287d00476c1c}} 
+\index{interface.h@{interface.h}!movs@{movs}}
+\index{movs@{movs}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{movs()}{movs()}}
+{\footnotesize\ttfamily void movs (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{jogo,  }\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Função que mostra os movimentos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em jogo} & \\
 \hline
 \end{DoxyParams}

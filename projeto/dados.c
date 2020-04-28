@@ -2,7 +2,6 @@
 #include "logica.h"
 #include "listas.h"
 #include <stdlib.h>
-#include <stdio.h>
 #include <math.h>
 
 ESTADO *inicializar_estado() {

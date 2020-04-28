@@ -1,7 +1,4 @@
-#include "logica.h"
 #include "dados.h"
-#include <math.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 int valida_jogada(ESTADO *e, COORDENADA c){

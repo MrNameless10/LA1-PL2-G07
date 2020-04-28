@@ -1,6 +1,9 @@
+//
+// Created by miguel on 28/04/2020.
+//
+
 #include "listas.h"
 #include <stdlib.h>
-
 
 LISTA criar_lista(){
     LISTA l = malloc(sizeof(NODO));
@@ -39,10 +42,4 @@ LISTA remove_cabeca(LISTA l){
 int lista_esta_vazia(LISTA l){
     if (l == NULL || (l->valor == NULL &&  l->prox == NULL)) return 1;
     else return 0;
-}
-
-int tamanho_lista(LISTA l){
-    int tamanho;
-    tamanho = sizeof(l)/ sizeof(l[0]);
-    return tamanho;
 }

@@ -3,6 +3,7 @@
 Definições das funções que fazem a ligação ao jogador
 */
 #include "dados.h"
+#include <stdio.h>
 
 /**
 \brief Mostra o tabuleiro na linha de comandos @param e aponta para o estado do jogo

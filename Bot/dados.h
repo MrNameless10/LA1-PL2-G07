@@ -1,5 +1,10 @@
-#ifndef UNTITLED_CAMADA_DE_DADOS_H
-#define UNTITLED_CAMADA_DE_DADOS_H
+//
+// Created by miguel on 28/04/2020.
+//
+
+#ifndef BOT_DADOS_H
+#define BOT_DADOS_H
+//#include <stdio.h>
 #include "listas.h"
 
 /**
@@ -67,7 +72,6 @@ int obter_numero_de_jogadas(ESTADO *estado);
  */
 CASA obter_estado_casa(ESTADO *e, COORDENADA c);
 
-
 /**
 \brief Devolve o valor da casa @param e aponta para o estado @param x Coluna da jogada @param y Linha da jogada @returns Valor da casa
 */
@@ -79,19 +83,14 @@ CASA obter_casa(ESTADO *e,int x,int y);
 COORDENADA obter_ultima_jogada(ESTADO *e);
 
 /**
-\brief Muda o valor de uma casa @param e aponta para o estado @param c Coordenada
-*/
-void alterar_casa(ESTADO *e, COORDENADA c);
-
-/**
 \brief Altera a ultima jogada @param e aponta para o estado @param c COORDENADA da ultima jogada
 */
 void alterar_ultima_jogada(ESTADO *e, COORDENADA c);
 
 /**
-\brief Aumenta o valor do comando @param e aponta para o estado
+\brief Muda o valor de uma casa @param e aponta para o estado @param c Coordenada
 */
-int add_comando(ESTADO *e);
+void alterar_casa(ESTADO *e, COORDENADA c);
 
 /**
 \brief Altera o jogador @param e aponta para o estado
@@ -99,9 +98,9 @@ int add_comando(ESTADO *e);
 void alterar_jogador_atual(ESTADO *e);
 
 /**
-\brief Verifica se o jogo acabou @param e aponta para o estado @param c COORDENADA da ultima jogada @returns Jogador vencedor
+\brief Altera jogadas @param e aponta para o estado @param c COORDENADA da jogada a ser inserida na array das jogadas
 */
-int fim_de_jogo(ESTADO *e, COORDENADA c);
+void alterar_jogadas(ESTADO *e, COORDENADA c);
 
 /**
 \brief Aumenta uma jogada se o jogador atual for 1 @param e aponta para o estado
@@ -109,24 +108,14 @@ int fim_de_jogo(ESTADO *e, COORDENADA c);
 void alterar_num_jogadas(ESTADO *e);
 
 /**
-\brief Altera jogadas @param e aponta para o estado @param c COORDENADA da jogada a ser inserida na array das jogadas
+\brief Aumenta o valor do comando @param e aponta para o estado
 */
-void alterar_jogadas(ESTADO *e, COORDENADA c);
+int add_comando(ESTADO *e);
 
 /**
-\brief Vê as casa ocupadas a volta da coordenada @param c COORDENADA @returns Número de casas ocupados
+\brief Lê uma linha e guarda no estado de jogo @param Linha @param numlinha Index da linha @param e aponta para o estado do jogo
 */
-int bloqueado (ESTADO *e, COORDENADA c);
-
-/**
-\brief Adiciona 1 ao número de comandos @param e aponta para o estado do jogo
-*/
-int obter_num_comandos (ESTADO *e);
-
-/**
-\brief Recebe a jogada a ler @param e aponta para o estado do jogo @param c coluna @param n linha
-*/
-void jogadas_anteriores_guardadas(ESTADO *e, char c, int n);
+void seeline(char const *linha, int nlinha, ESTADO *e);
 
 /**
 \brief Retorna coordenadas @param e aponta para o estado do jogo @param i Número da jogada @param j Jogador atual @returns 0 se a Jogada não existe e \n 1 se a Jogada existe
@@ -139,25 +128,14 @@ int jogadas_guardadas(ESTADO *e, int i, int j);
 char* str_jogada_guardada(ESTADO *e, int i, int j);
 
 /**
-\brief Lê uma linha e guarda no estado de jogo @param Linha @param numlinha Index da linha @param e aponta para o estado do jogo
+\brief Recebe a jogada a ler @param e aponta para o estado do jogo @param c coluna @param n linha
 */
-void lelinha(char const *linha, int nlinha, ESTADO *e);
-
-//ESTADO *novo_estado(FILE *);
-/**
-\brief Dá reset ao tabuleiro @param e aponta para o estado do jogo
-*/
-void reset_estado(ESTADO *e);
+void jogadas_anteriores_guardadas(ESTADO *e, char c, int n);
 
 /**
-\brief Altera número da jogada atual @param num numero da ronda onde altera a jogada atual @param e aponta para o estado do jogo
+\brief Vê as casa ocupadas a volta da coordenada @param c COORDENADA @returns Número de casas ocupados
 */
-void posicao(int num, ESTADO *e);
-
-/**
-\brief Verifica o número de jogadas @param e aponta para o estado de jogo
-*/
-void decrementa_ncomandos(ESTADO *e);
+int bloqueado (ESTADO *e, COORDENADA c);
 
 /**
 \brief Vê as posicoes possiveis @param e aponta para o estado de jogo @param l uma lista
@@ -169,4 +147,4 @@ LISTA posicoes_possiveis(ESTADO *e, LISTA l);
 */
 float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2);
 
-#endif //UNTITLED_CAMADA_DE_DADOS_H
+#endif //BOT_DADOS_H

@@ -1,11 +1,11 @@
 #include "dados.h"
 #include "logica.h"
+#include "interface.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
 #define BUF_SIZE 1024
-int interpretador (ESTADO *e);
 
 void mostrar_prompt(ESTADO *e){
     printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1);
@@ -40,8 +40,6 @@ void congratular_jogador(ESTADO *e, COORDENADA c){
         exit(0);
     }
 }
-
-void movs(FILE *jogo, ESTADO *e);
 
 void escreve_tabuleiro(ESTADO *e, FILE *jogo) {
     int x ,y;

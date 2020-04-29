@@ -165,7 +165,7 @@ void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
         e->num_jogadas++;
     }else{
         e->jogadas[e->num_jogadas].jogador1.x = c - 'a';
-        e->jogadas[e->num_jogadas].jogador1.x = n - 1;
+        e->jogadas[e->num_jogadas].jogador1.y = n - 1;
         e->jogador_atual = 2;
     }
 }

@@ -11,11 +11,6 @@
 int valida_jogada(ESTADO*e, COORDENADA c);
 
 /**
-\brief Verifica se o jogo acabou @param e aponta para o estado @param c COORDENADA da ultima jogada @returns Jogador vencedor
-*/
-int fim_de_jogo(ESTADO *e, COORDENADA c);
-
-/**
 \brief  Joga, atualizando os valores do estado do tabuleiro @param e aponta para o estado @param c COORDENADA da jogada a ser efetuada
 */
 int jogar(ESTADO *e, COORDENADA c);

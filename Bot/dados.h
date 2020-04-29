@@ -1,10 +1,6 @@
-//
-// Created by miguel on 28/04/2020.
-//
-
 #ifndef BOT_DADOS_H
 #define BOT_DADOS_H
-//#include <stdio.h>
+
 #include "listas.h"
 
 /**
@@ -108,11 +104,6 @@ void alterar_jogadas(ESTADO *e, COORDENADA c);
 void alterar_num_jogadas(ESTADO *e);
 
 /**
-\brief Aumenta o valor do comando @param e aponta para o estado
-*/
-int add_comando(ESTADO *e);
-
-/**
 \brief Lê uma linha e guarda no estado de jogo @param Linha @param numlinha Index da linha @param e aponta para o estado do jogo
 */
 void seeline(char const *linha, int nlinha, ESTADO *e);
@@ -131,11 +122,6 @@ char* str_jogada_guardada(ESTADO *e, int i, int j);
 \brief Recebe a jogada a ler @param e aponta para o estado do jogo @param c coluna @param n linha
 */
 void jogadas_anteriores_guardadas(ESTADO *e, char c, int n);
-
-/**
-\brief Vê as casa ocupadas a volta da coordenada @param c COORDENADA @returns Número de casas ocupados
-*/
-int bloqueado (ESTADO *e, COORDENADA c);
 
 /**
 \brief Vê as posicoes possiveis @param e aponta para o estado de jogo @param l uma lista

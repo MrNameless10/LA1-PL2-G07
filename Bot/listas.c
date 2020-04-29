@@ -33,12 +33,6 @@ LISTA proximo(LISTA l){
     return l->prox;
 }
 
-LISTA remove_cabeca(LISTA l){
-    LISTA m = l->prox;
-    free(l);
-    return m;
-}
-
 int lista_esta_vazia(LISTA l){
     if (l == NULL || (l->valor == NULL &&  l->prox == NULL)) return 1;
     else return 0;

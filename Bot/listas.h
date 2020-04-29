@@ -34,11 +34,6 @@ void *devolve_cabeca(LISTA l);
 LISTA proximo(LISTA l);
 
 /**
-\brief Remove a cabeça da lista @param l Lista ligada @returns Cauda da lista ligada
- */
-LISTA remove_cabeca(LISTA l);
-
-/**
 \brief Verifica se a lista está vazia @param l Lista ligada dando @returns 1 se está vazia e 0 senão está
  */
 int lista_esta_vazia(LISTA l);

@@ -1,11 +1,6 @@
-//
-// Created by miguel on 28/04/2020.
-//
 #include "dados.h"
-#include "interface.h"
 #include <stdlib.h>
 #include <limits.h>
-
 
 int valida_jogada(ESTADO *e, COORDENADA c){
     int x1 = e->ultima_jogada.x, y1 = e->ultima_jogada.y;
@@ -17,21 +12,6 @@ int valida_jogada(ESTADO *e, COORDENADA c){
         if(casa_coord == VAZIO) return 1;
     }
     return 0;
-}
-
-int fim_de_jogo(ESTADO *e, COORDENADA c) {
-    COORDENADA cor;
-    if (c.y == 7 && c.x == 7) return 2;
-    if (c.y == 0 && c.x == 0) return 1;
-    if (bloqueado(e,c)==8) return (obter_jogador_atual(e)== 1 ? 2 : 1);
-    for (int i = c.y - 1; i <= c.y + 1; i++) {
-        for (int k = c.x - 1; k <= c.x + 1; k++) {
-            cor.x = i;
-            cor.y = k;
-            if (valida_jogada(e, cor)==0) return 0;
-        }
-    }
-    return (obter_jogador_atual(e)== 1 ? 2 : 1);
 }
 
 int jogar(ESTADO *e, COORDENADA c) {
@@ -74,5 +54,4 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
         m = proximo(m);
     }
     jogar(e,c);
-    congratular_jogador(e,c);
 }

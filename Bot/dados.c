@@ -1,7 +1,3 @@
-//
-// Created by miguel on 28/04/2020.
-//
-
 #include "dados.h"
 #include <stdlib.h>
 #include <math.h>
@@ -82,10 +78,6 @@ void alterar_num_jogadas(ESTADO *e){
         e->num_jogadas++;
 }
 
-int add_comando(ESTADO *e){
-    return e->num_comandos += 1;
-}
-
 void seeline(char const *linha, int nlinha, ESTADO *e) {
     for (int i = 7; i >= 0; i--) {
         if (linha[i] == '*') {
@@ -135,38 +127,6 @@ void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
     }
 }
 
-int bloqueado (ESTADO *e, COORDENADA c){
-    COORDENADA cor;
-    int r=0;
-    cor.x = c.x+1;
-    cor.y = c.y;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x+1;
-    cor.y = c.y+1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x+1;
-    cor.y = c.y-1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x;
-    cor.y = c.y+1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x;
-    cor.y = c.y-1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x-1;
-    cor.y = c.y;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x-1;
-    cor.y = c.y+1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x-1;
-    cor.y = c.y-1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-
-    return r;
-}
-
-
 float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2){
 
     float d = sqrtf(pow(c1.y - c2.y, 2) + pow(c1.x - c2.x, 2));
@@ -191,6 +151,5 @@ LISTA posicoes_possiveis(ESTADO *e, LISTA l){
             }
         }
     }
-
     return l;
 }

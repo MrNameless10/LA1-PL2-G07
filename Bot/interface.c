@@ -1,37 +1,6 @@
-//
-// Created by miguel on 28/04/2020.
-//
 #include "dados.h"
-#include "logica.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-void mostrar_prompt(ESTADO *e){
-    printf("# %d  PL%d  (%d)>", add_comando(e), obter_jogador_atual(e),obter_numero_de_jogadas(e)+1);
-}
-
-void mostrar_tabuleiro(ESTADO *e) {
-    int x ,y,i=8;
-    printf("\n");
-    for(y=7;y>=0; y--){
-        printf("%d ", i);
-        for(x=0;x<8;x++){
-            if (x==7 && y==7) printf("2");
-            else if (x==0 && y==0)printf("1");
-            else if (obter_casa(e,x,y)==BRANCA) printf("*");
-            else if (obter_casa(e,x,y)==PRETA) printf("#");
-            else if (obter_casa(e,x,y)==VAZIO) printf(".");
-            printf(" ");
-        }
-        printf("\n");
-        i--;
-    }
-    printf("  a b c d e f g h");
-    printf("\n");
-    mostrar_prompt(e);
-}
-
-
 
 void movs(FILE *jogo, ESTADO *e){
     char *string;
@@ -62,7 +31,6 @@ void escreve_tabuleiro(ESTADO *e, FILE *jogo) {
         fprintf(jogo, "\n");
     }
 }
-
 
 void ler(char *ficheiro, ESTADO *e){
     FILE *jogo;
@@ -96,14 +64,3 @@ void gr(char *ficheiro, ESTADO *e){
     movs(jogo, e);
     fclose(jogo);
 }
-
-void congratular_jogador(ESTADO *e, COORDENADA c){
-
-    if((fim_de_jogo (e,c))){
-        mostrar_tabuleiro(e);
-        printf ("\nGAME OVER. Parabéns jogador %d!\n",fim_de_jogo (e,c));
-        exit(0);
-    }
-}
-
-

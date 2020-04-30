@@ -40,6 +40,11 @@ void ler(char *ficheiro, ESTADO *e){
     free(e);
     e = inicializar_estado();
 
+    if(jogo == NULL){
+        printf("Erro. Ficheiro nao encontrado.\n");
+        exit(1);
+    }
+
     for (int i = 7; i >= 0; i--){    //muda para o novo estado do tabuleiro linha por linha.
         if((fgets(linha, 50, jogo) != NULL)) seeline(linha, i, e);
     }

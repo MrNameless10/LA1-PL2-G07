@@ -1,0 +1,1102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dados_8c" kind="file" language="C++">
+    <compoundname>dados.c</compoundname>
+    <includes refid="dados_8h" local="yes">dados.h</includes>
+    <includes refid="logica_8h" local="yes">logica.h</includes>
+    <includes refid="listas_8h" local="yes">listas.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>listas.h</label>
+        <link refid="listas_8h"/>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>logica.h</label>
+        <link refid="logica_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c</label>
+        <link refid="dados_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dados.h</label>
+        <link refid="dados_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dados_8c_1a7e0c7e26fb685d9ab501e19b05e6954f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+        <definition>ESTADO* inicializar_estado</definition>
+        <argsstring>()</argsstring>
+        <name>inicializar_estado</name>
+        <briefdescription>
+<para>Inicializa o valor do respetivo estado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Novo estado </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="7" column="8" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="7" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1acc6c25533188a99cb69c12e7f2c406ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_jogador_atual</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_jogador_atual</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Obtém o jogador atual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Jogador atual </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="27" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1abbfeab93575f20e5867482fd41a71cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_numero_de_jogadas</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_numero_de_jogadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Obtém o número de jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>número de jogadas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="31" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a6faa68373203923729ed38657aa0f768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
+        <definition>CASA obter_estado_casa</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>obter_estado_casa</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Obtém o estado da casa na coordenada C. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Estado da casa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="35" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1ad63a284746595f32293f89bf089f1d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref></type>
+        <definition>CASA obter_casa</definition>
+        <argsstring>(ESTADO *e, int x, int y)</argsstring>
+        <name>obter_casa</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Devolve o valor da casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coluna da jogada</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Linha da jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valor da casa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="39" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a40555aff97afc67bd1866f2785111310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+        <definition>COORDENADA obter_ultima_jogada</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_ultima_jogada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Devolve a última jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Coordenada da última jogada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="43" column="12" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1ae5817f462d7599ff9fadfdc8596270ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void alterar_casa</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>alterar_casa</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Muda o valor de uma casa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="47" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a8144bcdeeacf87ba2d67af596b5d790e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void alterar_ultima_jogada</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>alterar_ultima_jogada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Altera a ultima jogada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref> da ultima jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="56" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a7e6cc4477c5928973558177f1ac4bf1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int add_comando</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>add_comando</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Aumenta o valor do comando. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="61" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1aee744bc7c773a2688c336d86edba138d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void alterar_jogador_atual</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>alterar_jogador_atual</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Altera o jogador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="65" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a9271168cb6090bb1fcb51a7f197f41cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void alterar_jogadas</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>alterar_jogadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Altera jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref> da jogada a ser inserida na array das jogadas </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="70" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="70" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a405e2b7dd2c46eee64f39a3bc663a064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int jogadas_guardadas</definition>
+        <argsstring>(ESTADO *e, int i, int j)</argsstring>
+        <name>jogadas_guardadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Retorna coordenadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número da jogada</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jogador atual </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 se a Jogada não existe e <linebreak/>
+ 1 se a Jogada existe </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="81" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="81" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a685de94e6b2fabbe6f28df4f54bcf21b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* str_jogada_guardada</definition>
+        <argsstring>(ESTADO *e, int i, int j)</argsstring>
+        <name>str_jogada_guardada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Retorna a jogada a imprimir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número da jogada</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Jogador atual </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String com a jogada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="93" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="93" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1aa035768a1f6ddd02cccfdb8c4eb5f598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void alterar_num_jogadas</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>alterar_num_jogadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Aumenta uma jogada se o jogador atual for 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="105" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a38d349b0eab9c1249c89d3d03c6e1269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int obter_num_comandos</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>obter_num_comandos</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Adiciona 1 ao número de comandos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="110" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1abea7e4a154492a9eae4247aebb694570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bloqueado</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>bloqueado</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Vê as casa ocupadas a volta da coordenada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Número de casas ocupados </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="114" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="114" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1aa270702c2fca24f0a7a29c57e67384f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jogadas_anteriores_guardadas</definition>
+        <argsstring>(ESTADO *e, char c, int n)</argsstring>
+        <name>jogadas_anteriores_guardadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Recebe a jogada a ler. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coluna</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>linha </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="146" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="146" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a40d8a10a502d4693dbacacde1a0ac31b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lelinha</definition>
+        <argsstring>(char const *linha, int nlinha, ESTADO *e)</argsstring>
+        <name>lelinha</name>
+        <param>
+          <type>char const *</type>
+          <declname>linha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nlinha</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Lê uma linha e guarda no estado de jogo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string de linhas a ser lidas</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nlinha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de linhas</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="159" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="159" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a4f27d56dce335345b237a6c6aa571453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reset_estado</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>reset_estado</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Dá reset ao tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="171" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="171" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1adbf89d13b413a4fa0c0a1c51fe2eecb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void posicao</definition>
+        <argsstring>(int num, ESTADO *e)</argsstring>
+        <name>posicao</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Altera número da jogada atual. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numero da ronda onde altera a jogada atual</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="186" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="186" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1a2f7b8003e10e605685f7dc7e15fe6802" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void decrementa_ncomandos</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>decrementa_ncomandos</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Verifica o número de jogadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado de jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="194" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="194" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="dados_8c_1aae51d261500aba3e614642ecc0c6cfeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+        <definition>LISTA posicoes_possiveis</definition>
+        <argsstring>(ESTADO *e, LISTA l)</argsstring>
+        <name>posicoes_possiveis</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Vê as posicoes possiveis. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado de jogo</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uma lista </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" line="198" column="7" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c" bodystart="198" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dados_8h" kindref="compound">dados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logica_8h" kindref="compound">logica.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="listas_8h" kindref="compound">listas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*<ref refid="dados_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kindref="member">inicializar_estado</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e<sp/>=<sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref>));</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,y;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(y=0;y&lt;8;y++)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;<sp/>x&lt;8;<sp/>x++)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[x][y]<sp/>=<sp/>VAZIO;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[4][4]<sp/>=<sp/>BRANCA;<sp/></highlight><highlight class="comment">//posicao<sp/>da<sp/>peca<sp/>branca<sp/>no<sp/>inicio<sp/>do<sp/>jogo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a8b8aaf0ecf7c3239e0b7f5f60a3e82c2" kindref="member">num_comandos</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//e-&gt;jogadas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" kindref="member">obter_jogador_atual</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1abbfeab93575f20e5867482fd41a71cba" kindref="member">obter_numero_de_jogadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/><ref refid="dados_8h_1a6faa68373203923729ed38657aa0f768" kindref="member">obter_estado_casa</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>];</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kindref="member">CASA</ref><sp/><ref refid="dados_8h_1ad63a284746595f32293f89bf089f1d1a" kindref="member">obter_casa</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[x][y];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/><ref refid="dados_8h_1a40555aff97afc67bd1866f2785111310" kindref="member">obter_ultima_jogada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1ae5817f462d7599ff9fadfdc8596270ab" kindref="member">alterar_casa</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/><ref refid="dados_8h_1a40555aff97afc67bd1866f2785111310" kindref="member">obter_ultima_jogada</ref>(e).<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/><ref refid="dados_8h_1a40555aff97afc67bd1866f2785111310" kindref="member">obter_ultima_jogada</ref>(e).<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>tab[x][y]<sp/>=<sp/>PRETA;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>e<sp/>-&gt;<sp/>tab[c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>=<sp/>BRANCA;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a8144bcdeeacf87ba2d67af596b5d790e" kindref="member">alterar_ultima_jogada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a7e6cc4477c5928973558177f1ac4bf1b" kindref="member">add_comando</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a8b8aaf0ecf7c3239e0b7f5f60a3e82c2" kindref="member">num_comandos</ref><sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1aee744bc7c773a2688c336d86edba138d" kindref="member">alterar_jogador_atual</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" kindref="member">obter_jogador_atual</ref><sp/>(e)<sp/>==<sp/>1)<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a9271168cb6090bb1fcb51a7f197f41cd" kindref="member">alterar_jogadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador1.x<sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador1.y<sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador2.x<sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador2.y<sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a405e2b7dd2c46eee64f39a3bc663a064" kindref="member">jogadas_guardadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>e-&gt;num_jogadas)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref><sp/>==<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="dados_8h_1a685de94e6b2fabbe6f28df4f54bcf21b" kindref="member">str_jogada_guardada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>=<sp/>calloc(3,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[0]<sp/>=<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[i].jogador1.x<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[1]<sp/>=<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[i].jogador1.y<sp/>+<sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[0]<sp/>=<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[i].jogador2.x<sp/>+<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[1]<sp/>=<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[i].jogador2.y<sp/>+<sp/></highlight><highlight class="charliteral">&apos;1&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>string;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1aa035768a1f6ddd02cccfdb8c4eb5f598" kindref="member">alterar_num_jogadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dados_8h_1acc6c25533188a99cb69c12e7f2c406ef" kindref="member">obter_jogador_atual</ref>(e)==<sp/>1)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>++;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a38d349b0eab9c1249c89d3d03c6e1269" kindref="member">obter_num_comandos</ref><sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a8b8aaf0ecf7c3239e0b7f5f60a3e82c2" kindref="member">num_comandos</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1abea7e4a154492a9eae4247aebb694570" kindref="member">bloqueado</ref><sp/>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c){</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>cor;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r=0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>+1;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>+1;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>+1;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>+1;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>-1;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>+1;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>-1;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>-1;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>-1;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>+1;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>-1;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>c.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>-1;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>][cor.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>]<sp/>!=<sp/>VAZIO<sp/>||<sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,cor)==2)<sp/>r+=1;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1aa270702c2fca24f0a7a29c57e67384f0" kindref="member">jogadas_anteriores_guardadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador2.x<sp/>=<sp/>c<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador2.y<sp/>=<sp/>n<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>++;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador1.x<sp/>=<sp/>c<sp/>-<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref>].jogador1.y<sp/>=<sp/>n<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a40d8a10a502d4693dbacacde1a0ac31b" kindref="member">lelinha</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*linha,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nlinha,<sp/><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>7;<sp/>i<sp/>&gt;=<sp/>0;<sp/>i--){</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(linha[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[i][nlinha]<sp/>=<sp/>BRANCA;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>nlinha;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(linha[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;#&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[i][nlinha]<sp/>=<sp/>PRETA;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>e<sp/>-&gt;<sp/>tab[i][nlinha]<sp/>=<sp/>VAZIO;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a4f27d56dce335345b237a6c6aa571453" kindref="member">reset_estado</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/>y;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(y=0;y&lt;8;y++){</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(x=0;<sp/>x&lt;8;<sp/>x++){</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[x][y]<sp/>=<sp/>VAZIO;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a88f042640b66b99525b1c9d830893177" kindref="member">ultima_jogada</ref>.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a00c6ffee9c6e637d4178cb6e8846a578" kindref="member">tab</ref>[4][4]<sp/>=<sp/>BRANCA;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a06af1e846368d0fc9525e78f4d86faa3" kindref="member">num_jogadas</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a6f3701db06762a60333719d94aa4d28c" kindref="member">jogador_atual</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1adbf89d13b413a4fa0c0a1c51fe2eecb8" kindref="member">posicao</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num,<sp/><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dados_8h_1a4f27d56dce335345b237a6c6aa571453" kindref="member">reset_estado</ref>(e);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num;<sp/>i++){</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="logica_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kindref="member">jogar</ref>(e,<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[i].jogador1);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="logica_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kindref="member">jogar</ref>(e,<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a0e44ff9e999c7573f4b87cb8a7aba6c2" kindref="member">jogadas</ref>[i].jogador2);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dados_8h_1a2f7b8003e10e605685f7dc7e15fe6802" kindref="member">decrementa_ncomandos</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e){</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a8b8aaf0ecf7c3239e0b7f5f60a3e82c2" kindref="member">num_comandos</ref><sp/>=<sp/>e-&gt;<ref refid="struct_e_s_t_a_d_o_1a8b8aaf0ecf7c3239e0b7f5f60a3e82c2" kindref="member">num_comandos</ref><sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="dados_8h_1aae51d261500aba3e614642ecc0c6cfeb" kindref="member">posicoes_possiveis</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="structnodo" kindref="compound">LISTA</ref><sp/>l){</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c1<sp/>=<sp/><ref refid="dados_8h_1a40555aff97afc67bd1866f2785111310" kindref="member">obter_ultima_jogada</ref>(e),<sp/>c2,<sp/>*ec;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>c1.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>-<sp/>1;<sp/>i<sp/>&lt;=<sp/>c1.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>+<sp/>1;<sp/>i++){</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>c1.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>-<sp/>1;<sp/>j<sp/>&lt;=<sp/>c1.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>+<sp/>1;<sp/>++j)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c2.<ref refid="struct_c_o_o_r_d_e_n_a_d_a_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c2.x<sp/>=<sp/>j;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(e,<sp/>c2)==1){</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ec<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref>));</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ec-&gt;y<sp/>=<sp/>c2.y;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ec-&gt;x<sp/>=<sp/>c2.x;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l<sp/>=<sp/><ref refid="listas_8h_1a6ec793087950b61f792d8e184bf04d9d" kindref="member">insere_cabeca</ref>(l,<sp/>ec);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c"/>
+  </compounddef>
+</doxygen>

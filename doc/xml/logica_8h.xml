@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="logica_8h" kind="file" language="C++">
+    <compoundname>logica.h</compoundname>
+    <includes refid="dados_8h" local="yes">dados.h</includes>
+    <includedby refid="dados_8c" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c</includedby>
+    <includedby refid="interface_8c" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/main.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>listas.h</label>
+        <link refid="listas_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h</label>
+        <link refid="logica_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dados.h</label>
+        <link refid="dados_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int valida_jogada</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>valida_jogada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Verifica se a jogada é valida. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada da jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se Jogada Válida e <linebreak/>
+ 0 ou 2 se Jogada Inválida </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" line="13" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.c" bodystart="5" bodyend="15" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" declline="13" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="logica_8h_1ab9224677cba993c3221373ab1ae7cd6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fim_de_jogo</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>fim_de_jogo</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Verifica se o jogo acabou. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref> da ultima jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Jogador vencedor </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" line="18" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.c" bodystart="17" bodyend="30" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" declline="18" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="logica_8h_1a072209369d5aee94a351af68e7215fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float distancia_euclidiana</definition>
+        <argsstring>(COORDENADA c1, COORDENADA c2)</argsstring>
+        <name>distancia_euclidiana</name>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c2</declname>
+        </param>
+        <briefdescription>
+<para>Calcula a distância. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" line="23" column="7" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.c" bodystart="32" bodyend="36" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" declline="23" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="logica_8h_1ac313d7e553b1e2b5f266acb9bfff8141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int jogar</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>jogar</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Joga, atualizando os valores do estado do tabuleiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref> da jogada a ser efetuada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" line="28" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.c" bodystart="38" bodyend="48" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h" declline="28" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definições das funções que representam a jogabilidade do jogo </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>UNTITLED_LOGICA_DE_PROGRAMA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UNTITLED_LOGICA_DE_PROGRAMA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dados_8h" kindref="compound">dados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="logica_8h_1a2d4d0c62a9e078d27912af5a0af9c4ba" kindref="member">valida_jogada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="logica_8h_1ab9224677cba993c3221373ab1ae7cd6e" kindref="member">fim_de_jogo</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="logica_8h_1a072209369d5aee94a351af68e7215fc4" kindref="member">distancia_euclidiana</ref>(<ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c1<sp/>,<ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c2);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="logica_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kindref="member">jogar</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//UNTITLED_LOGICA_DE_PROGRAMA_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h"/>
+  </compounddef>
+</doxygen>

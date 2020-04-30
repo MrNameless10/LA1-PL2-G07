@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ultima_5fjogada_114',['ultima_jogada',['../struct_e_s_t_a_d_o.html#a88f042640b66b99525b1c9d830893177',1,'ESTADO']]]
+  ['tab_121',['tab',['../struct_e_s_t_a_d_o.html#a00c6ffee9c6e637d4178cb6e8846a578',1,'ESTADO']]]
 ];

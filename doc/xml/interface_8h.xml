@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="interface_8h" kind="file" language="C++">
+    <compoundname>interface.h</compoundname>
+    <includes refid="dados_8h" local="yes">dados.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="interface_8c" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/main.c</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>listas.h</label>
+        <link refid="listas_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h</label>
+        <link refid="interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>dados.h</label>
+        <link refid="dados_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrar_tabuleiro</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>mostrar_tabuleiro</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Mostra o tabuleiro na linha de comandos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="11" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="14" bodyend="33" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a24da95ebeede4a540e37790ce8be359b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int interpretador</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>interpretador</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Recebe o input do jogador. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="16" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="159" bodyend="209" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="16" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a86da472ab10e0eeb84614f53ef2fa83d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ler</definition>
+        <argsstring>(char *ficheiro, ESTADO *e)</argsstring>
+        <name>ler</name>
+        <param>
+          <type>char *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Lê um ficheiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ficheiro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ficheiro a ser lido</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="21" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="59" bodyend="80" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1af1aeaac32ef88d07f12ad4434deae8bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr</definition>
+        <argsstring>(char *ficheiro, ESTADO *e)</argsstring>
+        <name>gr</name>
+        <param>
+          <type>char *</type>
+          <declname>ficheiro</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Grava um ficheiro. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ficheiro</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ficheiro a ser gravado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="26" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="82" bodyend="90" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a1fd532d3d252ff42d406a15757e2a401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrar_prompt</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>mostrar_prompt</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Imprime o prompt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="31" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="10" bodyend="12" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1acdbfdb41df5dd74e031bdaf4a8e9c21d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void escreve_tabuleiro</definition>
+        <argsstring>(ESTADO *e, FILE *jogo)</argsstring>
+        <name>escreve_tabuleiro</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>jogo</declname>
+        </param>
+        <briefdescription>
+<para>Mostra o tabuleiro na linha de comandos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>guarda o jogo no File para o output </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="36" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="44" bodyend="57" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a52f8eb7a7c3f4118a8a7287d00476c1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void movs</definition>
+        <argsstring>(FILE *jogo, ESTADO *e)</argsstring>
+        <name>movs</name>
+        <param>
+          <type>FILE *</type>
+          <declname>jogo</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que mostra os movimentos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jogo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>file onde guarda os movimentos</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="41" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="92" bodyend="105" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a9dfbc982d23a619e36575d8e7ec8e41c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jog</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>jog</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que joga pelo jogador pela estrategia da distancia euclidian. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="46" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="107" bodyend="136" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="46" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1a75a3c6feb2f2ec713f96559558b136d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jog2</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>jog2</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que joga pelo jogador pela estrategia baseada na paridade. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado do jogo </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="51" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="138" bodyend="157" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8h_1adad8e3f8dda46dfbaede645214b2e87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void congratular_jogador</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>congratular_jogador</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função que congratula o jogador correspondente. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>aponta para o estado</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coordenada da ultima jogada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" line="56" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.c" bodystart="35" bodyend="42" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definições das funções que fazem a ligação ao jogador </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dados_8h" kindref="compound">dados.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" kindref="member">mostrar_tabuleiro</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a24da95ebeede4a540e37790ce8be359b" kindref="member">interpretador</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a86da472ab10e0eeb84614f53ef2fa83d" kindref="member">ler</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ficheiro,<sp/><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1af1aeaac32ef88d07f12ad4434deae8bb" kindref="member">gr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ficheiro,<sp/><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a1fd532d3d252ff42d406a15757e2a401" kindref="member">mostrar_prompt</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1acdbfdb41df5dd74e031bdaf4a8e9c21d" kindref="member">escreve_tabuleiro</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*jogo);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a52f8eb7a7c3f4118a8a7287d00476c1c" kindref="member">movs</ref>(FILE<sp/>*jogo,<sp/><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a9dfbc982d23a619e36575d8e7ec8e41c" kindref="member">jog</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1a75a3c6feb2f2ec713f96559558b136d0" kindref="member">jog2</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interface_8h_1adad8e3f8dda46dfbaede645214b2e87e" kindref="member">congratular_jogador</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h"/>
+  </compounddef>
+</doxygen>

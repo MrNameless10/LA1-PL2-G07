@@ -6,6 +6,10 @@
 \item 
 int \mbox{\hyperlink{logica_8h_a2d4d0c62a9e078d27912af5a0af9c4ba}{valida\+\_\+jogada}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e, \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} c)
 \begin{DoxyCompactList}\small\item\em Verifica se a jogada é valida. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{logica_8h_ab9224677cba993c3221373ab1ae7cd6e}{fim\+\_\+de\+\_\+jogo}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e, \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} c)
+\begin{DoxyCompactList}\small\item\em Verifica se o jogo acabou. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{logica_8h_a072209369d5aee94a351af68e7215fc4}{distancia\+\_\+euclidiana}} (\mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} c1, \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} c2)
+\begin{DoxyCompactList}\small\item\em Calcula a distância. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}{jogar}} (\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$e, \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} c)
 \begin{DoxyCompactList}\small\item\em Joga, atualizando os valores do estado do tabuleiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -14,6 +18,43 @@ int \mbox{\hyperlink{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}{jogar}} (\mbox
 Definições das funções que representam a jogabilidade do jogo 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{logica_8h_a072209369d5aee94a351af68e7215fc4}\label{logica_8h_a072209369d5aee94a351af68e7215fc4}} 
+\index{logica.h@{logica.h}!distancia\_euclidiana@{distancia\_euclidiana}}
+\index{distancia\_euclidiana@{distancia\_euclidiana}!logica.h@{logica.h}}
+\doxysubsubsection{\texorpdfstring{distancia\_euclidiana()}{distancia\_euclidiana()}}
+{\footnotesize\ttfamily float distancia\+\_\+euclidiana (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}}]{c1,  }\item[{\mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}}]{c2 }\end{DoxyParamCaption})}
+
+
+
+Calcula a distância. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & Coordenada\\
+\hline
+{\em c2} & Coordenada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{logica_8h_ab9224677cba993c3221373ab1ae7cd6e}\label{logica_8h_ab9224677cba993c3221373ab1ae7cd6e}} 
+\index{logica.h@{logica.h}!fim\_de\_jogo@{fim\_de\_jogo}}
+\index{fim\_de\_jogo@{fim\_de\_jogo}!logica.h@{logica.h}}
+\doxysubsubsection{\texorpdfstring{fim\_de\_jogo()}{fim\_de\_jogo()}}
+{\footnotesize\ttfamily int fim\+\_\+de\+\_\+jogo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_e_s_t_a_d_o}{E\+S\+T\+A\+DO}} $\ast$}]{e,  }\item[{\mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Verifica se o jogo acabou. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & aponta para o estado\\
+\hline
+{\em c} & \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}} da ultima jogada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Jogador vencedor 
+\end{DoxyReturn}
 \mbox{\Hypertarget{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}\label{logica_8h_ac313d7e553b1e2b5f266acb9bfff8141}} 
 \index{logica.h@{logica.h}!jogar@{jogar}}
 \index{jogar@{jogar}!logica.h@{logica.h}}

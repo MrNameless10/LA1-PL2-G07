@@ -1,6 +1,7 @@
 \hypertarget{interface_8h}{}\doxysection{C\+:/\+Users/migue/\+Documents/\+Git\+Hub/\+L\+A1-\/\+P\+L2-\/\+G07/\+L\+A1-\/\+P\+L2-\/\+G07/projeto/interface.h File Reference}
 \label{interface_8h}\index{C:/Users/migue/Documents/GitHub/LA1-\/PL2-\/G07/LA1-\/PL2-\/G07/projeto/interface.h@{C:/Users/migue/Documents/GitHub/LA1-\/PL2-\/G07/LA1-\/PL2-\/G07/projeto/interface.h}}
 {\ttfamily \#include \char`\"{}dados.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,7 +45,7 @@ Função que congratula o jogador correspondente.
 \begin{DoxyParams}{Parameters}
 {\em e} & aponta para o estado\\
 \hline
-{\em \mbox{\hyperlink{struct_c_o_o_r_d_e_n_a_d_a}{C\+O\+O\+R\+D\+E\+N\+A\+DA}}} & da ultima jogada \\
+{\em c} & coordenada da ultima jogada \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}\label{interface_8h_acdbfdb41df5dd74e031bdaf4a8e9c21d}} 
@@ -61,7 +62,7 @@ Mostra o tabuleiro na linha de comandos.
 \begin{DoxyParams}{Parameters}
 {\em e} & aponta para o estado do jogo\\
 \hline
-{\em guarda} & o jogo no File para o output \\
+{\em jogo} & guarda o jogo no File para o output \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_af1aeaac32ef88d07f12ad4434deae8bb}\label{interface_8h_af1aeaac32ef88d07f12ad4434deae8bb}} 
@@ -76,7 +77,9 @@ Grava um ficheiro.
 
 
 \begin{DoxyParams}{Parameters}
-{\em ficheiro} & \\
+{\em ficheiro} & ficheiro a ser gravado\\
+\hline
+{\em e} & aponta para o estado do jogo \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_a24da95ebeede4a540e37790ce8be359b}\label{interface_8h_a24da95ebeede4a540e37790ce8be359b}} 
@@ -136,7 +139,9 @@ Lê um ficheiro.
 
 
 \begin{DoxyParams}{Parameters}
-{\em ficheiro} & \\
+{\em ficheiro} & ficheiro a ser lido\\
+\hline
+{\em e} & aponta para o estado do jogo \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{interface_8h_a1fd532d3d252ff42d406a15757e2a401}\label{interface_8h_a1fd532d3d252ff42d406a15757e2a401}} 
@@ -181,6 +186,8 @@ Função que mostra os movimentos.
 
 
 \begin{DoxyParams}{Parameters}
-{\em jogo} & \\
+{\em jogo} & file onde guarda os movimentos\\
+\hline
+{\em e} & aponta para o estado do jogo \\
 \hline
 \end{DoxyParams}

@@ -78,52 +78,6 @@ void alterar_jogadas(ESTADO *e, COORDENADA c){
     }
 }
 
-int fim_de_jogo(ESTADO *e, COORDENADA c) {
-    COORDENADA cor;
-    if (c.y == 7 && c.x == 7) return 2;
-    if (c.y == 0 && c.x == 0) return 1;
-    if (bloqueado(e,c)==8) return (obter_jogador_atual(e)== 1 ? 2 : 1);
-    for (int i = c.y - 1; i <= c.y + 1; i++) {
-        for (int k = c.x - 1; k <= c.x + 1; k++) {
-            cor.x = i;
-            cor.y = k;
-            if (valida_jogada(e, cor)==0) return 0;
-        }
-    }
-    return (obter_jogador_atual(e)== 1 ? 2 : 1);
-}
-
-int bloqueado (ESTADO *e, COORDENADA c){
-    COORDENADA cor;
-    int r=0;
-    cor.x = c.x+1;
-    cor.y = c.y;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x+1;
-    cor.y = c.y+1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x+1;
-    cor.y = c.y-1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x;
-    cor.y = c.y+1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x;
-    cor.y = c.y-1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x-1;
-    cor.y = c.y;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x-1;
-    cor.y = c.y+1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-    cor.x = c.x-1;
-    cor.y = c.y-1;
-    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
-
-    return r;
-}
-
 int jogadas_guardadas(ESTADO *e, int i, int j) {
     if (i < e->num_jogadas)
         return 1;
@@ -157,6 +111,38 @@ int obter_num_comandos (ESTADO *e){
     return e->num_comandos;
 }
 
+int bloqueado (ESTADO *e, COORDENADA c){
+    COORDENADA cor;
+    int r=0;
+    cor.x = c.x+1;
+    cor.y = c.y;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+    cor.x = c.x+1;
+    cor.y = c.y+1;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+    cor.x = c.x+1;
+    cor.y = c.y-1;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+    cor.x = c.x;
+    cor.y = c.y+1;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+    cor.x = c.x;
+    cor.y = c.y-1;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+    cor.x = c.x-1;
+    cor.y = c.y;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+    cor.x = c.x-1;
+    cor.y = c.y+1;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+    cor.x = c.x-1;
+    cor.y = c.y-1;
+    if(e->tab[cor.x][cor.y] != VAZIO || valida_jogada(e,cor)==2) r+=1;
+
+    return r;
+}
+
+
 void jogadas_anteriores_guardadas(ESTADO *e, char c, int n) {
     if (e->jogador_atual == 2) {
         e->jogadas[e->num_jogadas].jogador2.x = c - 'a';
@@ -181,31 +167,6 @@ void lelinha(char const *linha, int nlinha, ESTADO *e){
         }else e -> tab[i][nlinha] = VAZIO;
     }
 }
-
-/*ESTADO *novo_estado(FILE *jogo) {
-    ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
-    char linha[25];
-    int c;
-    int x,y;
-    for(y=0;y<8;y++) {
-        for (x=0; x<8; x++) {
-            if(fscanf(jogo,"%d",&c) == 46) e->tab[x][y] = VAZIO;
-            if(fscanf(jogo,"%d",&c) == 42){
-                e->tab[x][y] = BRANCA;
-                e->ultima_jogada.x = x;
-                e->ultima_jogada.y = y;
-            }
-            if(fscanf(jogo,"%d",&c) == 35) e->tab[x][y] = PRETA;
-        }
-    }
-
-    //e->tab[ultima_jogada.x][ultima_jogada.y] = BRANCA; //posicao da peca branca no inicio do jogo
-    //e->num_jogadas = 0;
-    //e->jogador_atual = 1;
-    //e->num_comandos = 0;
-    //e->jogada
-    return e;
-}*/
 
 void reset_estado(ESTADO *e){
     int x, y;
@@ -255,20 +216,3 @@ LISTA posicoes_possiveis(ESTADO *e, LISTA l){
 
     return l;
 }
-
-float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2){
-
-    float d = sqrtf(pow(c1.y - c2.y, 2) + pow(c1.x - c2.x, 2));
-    return d;
-}
-
-
-
-/*ESTADO cabeca_proxlista (LISTA l) {
-    COORDENADA *c1;
-    LISTA m = l;
-    m = proximo(l);
-    c1= devolve_cabeca(m);
-    return c1;
-}
- */

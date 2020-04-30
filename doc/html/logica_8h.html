@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>la1-pl2-g07: C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h File Reference</title>
+<title>LA1-PL2-G07: C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">la1-pl2-g07
+   <div id="projectname">LA1-PL2-G07
    </div>
   </td>
  </tr>
@@ -80,6 +80,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2d4d0c62a9e078d27912af5a0af9c4ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a2d4d0c62a9e078d27912af5a0af9c4ba">valida_jogada</a> (<a class="el" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, <a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a> c)</td></tr>
 <tr class="memdesc:a2d4d0c62a9e078d27912af5a0af9c4ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a jogada é valida.  <a href="logica_8h.html#a2d4d0c62a9e078d27912af5a0af9c4ba">More...</a><br /></td></tr>
 <tr class="separator:a2d4d0c62a9e078d27912af5a0af9c4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9224677cba993c3221373ab1ae7cd6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#ab9224677cba993c3221373ab1ae7cd6e">fim_de_jogo</a> (<a class="el" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, <a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a> c)</td></tr>
+<tr class="memdesc:ab9224677cba993c3221373ab1ae7cd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se o jogo acabou.  <a href="logica_8h.html#ab9224677cba993c3221373ab1ae7cd6e">More...</a><br /></td></tr>
+<tr class="separator:ab9224677cba993c3221373ab1ae7cd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072209369d5aee94a351af68e7215fc4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#a072209369d5aee94a351af68e7215fc4">distancia_euclidiana</a> (<a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a> c1, <a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a> c2)</td></tr>
+<tr class="memdesc:a072209369d5aee94a351af68e7215fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcula a distância.  <a href="logica_8h.html#a072209369d5aee94a351af68e7215fc4">More...</a><br /></td></tr>
+<tr class="separator:a072209369d5aee94a351af68e7215fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac313d7e553b1e2b5f266acb9bfff8141"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logica_8h.html#ac313d7e553b1e2b5f266acb9bfff8141">jogar</a> (<a class="el" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, <a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a> c)</td></tr>
 <tr class="memdesc:ac313d7e553b1e2b5f266acb9bfff8141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joga, atualizando os valores do estado do tabuleiro.  <a href="logica_8h.html#ac313d7e553b1e2b5f266acb9bfff8141">More...</a><br /></td></tr>
 <tr class="separator:ac313d7e553b1e2b5f266acb9bfff8141"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,6 +93,81 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Definições das funções que representam a jogabilidade do jogo </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a072209369d5aee94a351af68e7215fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072209369d5aee94a351af68e7215fc4">&#9670;&nbsp;</a></span>distancia_euclidiana()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float distancia_euclidiana </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a>&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a>&#160;</td>
+          <td class="paramname"><em>c2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcula a distância. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">c1</td><td>Coordenada</td></tr>
+    <tr><td class="paramname">c2</td><td>Coordenada </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9224677cba993c3221373ab1ae7cd6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9224677cba993c3221373ab1ae7cd6e">&#9670;&nbsp;</a></span>fim_de_jogo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fim_de_jogo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_e_s_t_a_d_o.html">ESTADO</a> *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a>&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se o jogo acabou. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>aponta para o estado</td></tr>
+    <tr><td class="paramname">c</td><td><a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html" title="Tipos de dados para as respetivas coordenadas.">COORDENADA</a> da ultima jogada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Jogador vencedor </dd></dl>
+
+</div>
+</div>
 <a id="ac313d7e553b1e2b5f266acb9bfff8141"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac313d7e553b1e2b5f266acb9bfff8141">&#9670;&nbsp;</a></span>jogar()</h2>
 

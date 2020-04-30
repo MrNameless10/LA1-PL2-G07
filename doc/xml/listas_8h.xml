@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="listas_8h" kind="file" language="C++">
+    <compoundname>listas.h</compoundname>
+    <includedby refid="dados_8h" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.h</includedby>
+    <includedby refid="dados_8c" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.c</includedby>
+    <includedby refid="listas_8c" local="yes">C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h</label>
+        <link refid="listas_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/logica.h</label>
+        <link refid="logica_8h"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h</label>
+        <link refid="interface_8h"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/dados.h</label>
+        <link refid="dados_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnodo" prot="public">nodo</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" prot="public" static="no">
+        <type>struct <ref refid="structnodo" kindref="compound">nodo</ref> *</type>
+        <definition>typedef struct nodo* LISTA</definition>
+        <argsstring></argsstring>
+        <name>LISTA</name>
+        <briefdescription>
+<para>Definição genérica das listas ligadas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="17" column="7"/>
+      </memberdef>
+      <memberdef kind="typedef" id="listas_8h_1ab352ead3fb06267f3afdd032d67c189c" prot="public" static="no">
+        <type>struct <ref refid="structnodo" kindref="compound">nodo</ref></type>
+        <definition>typedef struct nodo NODO</definition>
+        <argsstring></argsstring>
+        <name>NODO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nodo da lista </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="17" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="listas_8h_1ae3b99323b6f8f35d80bb69ff1a27985e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+        <definition>LISTA criar_lista</definition>
+        <argsstring>()</argsstring>
+        <name>criar_lista</name>
+        <briefdescription>
+<para>Cria um lista ligada. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>apontando para a mesma </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="22" column="7" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.c" bodystart="5" bodyend="11" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" declline="22" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="listas_8h_1a6ec793087950b61f792d8e184bf04d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+        <definition>LISTA insere_cabeca</definition>
+        <argsstring>(LISTA l, void *valor)</argsstring>
+        <name>insere_cabeca</name>
+        <param>
+          <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+<para>Insere um valor à cabeça. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista ligada</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>para ser adicionado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>apontando para a lista ligada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="27" column="7" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.c" bodystart="13" bodyend="23" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" declline="27" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="listas_8h_1af90a7ac214fd566bfb7288d744c94185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* devolve_cabeca</definition>
+        <argsstring>(LISTA l)</argsstring>
+        <name>devolve_cabeca</name>
+        <param>
+          <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Devolve a cabeça da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista ligada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valor guardado na cabeça </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="32" column="6" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.c" bodystart="25" bodyend="27" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="listas_8h_1affb39e37aef63ab00b6df8f9336f6673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+        <definition>LISTA proximo</definition>
+        <argsstring>(LISTA l)</argsstring>
+        <name>proximo</name>
+        <param>
+          <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Devolve o próximo valor da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista ligada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lista que começa no elemento a seguir da lista dada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="37" column="7" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.c" bodystart="29" bodyend="31" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" declline="37" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="listas_8h_1a18d863cdb6eb3e2ede74559c4d70b4e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+        <definition>LISTA remove_cabeca</definition>
+        <argsstring>(LISTA l)</argsstring>
+        <name>remove_cabeca</name>
+        <param>
+          <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Remove a cabeça da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista ligada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Cauda da lista ligada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="42" column="7" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.c" bodystart="33" bodyend="37" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" declline="42" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="listas_8h_1a7e919af230d184128c5465451ea64a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lista_esta_vazia</definition>
+        <argsstring>(LISTA l)</argsstring>
+        <name>lista_esta_vazia</name>
+        <param>
+          <type><ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref></type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Verifica se a lista está vazia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista ligada dando </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 se está vazia e 0 senão está </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" line="47" column="5" bodyfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.c" bodystart="39" bodyend="42" declfile="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h" declline="47" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definições das listas ligadas </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>LA1_PL2_G07_LISTAS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LA1_PL2_G07_LISTAS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structnodo" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnodo" kindref="compound">nodo</ref>{</highlight></codeline>
+<codeline lineno="13" refid="structnodo_1ac78f1a082a695595f0d3ed32cead97f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structnodo_1ac78f1a082a695595f0d3ed32cead97f4" kindref="member">valor</ref>;</highlight></codeline>
+<codeline lineno="15" refid="structnodo_1a486ad5c9b955ff42eaf8fbf3330e4c75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnodo" kindref="compound">nodo</ref><sp/>*<ref refid="structnodo_1a486ad5c9b955ff42eaf8fbf3330e4c75" kindref="member">prox</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}*<ref refid="listas_8h_1a5a5447a03bcb835183312f000a1d12bc" kindref="member">LISTA</ref>,<sp/><sp/><ref refid="listas_8h_1ab352ead3fb06267f3afdd032d67c189c" kindref="member">NODO</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="listas_8h_1ae3b99323b6f8f35d80bb69ff1a27985e" kindref="member">criar_lista</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="listas_8h_1a6ec793087950b61f792d8e184bf04d9d" kindref="member">insere_cabeca</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>l,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structnodo_1ac78f1a082a695595f0d3ed32cead97f4" kindref="member">valor</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="listas_8h_1af90a7ac214fd566bfb7288d744c94185" kindref="member">devolve_cabeca</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>l);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="listas_8h_1affb39e37aef63ab00b6df8f9336f6673" kindref="member">proximo</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>l);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="structnodo" kindref="compound">LISTA</ref><sp/><ref refid="listas_8h_1a18d863cdb6eb3e2ede74559c4d70b4e5" kindref="member">remove_cabeca</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>l);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="listas_8h_1a7e919af230d184128c5465451ea64a79" kindref="member">lista_esta_vazia</ref>(<ref refid="structnodo" kindref="compound">LISTA</ref><sp/>l);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//LA1_PL2_G07_LISTAS_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/listas.h"/>
+  </compounddef>
+</doxygen>

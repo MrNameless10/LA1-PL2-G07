@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>la1-pl2-g07: C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h File Reference</title>
+<title>LA1-PL2-G07: C:/Users/migue/Documents/GitHub/LA1-PL2-G07/LA1-PL2-G07/projeto/interface.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">la1-pl2-g07
+   <div id="projectname">LA1-PL2-G07
    </div>
   </td>
  </tr>
@@ -72,6 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dados_8h_source.html">dados.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div>
 <p><a href="interface_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -141,7 +142,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">e</td><td>aponta para o estado</td></tr>
-    <tr><td class="paramname"><a class="el" href="struct_c_o_o_r_d_e_n_a_d_a.html" title="Tipos de dados para as respetivas coordenadas.">COORDENADA</a></td><td>da ultima jogada </td></tr>
+    <tr><td class="paramname">c</td><td>coordenada da ultima jogada </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,7 +179,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">e</td><td>aponta para o estado do jogo</td></tr>
-    <tr><td class="paramname">guarda</td><td>o jogo no File para o output </td></tr>
+    <tr><td class="paramname">jogo</td><td>guarda o jogo no File para o output </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,7 +215,8 @@ Functions</h2></td></tr>
 <p>Grava um ficheiro. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ficheiro</td><td></td></tr>
+    <tr><td class="paramname">ficheiro</td><td>ficheiro a ser gravado</td></tr>
+    <tr><td class="paramname">e</td><td>aponta para o estado do jogo </td></tr>
   </table>
   </dd>
 </dl>
@@ -328,7 +330,8 @@ Functions</h2></td></tr>
 <p>Lê um ficheiro. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ficheiro</td><td></td></tr>
+    <tr><td class="paramname">ficheiro</td><td>ficheiro a ser lido</td></tr>
+    <tr><td class="paramname">e</td><td>aponta para o estado do jogo </td></tr>
   </table>
   </dd>
 </dl>
@@ -416,7 +419,8 @@ Functions</h2></td></tr>
 <p>Função que mostra os movimentos. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">jogo</td><td></td></tr>
+    <tr><td class="paramname">jogo</td><td>file onde guarda os movimentos</td></tr>
+    <tr><td class="paramname">e</td><td>aponta para o estado do jogo </td></tr>
   </table>
   </dd>
 </dl>

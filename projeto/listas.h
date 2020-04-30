@@ -9,9 +9,12 @@ Definições das listas ligadas
 \brief Definição genérica das listas ligadas 
 */
 typedef struct nodo{
+    /** valor */
     void *valor;
+    /** proximo */
     struct nodo *prox;
-}*LISTA, NODO;
+
+}*LISTA, /** Nodo da lista */ NODO;
 
 /**
 \brief Cria um lista ligada @returns apontando para a mesma
@@ -42,10 +45,5 @@ LISTA remove_cabeca(LISTA l);
 \brief Verifica se a lista está vazia @param l Lista ligada dando @returns 1 se está vazia e 0 senão está
  */
 int lista_esta_vazia(LISTA l);
-
-/**
-\brief Mostra o tamanho da lista @param l Lista
- */
-int tamanho_lista(LISTA l);
 
 #endif //LA1_PL2_G07_LISTAS_H

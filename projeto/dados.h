@@ -6,13 +6,19 @@
 @file dados.h
 Definições do estado e da manipulação deste através das funções
 */
+
+/**
+\brief Tipos de estados das respetivas casas
+*/
 typedef enum {VAZIO, BRANCA, PRETA} CASA;
 
 /**
 \brief Tipos de dados para as respetivas coordenadas
 */
 typedef struct {
+    /** coluna */
     int x;
+    /** linha */
     int y;
 } COORDENADA;
 
@@ -20,7 +26,9 @@ typedef struct {
 \brief Tipos de dados para a respetiva jogada
 */
 typedef struct {
+    /** Cooordenada jogador1 */
     COORDENADA jogador1;
+    /** Cooordenada jogador2 */
     COORDENADA jogador2;
 } JOGADA;
 
@@ -55,18 +63,17 @@ ESTADO *inicializar_estado();
 /**
 \brief Obtém o jogador atual @param e aponta para o estado @returns Jogador atual
 */
-int obter_jogador_atual(ESTADO *estado);
+int obter_jogador_atual(ESTADO *e);
 
 /**
 \brief Obtém o número de jogadas @param e aponta para o estado @returns número de jogadas
 */
-int obter_numero_de_jogadas(ESTADO *estado);
+int obter_numero_de_jogadas(ESTADO *e);
 
 /**
 \brief Obtém o estado da casa na coordenada C @param e aponta para o estado @param c Coordenada @returns Estado da casa
  */
 CASA obter_estado_casa(ESTADO *e, COORDENADA c);
-
 
 /**
 \brief Devolve o valor da casa @param e aponta para o estado @param x Coluna da jogada @param y Linha da jogada @returns Valor da casa
@@ -99,11 +106,6 @@ int add_comando(ESTADO *e);
 void alterar_jogador_atual(ESTADO *e);
 
 /**
-\brief Verifica se o jogo acabou @param e aponta para o estado @param c COORDENADA da ultima jogada @returns Jogador vencedor
-*/
-int fim_de_jogo(ESTADO *e, COORDENADA c);
-
-/**
 \brief Aumenta uma jogada se o jogador atual for 1 @param e aponta para o estado
 */
 void alterar_num_jogadas(ESTADO *e);
@@ -114,14 +116,14 @@ void alterar_num_jogadas(ESTADO *e);
 void alterar_jogadas(ESTADO *e, COORDENADA c);
 
 /**
-\brief Vê as casa ocupadas a volta da coordenada @param c COORDENADA @returns Número de casas ocupados
-*/
-int bloqueado (ESTADO *e, COORDENADA c);
-
-/**
 \brief Adiciona 1 ao número de comandos @param e aponta para o estado do jogo
 */
 int obter_num_comandos (ESTADO *e);
+
+/**
+\brief Vê as casa ocupadas a volta da coordenada @param e aponta para o estado do jogo @param c COORDENADA @returns Número de casas ocupados
+*/
+int bloqueado (ESTADO *e, COORDENADA c);
 
 /**
 \brief Recebe a jogada a ler @param e aponta para o estado do jogo @param c coluna @param n linha
@@ -139,11 +141,10 @@ int jogadas_guardadas(ESTADO *e, int i, int j);
 char* str_jogada_guardada(ESTADO *e, int i, int j);
 
 /**
-\brief Lê uma linha e guarda no estado de jogo @param Linha @param numlinha Index da linha @param e aponta para o estado do jogo
+\brief Lê uma linha e guarda no estado de jogo @param linha string de linhas a ser lidas @param nlinha número de linhas @param e aponta para o estado do jogo
 */
 void lelinha(char const *linha, int nlinha, ESTADO *e);
 
-//ESTADO *novo_estado(FILE *);
 /**
 \brief Dá reset ao tabuleiro @param e aponta para o estado do jogo
 */
@@ -164,9 +165,5 @@ void decrementa_ncomandos(ESTADO *e);
 */
 LISTA posicoes_possiveis(ESTADO *e, LISTA l);
 
-/**
-\brief Calcula a distância @param c1 Coordenada @param c2 Coordenada
-*/
-float distancia_euclidiana(COORDENADA c1 ,COORDENADA c2);
 
 #endif //UNTITLED_CAMADA_DE_DADOS_H

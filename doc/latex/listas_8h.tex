@@ -11,8 +11,7 @@ struct \mbox{\hyperlink{structnodo}{nodo}}
 \mbox{\Hypertarget{listas_8h_a5a5447a03bcb835183312f000a1d12bc}\label{listas_8h_a5a5447a03bcb835183312f000a1d12bc}} 
 typedef struct \mbox{\hyperlink{structnodo}{nodo}} $\ast$ \mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}
 \begin{DoxyCompactList}\small\item\em Definição genérica das listas ligadas. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{listas_8h_ab352ead3fb06267f3afdd032d67c189c}\label{listas_8h_ab352ead3fb06267f3afdd032d67c189c}} 
-typedef struct \mbox{\hyperlink{structnodo}{nodo}} {\bfseries N\+O\+DO}
+typedef struct \mbox{\hyperlink{structnodo}{nodo}} \mbox{\hyperlink{listas_8h_ab352ead3fb06267f3afdd032d67c189c}{N\+O\+DO}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -28,13 +27,20 @@ void $\ast$ \mbox{\hyperlink{listas_8h_af90a7ac214fd566bfb7288d744c94185}{devolv
 \mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} \mbox{\hyperlink{listas_8h_a18d863cdb6eb3e2ede74559c4d70b4e5}{remove\+\_\+cabeca}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
 \begin{DoxyCompactList}\small\item\em Remove a cabeça da lista. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{listas_8h_a7e919af230d184128c5465451ea64a79}{lista\+\_\+esta\+\_\+vazia}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
-\begin{DoxyCompactList}\small\item\em Verifica se a lista está vazia. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{listas_8h_a7daf2472369dc2617e86e90118cc01e6}{tamanho\+\_\+lista}} (\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}} l)
-\begin{DoxyCompactList}\small\item\em Mostra o tamanho da lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Verifica se a lista está vazia. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Definições das listas ligadas 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{listas_8h_ab352ead3fb06267f3afdd032d67c189c}\label{listas_8h_ab352ead3fb06267f3afdd032d67c189c}} 
+\index{listas.h@{listas.h}!NODO@{NODO}}
+\index{NODO@{NODO}!listas.h@{listas.h}}
+\doxysubsubsection{\texorpdfstring{NODO}{NODO}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structnodo}{nodo}} \mbox{\hyperlink{listas_8h_ab352ead3fb06267f3afdd032d67c189c}{N\+O\+DO}}}
+
+Nodo da lista 
 
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{listas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}\label{listas_8h_ae3b99323b6f8f35d80bb69ff1a27985e}} 
@@ -142,18 +148,3 @@ Remove a cabeça da lista.
 \begin{DoxyReturn}{Returns}
 Cauda da lista ligada 
 \end{DoxyReturn}
-\mbox{\Hypertarget{listas_8h_a7daf2472369dc2617e86e90118cc01e6}\label{listas_8h_a7daf2472369dc2617e86e90118cc01e6}} 
-\index{listas.h@{listas.h}!tamanho\_lista@{tamanho\_lista}}
-\index{tamanho\_lista@{tamanho\_lista}!listas.h@{listas.h}}
-\doxysubsubsection{\texorpdfstring{tamanho\_lista()}{tamanho\_lista()}}
-{\footnotesize\ttfamily int tamanho\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{listas_8h_a5a5447a03bcb835183312f000a1d12bc}{L\+I\+S\+TA}}}]{l }\end{DoxyParamCaption})}
-
-
-
-Mostra o tamanho da lista. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em l} & Lista \\
-\hline
-\end{DoxyParams}

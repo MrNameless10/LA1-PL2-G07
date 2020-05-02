@@ -55,3 +55,38 @@ void jog(ESTADO *e){  //contém a estrategia da distancia Euclidiana!!!
     }
     jogar(e,c);
 }
+
+/*void jog2(ESTADO *e) { //contém a Estratégia baseada na paridade!!!
+    int d= INT_MAX;
+    COORDENADA c,target, *a, *b;
+    LISTA l = criar_lista();
+    LISTA j= criar_lista();
+    c.x = 0;
+    c.y = 0;
+    l = posicoes_possiveis(e, l);
+
+    if(obter_jogador_atual(e)==1){
+        target.x = 0;
+        target.y = 0;
+    }
+    else{
+        target.x = 7;
+        target.y = 7;
+    }
+    while (lista_esta_vazia(l)==0) {
+        a = devolve_cabeca(l);
+        c = *a;
+        insere_cabeca(j,a);
+        proximo(j);
+        l = proximo(l);
+    }
+    while((bloqueado(e,c) % 2 != 0) && (distancia_euclidiana(*a, target) > d)){
+        d = distancia_euclidiana(*a, target);
+        proximo(j);
+        b = devolve_cabeca(j);
+        c = *b;
+    }
+
+    jogar(e,c);
+    congratular_jogador(e,c);
+}*/
